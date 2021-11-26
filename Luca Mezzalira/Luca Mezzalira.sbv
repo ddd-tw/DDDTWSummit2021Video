@@ -1,0 +1,1885 @@
+0:00:09.760,0:00:15.920
+evolutionary fws lambda with 
+hexagonal architecture um
+
+0:00:28.000,0:00:29.840
+um
+
+0:00:32.080,0:00:43.120
+hello hello nice to meet you likewise yeah okay 
+so now it's your time so you can start at any time
+
+0:00:43.680,0:00:49.600
+perfect fantastic thank you very much for the 
+introduction uh and sorry a bit for my voice
+
+0:00:49.600,0:00:54.720
+i have a bit of code so uh it would be a bit 
+weird my voice but don't worry i will do my
+
+0:00:54.720,0:01:02.320
+best that you you will be able to enjoy the talk 
+so today i'm going to talk about aws lambda but
+
+0:01:02.320,0:01:11.280
+specifically how to modularize your code in order 
+to have a let's say a system that would be able to
+
+0:01:11.280,0:01:18.160
+follow the drifts that uh the business would uh it 
+is looking for because in reality every business
+
+0:01:18.160,0:01:24.400
+is evolving and is changing direction and we 
+have some ways as architects and developers
+
+0:01:25.440,0:01:31.200
+that will allow us to follow their direction 
+and improve and evolve our architecture
+
+0:01:31.760,0:01:36.880
+following uh the right business 
+direction my name is luca magdalera
+
+0:01:36.880,0:01:42.320
+i'm a principal solution architect at aws i'm 
+an international speaker and an o'reilly author
+
+0:01:43.840,0:01:50.160
+so let's start with defining what evolutionary 
+architectures are and directly from the book
+
+0:01:50.160,0:01:55.920
+building evolutionary architecture that if you 
+didn't read uh trust me is a really great book um
+
+0:01:56.640,0:02:02.240
+you can see that evolution architecture supports 
+guided and incremental changes and i think here
+
+0:02:02.240,0:02:09.600
+the key part is the incremental changes because 
+uh more often than not when we have like new
+
+0:02:09.600,0:02:15.760
+features that are coming or there are new requests 
+from from the business they are quite chunky so
+
+0:02:15.760,0:02:21.440
+they start to say i would like to connect your 
+system with this third party and then evolve
+
+0:02:21.440,0:02:29.120
+uh the um computation adding new functionalities 
+and anything what you what you need to think
+
+0:02:29.120,0:02:35.920
+about every time is trying to break down those 
+uh let's say complex requests in smaller units
+
+0:02:35.920,0:02:41.200
+that are deliverable and that's why evolution 
+architecture can really help us to achieve that
+
+0:02:43.040,0:02:50.080
+so i think everyone at least once uh have to 
+deal with the three years after architecture
+
+0:02:50.080,0:02:55.040
+the free tier software architecture is composed 
+by three layers the first one is a presentation
+
+0:02:55.040,0:03:00.560
+layer you have dynamic application layer where 
+all the business logic leaves and then you have
+
+0:03:00.560,0:03:07.520
+a data layer where basically you store your your 
+data but the problem when you deal with this kind
+
+0:03:07.520,0:03:13.600
+of architecture that is still valid uh i i see a 
+lot of uh let's say uh that's still a lot of um
+
+0:03:14.640,0:03:20.160
+um implementation with with pretty architecture 
+nowadays the problem is that in the long run what
+
+0:03:20.160,0:03:25.280
+usually happens is there is a leak of domain 
+between the data layer and presentation layer
+
+0:03:25.280,0:03:30.880
+towards the application layer what it means is 
+basically sometimes when you need to implement
+
+0:03:30.880,0:03:38.080
+a feature and you are under pressure or time 
+constraints uh you start to take this code and
+
+0:03:38.080,0:03:44.400
+and start to uh let's say do some create some 
+tech debt uh the problem is more often than not
+
+0:03:44.400,0:03:51.440
+is difficult then to remember about the tech depth 
+or to uh let's say fix the tech depth and sooner
+
+0:03:51.440,0:03:58.080
+rather than later the application layer became 
+obliterated of information that shouldn't leave in
+
+0:03:58.080,0:04:08.000
+that specific layer the other thing that um i have 
+experienced firsthand was moving some workloads
+
+0:04:08.000,0:04:15.280
+to to aws london so imagine that you have for 
+instance your container living on aws ccs or you
+
+0:04:15.280,0:04:20.880
+have your application running in a virtual machine 
+in this case ec2 and you want to move everything
+
+0:04:20.880,0:04:29.440
+to lambda the complexity if the code is not well 
+structured is extracting a portion of a domain and
+
+0:04:29.440,0:04:38.480
+move to the london now this despite it could uh 
+let's say seem simple a simple problem to solve uh
+
+0:04:38.480,0:04:44.720
+it results that is not especially when you don't 
+plan upfront on creating some code that is modular
+
+0:04:44.720,0:04:52.160
+enough for being decoupled and then you will be 
+able to easily move between different compute
+
+0:04:52.160,0:04:59.120
+services the third point uh that they want to make 
+is uh more often than not when you're looking for
+
+0:04:59.120,0:05:05.440
+example or lambdas or maybe you have some numbers 
+that are written uh similar to uh to this one um
+
+0:05:05.440,0:05:11.520
+you find this kind of code and usually what you 
+have is inside your hand lambda handler you have
+
+0:05:11.520,0:05:18.960
+like all these code that contains basically the 
+um retrieval of uh the the request from the body
+
+0:05:18.960,0:05:24.800
+uh in this case of a post of a post request and 
+then you have like submit candidate p that is
+
+0:05:24.800,0:05:32.480
+basically the um function uh in the middle of 
+this image and candidate info so those two um
+
+0:05:32.480,0:05:38.800
+those two basically functions what they do is 
+submit candidate p is communicating with the
+
+0:05:38.800,0:05:46.720
+database instead candidate info is containing 
+information around the domain so what we uh
+
+0:05:46.720,0:05:52.320
+want to store inside the database but as you can 
+see here there is a mix and match of uh incoming
+
+0:05:52.320,0:05:58.240
+requests parsing validation uh and then you have 
+like in integration with infrastructure and so
+
+0:05:58.240,0:06:03.760
+so forth if we want to evolve this kind of code it 
+becomes complicated mainly because we need them to
+
+0:06:03.760,0:06:11.040
+test every single bit end to end to make sure that 
+we didn't introduce any bug and that is a very uh
+
+0:06:11.040,0:06:18.320
+let's say challenging problem because when you 
+are working in large system if you have multiple
+
+0:06:18.320,0:06:24.640
+of those implementation you you risk that you 
+jeopardize your velocity and throughput because
+
+0:06:24.640,0:06:31.920
+you basically are living in a code that is very 
+tightly coupled together so examiner architecture
+
+0:06:31.920,0:06:38.560
+is trying to solve that alistar cockburn that is 
+the creator of alexander architecture but also
+
+0:06:38.560,0:06:45.280
+co-sign the agile manifesto so it's a person that 
+really give a lot to to the software community
+
+0:06:47.040,0:06:54.320
+created the examiner architecture in with one 
+thing in mind trying to find a way to decouple uh
+
+0:06:54.320,0:07:00.720
+the business logic from the environment where it's 
+running and that basically uh provides some nice
+
+0:07:00.720,0:07:06.960
+side effects the first one is that you can drive 
+your application uh in different ways it could
+
+0:07:06.960,0:07:13.920
+be like a batch script it could be a unit test it 
+could be uh let's say a request from a service but
+
+0:07:13.920,0:07:21.360
+because you modularized very well your code you 
+don't risk to pollute the business logic uh in in
+
+0:07:21.360,0:07:27.280
+a way that then became uh unflexible and therefore 
+you need to spend a lot of time to evolve it
+
+0:07:29.360,0:07:35.680
+um the other thing uh that i want to to 
+focus is understanding deeply how hexagonal
+
+0:07:35.680,0:07:41.360
+architecture works so let's take a look to the 
+anatomy of an examiner attraction so the first
+
+0:07:41.360,0:07:47.200
+if you want layer or exit learning this in 
+this case is the domain logic the main logic
+
+0:07:47.760,0:07:52.000
+is basically what you want to 
+achieve inside your aws london
+
+0:07:52.880,0:07:58.640
+the beauty of of applying examiner architecture on 
+lambda is that because lambda by design is is not
+
+0:07:58.640,0:08:04.400
+let's say a very complex environment so you have 
+like a small amount of logic if you encapsulate
+
+0:08:04.400,0:08:09.280
+very well your domain logic it became easier 
+to test and evolve it without too many problems
+
+0:08:10.880,0:08:18.320
+second layer is the ports and ports are basically 
+the entry point for the external world towards the
+
+0:08:18.320,0:08:23.920
+domain logic and also are the way how the domain 
+logic is interacting with the external world
+
+0:08:25.280,0:08:29.280
+and finally you have adapters 
+adapters as the name suggests
+
+0:08:29.840,0:08:37.120
+uh is uh uh taken from the idea of the adapter 
+pattern the basically is a way that uh two
+
+0:08:37.120,0:08:42.880
+different contracts are communicating together the 
+role of the adapters is basically becoming your
+
+0:08:42.880,0:08:49.680
+anti-corruption layer between the external world 
+and your business logic and is also translating
+
+0:08:49.680,0:08:54.800
+what is coming from the external world towards the 
+internal world the communication between domain
+
+0:08:54.800,0:09:00.480
+logic and adapters is happening always through 
+ports this architecture is also called port and
+
+0:09:00.480,0:09:05.680
+adapter so you can hear hexagon architecture 
+okay airport adapter they mean the same thing
+
+0:09:07.200,0:09:13.120
+the um interesting part of these is the ports 
+could be uh depends on the language that they
+
+0:09:13.120,0:09:18.400
+are using it could be just an interface and 
+therefore an adapter is implementing an interface
+
+0:09:18.400,0:09:23.840
+for communicating with domain logic or it could be 
+like in the example that we are going to see uh a
+
+0:09:23.840,0:09:31.120
+a function i'm going to use node.js with uh es6 so 
+javascript and not typescript but we type language
+
+0:09:31.120,0:09:40.240
+type language like java or c-sharp or 
+uh typescript you can use interfaces the
+
+0:09:40.240,0:09:44.240
+other part that you need to be aware on the exact 
+architecture is that you have primary actors the
+
+0:09:44.240,0:09:50.320
+primary actors are the ones that are communicating 
+with your aws lambda in this case inside your
+
+0:09:50.320,0:09:58.160
+examiner architecture what they are it could be 
+another microservice it could be a client it could
+
+0:09:58.160,0:10:03.840
+be a message inside the queue because the lambda 
+can be called synchronously or asynchronously
+
+0:10:04.480,0:10:08.400
+and then you can have secondary actors 
+that basically are the actors that are
+
+0:10:08.400,0:10:13.520
+used by our code for uh i don't know for 
+instance retrieving information from a
+
+0:10:13.520,0:10:20.160
+database consuming a service a third party 
+service or adding a message in a queue so those
+
+0:10:20.160,0:10:26.880
+are basically the key point on how you are going 
+to to structure your exaggerator architecture that
+
+0:10:26.880,0:10:33.520
+obviously is valid for aws lambda but it could be 
+valid also with the container or with the virtual
+
+0:10:33.520,0:10:38.800
+machine bear in mind currently the focus of this 
+talk will be on lambda because uh i think these
+
+0:10:38.800,0:10:44.400
+architectures specifically can really shine inside 
+the serverless paradigm the benefit and drawbacks
+
+0:10:44.960,0:10:51.680
+so benefit is the business logic is agnostic to 
+the outside world and that is absolutely great
+
+0:10:51.680,0:10:57.600
+because it means that we have we can evolve it and 
+change it without affecting the rest of the code
+
+0:10:58.720,0:11:03.520
+it's independent from external service therefore 
+for the business logic it doesn't matter if we
+
+0:11:03.520,0:11:08.800
+are using a sql database or no sql database what 
+it matters for the business logic is that it's
+
+0:11:08.800,0:11:16.880
+going to request some information to a repository 
+and then the adapter encapsulate all the logic
+
+0:11:16.880,0:11:23.280
+for interacting with that repository and that 
+allows you to really evolve your code in a way
+
+0:11:23.280,0:11:33.040
+that it's a better for for everyone then um it's 
+easier to test and test in isolation especially
+
+0:11:33.920,0:11:38.240
+and we will see more in this talk and 
+finally is reducing the technical debt
+
+0:11:38.240,0:11:44.720
+the fact that you spend a bit of time upfront 
+defining those boundaries and those modules
+
+0:11:44.720,0:11:51.040
+will allow you to run faster in the long run 
+at the same time on the pitfalls or drawbacks
+
+0:11:52.000,0:11:55.600
+you need to spend more time thinking on 
+building multiple layers because you need
+
+0:11:55.600,0:12:02.480
+to create adapters ports and business logic and 
+in the original implementation defined by alistar
+
+0:12:02.480,0:12:11.600
+cockburn there weren't too many references on 
+how to structure your business logic that is not
+
+0:12:11.600,0:12:21.280
+uh necessarily a negative thing but it means that 
+you have an opportunity for uh let's say use your
+
+0:12:21.280,0:12:25.920
+knowledge and your style for encapsulating 
+better the code inside your business logic
+
+0:12:27.840,0:12:34.960
+so if by now you're thinking okay why an accident 
+why not not another shape alistar cockburn is
+
+0:12:34.960,0:12:41.200
+providing also the answer for that the hexagon is 
+not the meaning of how many how many sides we need
+
+0:12:41.200,0:12:47.680
+uh in a shape but it's just a good way to 
+represent the complexity that a specific
+
+0:12:47.680,0:12:54.960
+service could be could interact with before we 
+just rectangles we didn't have enough space for
+
+0:12:54.960,0:12:59.920
+drawing all the interaction that the service could 
+be exposed to and nowadays with microservices this
+
+0:12:59.920,0:13:07.120
+is becoming even more important uh because um you 
+you may have multiple interaction as a primary or
+
+0:13:07.120,0:13:15.040
+secondary actors so i prepared a demo uh on 
+on this and what we are going to see is this
+
+0:13:15.040,0:13:21.120
+is a very simple demo but provides you the idea 
+of what we can really do with this approach
+
+0:13:21.920,0:13:28.560
+so first of all you have an api gateway 
+that is exposing an api the api is
+
+0:13:29.600,0:13:34.400
+basically every time you call this rest api 
+you trigger an aws lambda that is called stock
+
+0:13:34.400,0:13:41.520
+converter and as the name suggests what expects 
+is a stock id and when you receive the stock id
+
+0:13:41.520,0:13:46.400
+is going to retrieve the value of the stock id 
+from the stocks table that is a dynamodb table
+
+0:13:47.120,0:13:54.160
+and then is going to call a third party service 
+where it is going to retrieve real-time all the
+
+0:13:54.960,0:14:01.040
+currencies and then when it has those two piece 
+informations the business logic is going to apply
+
+0:14:01.040,0:14:07.520
+the currencies to the stock value and return back 
+the value of uh the stock in multiple currencies
+
+0:14:08.400,0:14:14.960
+that's basically what we're going to see and 
+when we see in slow motion uh how the interaction
+
+0:14:14.960,0:14:22.880
+would work so first of all you will have an http 
+request the adapter will pick the http request
+
+0:14:22.880,0:14:26.240
+and through the port is going to 
+communicate with the business logic
+
+0:14:27.280,0:14:33.360
+passing the stock id then the business logic 
+as the first thing is going to call a port
+
+0:14:33.360,0:14:39.520
+and saying to the port please retrieve 
+this uh stock id and the port knows that
+
+0:14:39.520,0:14:45.040
+has to communicate without an adapter then 
+the adapter is communicating with dynamodb
+
+0:14:45.040,0:14:51.520
+because it is encapsulating inside it all the 
+information related to dynamodb and then the
+
+0:14:51.520,0:14:56.080
+business logic triggers another action that is 
+calling through an adapter as a through a port
+
+0:14:56.080,0:15:00.400
+another adapter that is communicating with the 
+currency service that is a third party service
+
+0:15:02.160,0:15:09.120
+and then it returns everything so let's go back to 
+uh our ide and let's try to see what we have here
+
+0:15:10.480,0:15:14.480
+okay so this is the structure of my project as 
+you can see here i have a folder for adapters
+
+0:15:14.480,0:15:19.680
+domain and ports um usually you it depends 
+how you want to structure you can potentially
+
+0:15:19.680,0:15:26.400
+divide also this part per domain and have like one 
+business domain that contains sport adapters and
+
+0:15:26.400,0:15:32.480
+and business logic uh in my opinion because 
+we are working with lambda we are already
+
+0:15:32.480,0:15:38.560
+reducing the scope of of the domain so in 
+theory you should be able to structure the
+
+0:15:38.560,0:15:42.400
+code with just adapters domain ports but it's 
+completely up to you how you want to do that
+
+0:15:44.240,0:15:50.400
+the uh if we see how the the uh logi the the code 
+works based on the logic that i just explained
+
+0:15:50.400,0:15:56.400
+this is the entry point of our lambda okay so 
+we have like literally not much here because
+
+0:15:56.400,0:16:01.680
+what we have is the lamb that is retrieving the 
+stock id from the url and then is passing this
+
+0:16:01.680,0:16:08.400
+information to this adapter that is called that 
+has a function called get stock request get stock
+
+0:16:08.400,0:16:13.760
+request once again in this case is a primary 
+adapter this is coming from the primary actor
+
+0:16:14.720,0:16:19.680
+and what it does is just calling it doesn't have 
+to do validation on anything it's just calling
+
+0:16:20.480,0:16:28.560
+a a function for inside a port and is when he 
+receives the response it will drop the uh final
+
+0:16:28.560,0:16:36.320
+um with a response to the uh to the client if 
+we go inside then the port the port as i said
+
+0:16:36.320,0:16:43.600
+before but is important to iterate is as simple as 
+a function in javascript if you have typescript or
+
+0:16:43.600,0:16:48.400
+any other type language you can use an interface 
+so the port basically what it does in this case
+
+0:16:49.040,0:16:52.800
+is exposing a function and is 
+communicating with a business logic
+
+0:16:53.760,0:16:58.640
+why we're doing this because in this case now we 
+have the adapter that is completely decoupled from
+
+0:16:58.640,0:17:06.640
+the business logic therefore we can evolve those 
+two entities as as we want without risking to uh
+
+0:17:06.640,0:17:12.240
+let's say having a side effect that are bubbling 
+between between different layers as long the
+
+0:17:12.240,0:17:20.320
+contours will remain the same we are in a good 
+shape so in the business logic uh once again here
+
+0:17:20.320,0:17:25.280
+we have all the currencies that they want to uh to 
+use so in this case is american dollars canadian
+
+0:17:25.280,0:17:31.040
+dollars australian dollars uh but the important 
+thing is that i have other two uh action to do
+
+0:17:31.040,0:17:37.120
+first i call this repository port that will 
+communicate with a repository in this case
+
+0:17:37.120,0:17:43.520
+dynamodb uh through the adapter uh for retrieving 
+the stock id when i retrieve the stock id
+
+0:17:43.520,0:17:51.280
+i will then call the currencies therefore a third 
+party service for doing so and then i will apply
+
+0:17:51.280,0:17:57.920
+the logic that i explained before for uh let's say 
+applying the currency to the original stock value
+
+0:17:59.360,0:18:04.480
+great so um let's go for the 
+repository so the repository is a port
+
+0:18:05.120,0:18:11.360
+and as a port uh it it just has a function 
+that calls an adapter the adapter is get
+
+0:18:11.360,0:18:17.520
+stockman this is a secondary adapter because it's 
+calling is handled basically by our aws function
+
+0:18:18.400,0:18:25.760
+um and here as you can see what we have 
+is all the information related on how to
+
+0:18:25.760,0:18:32.160
+retrieve a specific item from the database 
+if i want to change the schema if i want
+
+0:18:32.160,0:18:37.440
+to change the way i'm i'm querying the 
+database or the way how i'm i don't know
+
+0:18:40.160,0:18:45.680
+writing data in the database in a hypothetical 
+thing the only thing that they need to change is
+
+0:18:45.680,0:18:51.040
+this partner and that is one of the benefit 
+of working with this with this approach
+
+0:18:52.320,0:18:59.600
+now if we go back to our business logic the other 
+interesting part is what we are going to do with
+
+0:18:59.600,0:19:07.040
+uh the currencies and the currencies has these 
+get that this port is called get currency data
+
+0:19:07.040,0:19:12.320
+and then it goes to to retrieve the currencies 
+here we have a point-to-point communication with
+
+0:19:12.320,0:19:18.160
+a third party service and that's it so we retrieve 
+the information we send back to the uh to the
+
+0:19:18.160,0:19:24.880
+business logic and business logic knows how to 
+do by now you understand that the business logic
+
+0:19:24.880,0:19:30.080
+doesn't know how who requested this information 
+it could be api gateway it could be unit test it
+
+0:19:30.080,0:19:35.280
+doesn't matter for the business logic and it 
+doesn't care even if it's communicating with
+
+0:19:35.280,0:19:42.240
+a sql or nosql database or where is the endpoint 
+that we are retrieving information therefore we
+
+0:19:42.240,0:19:48.960
+encapsulated very well the business logic 
+and can evolve as we prefer now let's
+
+0:19:48.960,0:19:56.400
+play a game let's think about a new scenario 
+you deploy this aws lambda in a production and
+
+0:19:56.400,0:20:00.880
+your service starts to get a lot of traction 
+so people are extremely interesting to that
+
+0:20:01.520,0:20:09.520
+and what happens then is um that you uh basically 
+start to see uh some uh errors coming out from
+
+0:20:09.520,0:20:16.800
+your uh lambda because the third party service 
+is not capable to cope up with the traffic uh
+
+0:20:16.800,0:20:22.320
+the request per second that you have uh from your 
+service you need to figure out a way to solve that
+
+0:20:23.040,0:20:29.360
+obviously it's a third party service so you cannot 
+say listen can you increase by i don't know 10x
+
+0:20:29.360,0:20:34.320
+the amount of requests that they have because they 
+have let's say their own architecture and they or
+
+0:20:34.880,0:20:40.400
+they um their own uh things to to to handle 
+therefore usually you have a limited amount
+
+0:20:40.400,0:20:46.560
+of requests that you can you can have okay so the 
+other alternative is that you handle on your side
+
+0:20:46.560,0:20:52.320
+so in this case what we can do instead of doing is 
+using this adapter we can i created a new adapter
+
+0:20:53.040,0:21:01.520
+that is called um currency converter with cache 
+and here as you can see i have exactly the same
+
+0:21:01.520,0:21:08.480
+signature so the same function the same contract 
+but what they have added here is a elastic cache
+
+0:21:08.480,0:21:14.560
+with redis that is a service available in aws 
+for using a managed version of redis cluster
+
+0:21:15.520,0:21:20.960
+and the um beauty of this approach is that 
+basically i'm implementing a cache inside
+
+0:21:20.960,0:21:30.560
+my my logic so here the logic would be first thing 
+first check inside radius if i stored any currency
+
+0:21:30.560,0:21:37.680
+and if i do return back to the client without 
+making any call to um to the third party service
+
+0:21:38.800,0:21:45.680
+and to a certain extent this is great because that 
+means i'm offloading dramatically all the traffic
+
+0:21:45.680,0:21:51.360
+that is going to the third party service because 
+i'm using the cash if the cash is evicted is empty
+
+0:21:51.360,0:21:59.360
+uh i have the possibility to call the third 
+party service and then i immediately store the
+
+0:21:59.360,0:22:05.840
+information retrieved from the third party service 
+inside radis and i set an eviction policy of 22nd
+
+0:22:06.720,0:22:14.480
+after 20 seconds automatically redis will evict 
+the cash and you can go ahead with let's say
+
+0:22:14.480,0:22:17.440
+querying again the third party 
+service for training fresh data
+
+0:22:18.400,0:22:23.840
+this approach scaled pretty well because as you 
+can imagine if you have 10 landers that are let's
+
+0:22:23.840,0:22:31.760
+say querying the database simultaneously then 
+you go uh you go with these 10 lambdas you are
+
+0:22:31.760,0:22:36.080
+going to hit the vast majority of the time red 
+is more than third party service so that is great
+
+0:22:38.080,0:22:44.720
+okay so we have seen uh uh how to 
+structure the code in ojs and how it works
+
+0:22:44.720,0:22:50.960
+now another example that i want to add on 
+this uh scenario again so imagine now that
+
+0:22:50.960,0:22:56.000
+instead of having a lambda the team that was 
+working on this was starting from a container
+
+0:22:56.000,0:23:02.800
+and therefore docker container in this case so in 
+this case this is the code that i need to do as
+
+0:23:02.800,0:23:07.840
+you can see here i have the same folders with 
+the same files okay nothing nothing different
+
+0:23:08.640,0:23:14.400
+so i copy and paste those inside this new 
+application i have a different obviously entry
+
+0:23:14.400,0:23:19.760
+point because this is my web server in node called 
+fastify it's a well-known framework in node.js
+
+0:23:20.720,0:23:25.120
+and uh the interesting part is this 
+the entry point is exactly the same
+
+0:23:26.080,0:23:31.120
+what it means though it means that basically 
+imagine that you have a crowd application where
+
+0:23:31.120,0:23:39.520
+you are creating updating writing and reading uh 
+and deleting elements inside the database i will
+
+0:23:39.520,0:23:45.600
+have obviously multiple of those methods so if 
+we structure the code in a modular fashion we can
+
+0:23:45.600,0:23:52.400
+extract portion of the code and move to a lambda 
+without any problem and that is the power of this
+
+0:23:52.400,0:23:58.720
+approach we can also move between compute services 
+uh very easily because we modularize the code in a
+
+0:23:58.720,0:24:04.160
+way that would allow us to have this flexibility 
+to evolve our code based on the business needs
+
+0:24:06.320,0:24:11.440
+okay so let's go back to the slides and let's 
+start to think about other use cases because
+
+0:24:11.440,0:24:17.920
+that those are some of them but there are more so 
+the first one is testing and isolation as i said
+
+0:24:17.920,0:24:24.880
+before now the business logic is well encapsulated 
+and that means potentially you can have a faster
+
+0:24:24.880,0:24:29.680
+feedback loop when you're writing code imagine 
+that you are writing your code and you have your
+
+0:24:29.680,0:24:34.480
+business logic is well isolated you can even 
+separate how you're running your code in a way
+
+0:24:34.480,0:24:40.160
+that when you connect to a database unless you are 
+often changing schema it is not going to happen
+
+0:24:40.160,0:24:46.080
+very often uh you that code will be solid so you 
+need you don't need to test but the business logic
+
+0:24:46.080,0:24:52.240
+would evolve and therefore what you can do is 
+running dividing the test for the adapters and the
+
+0:24:52.240,0:24:59.040
+business logic in your uh development environment 
+and then testing more often the business logic
+
+0:24:59.040,0:25:04.400
+or the part that is evolving more and therefore 
+having a faster turnaround on the rest and then
+
+0:25:04.400,0:25:11.360
+doing more extensive tests uh when you are about 
+to open up a request or whatever but this really
+
+0:25:11.360,0:25:17.600
+speed up the way how you are doing testing the 
+cache inside pattern is the one that we have seen
+
+0:25:17.600,0:25:22.000
+before so we implement the redis cache and it's 
+very similar so you have the service that is it
+
+0:25:22.000,0:25:27.360
+in your lambda and then the land is communicating 
+with the database in order to offload or a third
+
+0:25:27.360,0:25:32.240
+party service in order to offload the request 
+because maybe some of the queries are always the
+
+0:25:32.240,0:25:36.880
+same you can add the cache and depends obviously 
+from database to database that you're going to
+
+0:25:36.880,0:25:42.160
+use if you're using dynamo you can use dax 
+that is another service that is let's say
+
+0:25:43.200,0:25:48.480
+fully managed and allows you to have a cache 
+layer in front of dynamo but if if you want
+
+0:25:48.480,0:25:53.840
+you can use elastic cache with uh radis and it's 
+completely up to you on memory db that is a new
+
+0:25:53.840,0:25:58.960
+service that we launched very recently the other 
+thing is imagine that you want to change the
+
+0:25:58.960,0:26:05.040
+trigger so the way how your application works so 
+instead of having an api gateway that is calling
+
+0:26:05.040,0:26:11.040
+the lambda function now you want to have an 
+asynchronous model where the api gateway is
+
+0:26:11.040,0:26:18.480
+storing the request directly to uh sqs so a queue 
+and then the the lambda is trigger uh in batches
+
+0:26:18.480,0:26:24.000
+so it takes like few elements inside the queue 
+start to process them and then behind the scene
+
+0:26:24.000,0:26:31.200
+the client is starting to have um a request a 
+polling mechanism or a socket for understanding
+
+0:26:31.200,0:26:36.880
+when the computation is accomplished so those 
+kind of things are easy to implement because
+
+0:26:36.880,0:26:41.680
+in this case the only change that you're going to 
+make as long as the computation remains the same
+
+0:26:41.680,0:26:47.040
+is that the primary adapter so you basically 
+change the adapter in a way that instead of
+
+0:26:47.040,0:26:54.000
+receiving the request from api gateway has to 
+extract the data from the from sqs and that is
+
+0:26:54.000,0:26:58.400
+great because it means that basically we don't 
+have to change anything on our business logic
+
+0:27:00.720,0:27:06.400
+another scenario is service migration so imagine 
+that you have a lamb that is communicating with
+
+0:27:06.400,0:27:11.680
+a self-managed mobile database and at some 
+point you realize that you spend too much
+
+0:27:11.680,0:27:16.720
+time on maintaining this database and you want 
+to move to a managed database version so in this
+
+0:27:16.720,0:27:21.920
+case it could be aws documentability that is 
+let's say powering one with the bb in the scene
+
+0:27:23.440,0:27:28.080
+the uh beauty of this approach is that like 
+once again you go you're going to change
+
+0:27:28.080,0:27:32.080
+just the adapters for the piece of logic 
+doesn't care if it's mongodb or document b
+
+0:27:32.640,0:27:38.160
+and also you can apply certain migration 
+patterns that you wouldn't be able to do so
+
+0:27:38.160,0:27:42.400
+so despite you obviously when you do 
+immigration or database you need to find a way
+
+0:27:42.400,0:27:47.920
+to migrate the data but then on the business 
+logic side you can use for instance a branch
+
+0:27:47.920,0:27:54.800
+by abstraction pattern that basically is allowing 
+you to run those two things in parallel and maybe
+
+0:27:54.800,0:27:58.880
+for a certain period of time just to make sure 
+that all the data are synchronized properly
+
+0:27:58.880,0:28:04.000
+you uh check on mongodb the responses that are 
+coming from document db and then when you are
+
+0:28:04.000,0:28:12.080
+confident you just uh move ahead but that is a 
+really great use case the other thing is modern
+
+0:28:12.080,0:28:16.160
+web application modernization so imagine 
+that you have your monolithic architecture
+
+0:28:16.160,0:28:22.960
+and you start to divide that by different 
+subdomains and then those domains usually in in
+
+0:28:22.960,0:28:26.480
+software architecture as some new one 
+described multiple times this is called
+
+0:28:27.040,0:28:32.240
+a modular monolate when you have a monolithic code 
+base that is divided by sub domains what you can
+
+0:28:32.240,0:28:37.200
+do is basically preparing yourself for migrating 
+to microservices and that is going to help
+
+0:28:37.200,0:28:42.640
+because when you divide with examiner architecture 
+your code the immutable sub domains then is easy
+
+0:28:42.640,0:28:48.000
+to extract portion in multiple microservices 
+and the same thing is going to happen when we do
+
+0:28:48.000,0:28:54.640
+from microservices to london the interesting 
+approach here for me is this one uh so the
+
+0:28:54.640,0:29:01.680
+fact that you have a microservice with multiple 
+obviously uh endpoints that are running there
+
+0:29:01.680,0:29:08.720
+you can extract some of them in lambdas based on 
+the volumetric that you're going to receive so for
+
+0:29:08.720,0:29:14.800
+instance if your microservice has a lot of reads 
+but not many writes and many delete and update
+
+0:29:14.800,0:29:21.120
+what you could do potentially as a first step is 
+uh instead of going with four lambdas one per uh
+
+0:29:21.120,0:29:28.560
+h rest verb or http verb you are going to have 
+one for read that has a different scale button
+
+0:29:28.560,0:29:32.480
+compared to the others and one for the other 
+three actions and then when you see that there
+
+0:29:32.480,0:29:39.600
+is a real need for let's say moving away and 
+from maintaining these three uh and let's say
+
+0:29:39.600,0:29:46.000
+other http verb in the same lambda you can slowly 
+but study migrating but you gain you're gaining
+
+0:29:46.000,0:29:53.840
+immediately the serverless benefit because you 
+move away from uh having a managed container
+
+0:29:54.560,0:29:59.200
+then finally hybrid strategies and that is 
+an interesting one right because sometimes
+
+0:29:59.200,0:30:05.440
+you have some workloads that require your code 
+to run in uh two environments maybe on-prem and
+
+0:30:06.000,0:30:12.400
+uh on on the cloud and an example is if 
+you have your uh examiner architecture
+
+0:30:12.960,0:30:19.520
+what you could do potentially is running your 
+aws lambda in aws and then have the same business
+
+0:30:19.520,0:30:25.520
+logic running on k native okay native is a 
+kubernetes offering for serverless that could run
+
+0:30:25.520,0:30:31.040
+um everywhere to be honest the beauty 
+of this approach is that you write once
+
+0:30:31.040,0:30:38.960
+the business logic and then you basically start to 
+spread the um so the test is just once and you you
+
+0:30:38.960,0:30:42.320
+are really making sure that everything is working 
+the only thing that you are going to change
+
+0:30:42.320,0:30:48.720
+probably are the adapters and as long as you 
+maintain the same contract the only effort that
+
+0:30:48.720,0:30:54.240
+you have is maintaining the adapters in aws and in 
+kenya that is in my opinion absolutely fantastic
+
+0:30:56.000,0:30:58.880
+finally there is one real let's say niche
+
+0:31:00.800,0:31:06.720
+and esoteric if you want architecture that i'm 
+quite interested on but it's still early days
+
+0:31:06.720,0:31:11.600
+it's called patholith architecture the concept 
+of patholith architecture is basically having
+
+0:31:11.600,0:31:18.160
+the possibility to work with microservices at 
+the development time but deploy in smaller units
+
+0:31:19.120,0:31:24.240
+when you go on uh on the cloud in this case 
+so what it means is that i'm developing a
+
+0:31:24.240,0:31:28.880
+microservice and my another team is developing 
+another one and because they're in the same domain
+
+0:31:28.880,0:31:35.920
+i can merge them at compile time and 
+send um all together inside a unique
+
+0:31:36.640,0:31:44.560
+piece to instance or whatever um this is still 
+let's say early days and there are quite a few
+
+0:31:44.560,0:31:51.520
+researches around that but it's something that i i 
+wanted to add just to give you an idea that where
+
+0:31:51.520,0:31:57.760
+also exactly architecture can shine i've seen an 
+implementation that uh is using a library node.js
+
+0:31:57.760,0:32:05.360
+library called microlib that what it does is using 
+these and even going further where you can reload
+
+0:32:05.360,0:32:11.360
+at runtime uh your code directly inside your 
+accident that is uh quite interesting obviously
+
+0:32:11.360,0:32:16.320
+still early days so uh don't take this tomorrow 
+introduction but definitely keep an eye on it
+
+0:32:17.920,0:32:28.400
+so obviously uh exactly architecture started um 
+was let's say released in 2005 so a big time ago
+
+0:32:28.960,0:32:35.120
+uh and uh since then there were some evolution 
+so the first one is uh this one is this uh onion
+
+0:32:35.120,0:32:41.200
+architecture uh that uh what it does is solving 
+the problem that we were describing before trying
+
+0:32:41.200,0:32:49.520
+to create a more structured and opinionated uh 
+business logic uh and the same was uh it happened
+
+0:32:49.520,0:32:59.440
+in 2020 2012 where um uncle bob uh they introduced 
+the clean architecture that is very dissimilar
+
+0:32:59.440,0:33:05.360
+uh to to the online one but with different 
+uh let's say entities uh and uh constructs
+
+0:33:06.000,0:33:12.000
+the interesting part here for me is uh if we're 
+talking about uh with a monolithic code base i see
+
+0:33:12.000,0:33:20.320
+the need of um structuring the better the business 
+logic totally i can see that uh on the lambda in
+
+0:33:20.320,0:33:25.680
+theory if you structure properly your lambdas and 
+you're not going to have a very complex lambdas
+
+0:33:26.480,0:33:33.200
+using just hexagonal architecture as i've shown 
+you uh during this uh session i think would be
+
+0:33:33.200,0:33:39.200
+more than enough because otherwise you start 
+to go too granular and you know um talking with
+
+0:33:39.200,0:33:46.320
+a customer uh it was telling me we we went to 
+the clean architecture route for microservices
+
+0:33:46.320,0:33:52.240
+and it was a proliferation of files that at the 
+end was difficult to manage in the long run and
+
+0:33:52.240,0:33:57.760
+i totally agree so you need to find the right 
+balance and the right trade-off despite yes there
+
+0:33:57.760,0:34:03.520
+are some other uh more structured architectures 
+but i believe that exaggerated architecture
+
+0:34:03.520,0:34:11.120
+as i showed you uh it should be enough for 
+your serverless workers so now the question
+
+0:34:11.120,0:34:18.160
+uh probably after this um this session is uh 
+is this the definitive architecture that aws
+
+0:34:19.040,0:34:27.200
+encourage for uh developing uh lambda the answer 
+is it depends as a good architect i couldn't say
+
+0:34:27.200,0:34:32.720
+yes or no because uh it really depends from 
+the context architecture is always based on
+
+0:34:32.720,0:34:37.840
+trade-offs it doesn't exist the right or wrong 
+but the only thing that exists is that your
+
+0:34:37.840,0:34:44.160
+context has some requirements and based on the 
+requirements you take a decision now what i see
+
+0:34:44.160,0:34:51.840
+uh really uh shining this architecture is when 
+for instance you have a workload that has to
+
+0:34:51.840,0:34:57.120
+evolve uh during the time imagine for instance 
+that you are developing a software as a service
+
+0:34:57.120,0:35:04.080
+or you have an internal product that you need to 
+maintain for years and years and years definitely
+
+0:35:04.080,0:35:10.480
+investing a bit of time on structuring your code 
+with the exact architecture can can really help
+
+0:35:11.360,0:35:15.200
+on the other side if you have uh for 
+instance a project that should stay
+
+0:35:15.920,0:35:19.520
+online for i don't know a couple of 
+months because maybe it's an event
+
+0:35:20.320,0:35:26.560
+starting with the exact architecture probably 
+is an overkill same when you have like a service
+
+0:35:26.560,0:35:35.120
+that is not doing much is maybe a service that is 
+just i don't know uh calling a a third party or uh
+
+0:35:35.120,0:35:39.200
+basically it's a proxy between two elements 
+starting with the exact architecture probably
+
+0:35:39.200,0:35:45.360
+probably is an overkill but there are uh let's 
+say situation where it can really shine for me the
+
+0:35:45.360,0:35:50.880
+important thing that for me is it should be that 
+your main takeaway is try to understand deeply
+
+0:35:50.880,0:35:56.560
+your context find the what are the characteristics 
+of your architecture and then based on that take
+
+0:35:56.560,0:36:02.000
+the decision if uh external architecture could 
+help you on your serverless workload or not
+
+0:36:03.840,0:36:09.760
+so just to wrap up uh so we have seen that 
+we have a strong separation of concern with
+
+0:36:09.760,0:36:13.600
+the external architecture then we have seen 
+that infrastructure is fully decoupled from
+
+0:36:13.600,0:36:18.640
+the business logic so we can evolve both 
+in parallel and potentially with let's say
+
+0:36:18.640,0:36:23.840
+different people or even you can evolve 
+taking different direction without any problem
+
+0:36:25.520,0:36:30.640
+exactly architecture is easy to test thanks to 
+the two characteristics that i mentioned before
+
+0:36:30.640,0:36:35.040
+and finally there are many use cases 
+where that are simplified when we use
+
+0:36:35.040,0:36:42.000
+uh etc architecture therefore if for any given 
+reason you know that uh some of the use cases
+
+0:36:42.000,0:36:46.880
+that i mentioned are going to happen no fear 
+not because you will be able to cover that
+
+0:36:48.880,0:36:54.400
+uh i gather in this life that we share later on 
+quite a few links uh you can find the demo that
+
+0:36:54.400,0:37:02.160
+i showed you uh on gitla on github and you have 
+also i wrote an article based on on this example
+
+0:37:02.160,0:37:09.360
+what i described uh that is available in the 
+compute blog uh of aws and you can read basically
+
+0:37:09.360,0:37:14.400
+what i described during this talk and then i 
+have you have a bunch of other uh links like
+
+0:37:14.400,0:37:19.440
+uh the original article on exam architecture the 
+only architecture clean architecture and so on
+
+0:37:20.800,0:37:26.560
+that's it for me thank you very much i'm more 
+than happy to jump on uh some questions and
+
+0:37:26.560,0:37:30.960
+if you want to contact me because later on 
+you have other questions or anything that is
+
+0:37:30.960,0:37:35.840
+my email so feel free to contact me anytime i 
+respond to everyone so uh thank you very much
+
+0:37:40.480,0:37:43.920
+okay thanks luke hey wait wait
+
+0:37:47.600,0:37:54.000
+thanks zuka well that's very informational 
+and knowledgeable uh presents okay so
+
+0:37:54.800,0:37:57.840
+the next one will go to the qna session
+
+0:37:57.840,0:38:05.280
+if you haven't asked the question yet please go to 
+the slider and and post your question and you can
+
+0:38:05.280,0:38:10.640
+upload your favorite one so that we can 
+see that more clearly i'll choose that one
+
+0:38:12.800,0:38:13.440
+let me see
+
+0:38:16.720,0:38:22.800
+okay uh look how can you could you see 
+the the slide on my screen okay cool
+
+0:38:23.680,0:38:32.720
+yeah great so let me choose the first one okay the 
+first one is does the hexagonal architecture must
+
+0:38:32.720,0:38:39.920
+go with aws london the way it decoupled protein 
+adapters from business lodges seems to fit in
+
+0:38:39.920,0:38:48.640
+on premise service as well okay you can go 
+yeah totally uh so the exact architecture it
+
+0:38:48.640,0:38:54.480
+doesn't work only with lambda it works with 
+containers it works with any type of code
+
+0:38:54.480,0:39:02.080
+is an architecture button right i uh i think 
+exactly architecture was well discussed for
+
+0:39:04.320,0:39:08.960
+for a long long long time inside the the community
+
+0:39:10.480,0:39:17.520
+and this is not let's say a novel thing but i i 
+thought that currently i didn't see many talking
+
+0:39:17.520,0:39:24.160
+about exact architecture properly on aws lambda 
+and i think with the ws lambda where more often
+
+0:39:24.160,0:39:31.520
+than not uh because it's a small entity we tend to 
+just write everything inside inside the handler is
+
+0:39:31.520,0:39:39.120
+a good pattern for helping uh the development 
+of of serverless let's say architectures
+
+0:39:40.160,0:39:47.360
+creating a wealth structure mechanism that at 
+least is well known and also uh is easy to to
+
+0:39:47.360,0:39:52.560
+implement so definitely you can run on premise you 
+can run a container you can run wherever you want
+
+0:39:54.720,0:40:02.080
+okay okay thank you and yeah let's uh actually 
+this is my first time too here we can mix
+
+0:40:02.080,0:40:06.560
+uh we can mix hexagon architecture with 
+lambda okay that's very interesting
+
+0:40:06.560,0:40:13.840
+and we can see lots more potentials 
+for aws lander okay next one okay so
+
+0:40:13.840,0:40:20.640
+is the currency converter service through 
+it safe i'm a serverless tfc member i know
+
+0:40:20.640,0:40:26.080
+the answer but i guess attended attendees 
+once you know it no less against my office
+
+0:40:27.520,0:40:35.680
+i i believe so uh so i i don't believe it would 
+be uh not safe so yes i think the answer is yes
+
+0:40:37.600,0:40:44.640
+yeah cool that's a sweet show and comfort 
+and it comes yeah good answer the next one
+
+0:40:45.200,0:40:52.240
+can we take hexagonal architecture as the idea 
+of clean architecture in cloud-based service
+
+0:40:52.240,0:40:58.000
+yeah totally uh you can use these 
+architecture for lambda for whatever they
+
+0:40:59.120,0:41:05.200
+they the other two architectures that i mentioned 
+like onion and clean are i mentioned them mainly
+
+0:41:05.200,0:41:10.720
+because sometimes when you go online and you start 
+to research around the external architecture they
+
+0:41:10.720,0:41:16.480
+they bubble up uh very often and people start 
+to say oh this is an exacto architecture
+
+0:41:16.480,0:41:22.000
+and it's true technically speaking they are 
+exotic architecture however is not the original
+
+0:41:22.000,0:41:27.520
+implementation are more structured version of the 
+hexagon architecture uh that are taking all the
+
+0:41:27.520,0:41:32.480
+characteristics of example architecture and then 
+adding on top of that a more structured business
+
+0:41:32.480,0:41:42.320
+logic yeah i agree then all those architectures 
+they share some common correct curricular
+
+0:41:42.320,0:41:49.920
+receipts yeah okay next one so someone is 
+very curious about could you explain more
+
+0:41:49.920,0:41:55.840
+about the pathways architecture um yeah 
+and explore curriculum characteristics
+
+0:41:56.560,0:42:06.560
+yeah so the name patholet is coming from one of 
+our colleagues in aws um adrian uh cockroft uh
+
+0:42:06.560,0:42:13.040
+that is that was the uh chief architect in netflix 
+he migrated basically the netflix architecture
+
+0:42:13.040,0:42:21.040
+towards um cloud and microservices uh and now is 
+working in aws uh on the sustainability uh part
+
+0:42:22.000,0:42:31.280
+so his idea basically is trying to uh decouple um 
+the try to reduce let's say the complexity on the
+
+0:42:31.280,0:42:36.400
+infrastructure or maintaining infrastructure but 
+maintaining the same flexibility that you have
+
+0:42:36.400,0:42:42.000
+with microservices at development time and the 
+idea is it's pretty interesting if you think about
+
+0:42:42.000,0:42:50.000
+that because compute and resources are becoming 
+extremely cheap uh so if we are capable to say
+
+0:42:50.000,0:42:57.120
+okay instead of having a proliferation of micro 
+services all over my accounts i start to have
+
+0:42:57.120,0:43:04.880
+less of them more if you want infrastructure wise 
+macro services and then i although i i have a very
+
+0:43:04.880,0:43:11.280
+granular approach on on the way how i'm developing 
+and then the basically the the the infrastructure
+
+0:43:11.280,0:43:17.760
+part is completely decoupled uh by the development 
+phase so i don't map one theme to one microservice
+
+0:43:17.760,0:43:24.320
+or one api to my microservices whatever it 
+is i map a domain to a bunch of microservices
+
+0:43:24.320,0:43:29.760
+i have the benefit of using microservices they're 
+for distributed teams that are empowered to make
+
+0:43:29.760,0:43:35.840
+changes atomically but on the other side i have 
+less to maintain on the infrastructure because
+
+0:43:35.840,0:43:41.440
+there are less things that could go wrong uh 
+everything maybe a specific um a specific domain
+
+0:43:41.440,0:43:46.560
+could live inside the same machine and therefore 
+the communication is even uh not affected by
+
+0:43:46.560,0:43:53.680
+latency and other things so the concept is pretty 
+interesting uh i think is it may break some other
+
+0:43:53.680,0:44:01.680
+uh ideas that in the community are well known by 
+now but uh it's uh it's definitely an interesting
+
+0:44:01.680,0:44:08.720
+architecture and i'm keeping an eye on it because 
+i want to see how it's going to evolve yeah thank
+
+0:44:08.720,0:44:15.520
+you that's cool okay i think we still have some 
+time okay so let me go through the next question
+
+0:44:16.240,0:44:24.960
+cool the next one is when we apply line the lambda 
+to make the it make the micro service what things
+
+0:44:24.960,0:44:35.760
+will meet problem and the risk yeah so at the end 
+uh lambda is a think about that is running inside
+
+0:44:35.760,0:44:42.080
+a container so if you have already a containerized 
+micro service uh let's say you should have too
+
+0:44:42.080,0:44:46.640
+many troubles obviously it depends what you're 
+doing inside the microservice if you're doing
+
+0:44:46.640,0:44:54.160
+some special things uh like using specific uh um 
+i don't know extensions or anything uh you need
+
+0:44:54.160,0:44:59.600
+to apply carefully them on on lambda wherever it's 
+totally doable uh but that that is not a problem
+
+0:44:59.600,0:45:07.680
+the beauty of of lambda is usually that you try to 
+uh split up in a modular fashion what you have in
+
+0:45:07.680,0:45:13.120
+a micro service so in the example that was making 
+before having a crowd operation where you are
+
+0:45:13.120,0:45:20.640
+decoupling basically uh the read from the right 
+operation inside your system you can have for
+
+0:45:20.640,0:45:26.320
+instance two lambdas you can even even add more 
+if you want to scale in a different fashion um the
+
+0:45:28.000,0:45:35.200
+the risk i would say um on top of my head i 
+would say that the main risk that you may have
+
+0:45:35.200,0:45:42.480
+is some uh patterns that are not manageable by 
+you so for instance uh if uh you say uh i know
+
+0:45:42.480,0:45:50.000
+up front that uh i'm going to have um i don't 
+know uh five millions of requests per second
+
+0:45:50.000,0:45:56.320
+uh on on a microservice then you can say 
+okay i uh prepare everything upfront uh in my
+
+0:45:56.880,0:46:02.800
+containers and i warm up everything i add more 
+machine than needed uh and so on so forth with
+
+0:46:02.800,0:46:08.560
+lambda you have a server you have a feature that 
+allows you to have a pre worm of your lambda
+
+0:46:08.560,0:46:13.920
+but then you are living inside your the constraint 
+basically provided by the service because it's
+
+0:46:13.920,0:46:19.120
+this fully managed service of a compute part 
+and therefore you can increase the amount of
+
+0:46:19.120,0:46:24.000
+lambda you can have per account uh but definitely 
+there are some quotas that you need to be aware
+
+0:46:24.000,0:46:30.880
+and you need to when you design your workload be 
+very aware to understand how your traffic pattern
+
+0:46:30.880,0:46:34.880
+should be implemented inside the serverless 
+solution i think that is the main thing but
+
+0:46:34.880,0:46:41.840
+what you can do in a server in microservices 
+you can do also in a serverless application
+
+0:46:42.400,0:46:49.040
+yes thank you yeah i agree that um however no 
+matter how you uh what kind of a technique you use
+
+0:46:49.040,0:46:57.600
+you are using make sure you understand its limits 
+and its ability yeah okay next one the live demo
+
+0:46:57.600,0:47:04.160
+is really cool and well explained i'm curious how 
+to explain the advantage of the architecture that
+
+0:47:04.160,0:47:10.880
+is easy that is easy to understand for business 
+people yeah that's quite a big challenge yeah
+
+0:47:10.880,0:47:17.120
+uh thanks for uh for the praise on on the demo 
+thanks for that uh so uh i think there are a
+
+0:47:17.120,0:47:25.600
+few points so the first one would be um the 
+possibility to uh to evolve their needs faster
+
+0:47:26.640,0:47:33.840
+they less introduction of uh production 
+bugs that already are a big advantage uh and
+
+0:47:34.960,0:47:43.600
+the fact that you can really drift uh the 
+direction of a system quickly because yes there
+
+0:47:43.600,0:47:51.520
+is an initial investment but if in the code that 
+you have seen i really have a small amount of code
+
+0:47:51.520,0:47:58.000
+that working as a solo developer or even in a team 
+it became extremely easy to atomically say okay
+
+0:47:58.000,0:48:02.160
+we need to make this feature you take care about 
+the adapter i take care about the business logic
+
+0:48:02.160,0:48:08.240
+so you can really parallelize the work in a 
+nice way and if you are disciplinated enough
+
+0:48:08.240,0:48:14.080
+or maintaining this structure uh during the the 
+life cycle of the project you would be able really
+
+0:48:14.080,0:48:22.160
+to uh follow and expand the need of things and 
+probably the first thing could be uh innovation
+
+0:48:22.160,0:48:28.800
+so if you want to try one thing quickly you just 
+try that and you uh let's say dropping away inside
+
+0:48:28.800,0:48:34.080
+your code that is modular enough that we you can 
+immediately test it and then if it doesn't work
+
+0:48:34.080,0:48:40.480
+you can remove at the same speed so you have 
+innovation you have a faster turnaround on new
+
+0:48:40.480,0:48:44.400
+features and you have less bugs in production 
+i think just these three characteristics should
+
+0:48:44.400,0:48:52.320
+be enough for for business people yeah i agree 
+that look i think the only thing the business
+
+0:48:52.320,0:48:59.120
+people only care about is could you deliver your 
+product or products uh more frequently more faster
+
+0:48:59.120,0:49:07.360
+and more safely yeah that's all are we concerned 
+about cool the final one or finally the final one
+
+0:49:07.360,0:49:15.840
+is could you list some main aspects that make 
+you choose hexagonal architecture from others
+
+0:49:17.680,0:49:26.880
+um yes so the the main choice for me is when 
+um when i have a project they need to maintain
+
+0:49:26.880,0:49:32.320
+in the long run so for instance imagine that 
+you want to run a quick poc just to a proof of
+
+0:49:32.320,0:49:38.400
+concept just to make sure that uh your idea 
+is working that probably i wouldn't go with
+
+0:49:38.400,0:49:44.800
+uh with uh an external architecture but then when 
+you want to really implement your code and you are
+
+0:49:44.800,0:49:51.920
+working on a product that has to you are going to 
+maintain for six months one year whatever is where
+
+0:49:51.920,0:49:57.680
+usually i will i will look into it especially 
+for serverless because in other architecture
+
+0:49:57.680,0:50:02.720
+so if you in for other more monolithical 
+code bases like for container whatever
+
+0:50:03.920,0:50:08.240
+there are plenty of architectures out there 
+that you can use the beauty of this is that
+
+0:50:08.240,0:50:14.640
+you you can um really test in isolation 
+certain parts and and the fact that you can
+
+0:50:14.640,0:50:22.240
+uh um um let's say structure the code in a very 
+modular fashion so for me in the lambda if uh or
+
+0:50:22.240,0:50:27.360
+already by design it shouldn't have too much 
+scope inside the lambda so it's very easy to do
+
+0:50:27.360,0:50:34.640
+to create but if we had also examined architecture 
+evolving that became easier uh and uh and so for
+
+0:50:34.640,0:50:41.360
+me the the rule of thumb would be is it is it 
+code that i have to thrown away after a while or
+
+0:50:41.360,0:50:47.120
+is it the code that i am not going to use for for 
+long term or is this very very small action that i
+
+0:50:47.120,0:50:51.360
+need to do inside my alarm that probably i won't 
+use external architecture for the rest of the
+
+0:50:51.360,0:50:58.640
+use cases yes say it's a bit more uh investment 
+but it's not definitely that it's going to take
+
+0:50:58.640,0:51:06.320
+twice the time for uh for writing in london 
+yeah i agree i think every investment has
+
+0:51:06.320,0:51:12.800
+its own risk and you can always start small 
+but if you want to go farther maybe you can
+
+0:51:12.800,0:51:18.720
+consider other things like hexagonal architecture 
+and you want to have a more scalability and you
+
+0:51:18.720,0:51:25.120
+want to have more um do you want to involve 
+your models quickly maybe you can consider
+
+0:51:25.120,0:51:32.400
+london and hexagonal architecture okay so thank 
+you luka again and very happy to have you here

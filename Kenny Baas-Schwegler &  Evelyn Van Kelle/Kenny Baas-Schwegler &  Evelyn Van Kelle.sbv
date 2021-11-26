@@ -1,0 +1,1959 @@
+0:00:10.320,0:00:15.920
+i want to say something
+
+0:01:53.200,0:01:58.240
+to welcome kenny best regular 
+and he'll be elvin benkel
+
+0:02:01.440,0:02:05.760
+thank you yes so unfortunately 
+evelyn couldn't be here today
+
+0:02:07.280,0:02:14.640
+and while i'm start talking i'll start to share 
+my screen so yes evelyn is struck ill this morning
+
+0:02:14.640,0:02:22.240
+so unfortunately she cannot come so uh all the 
+best uh to her and um let me get the chat up as
+
+0:02:22.240,0:02:27.200
+well so if you have questions or comments during 
+during this talk you can i'll see the chat and
+
+0:02:27.200,0:02:34.400
+maybe i can react to it so today will be a talk 
+about autonomy is that what we really want and
+
+0:02:34.400,0:02:39.840
+i'm really humbled to be back at ddd taiwan for 
+the second year and i really like it unfortunately
+
+0:02:39.840,0:02:46.160
+not in taiwan my wife would have really loved it 
+she is addicted to bubble tea she really wants to
+
+0:02:46.160,0:02:55.040
+go there one day so hopefully next year we'll 
+go there so talking about that let me share a
+
+0:02:55.040,0:03:00.720
+personal story first so me and my wife recently 
+moved houses it was around in the neighborhood and
+
+0:03:02.160,0:03:07.600
+yeah we move our main goal is to live close by 
+her parents also my parents live close for us
+
+0:03:07.600,0:03:13.520
+it's important to have family close to us and the 
+added benefit is since my mother-in-law comes from
+
+0:03:14.240,0:03:21.280
+asia she gives us a lot of food which is also 
+important to us but we moved houses recently and
+
+0:03:21.920,0:03:29.520
+this earlier this year and if you look at autonomy 
+you would think well i have a house now i can do
+
+0:03:29.520,0:03:35.520
+whatever i want on that house which unfortunately 
+is not the case if you look at my garden here in
+
+0:03:35.520,0:03:42.320
+the back right and there's a carport you would say 
+well let's just add more garden to the carport and
+
+0:03:43.280,0:03:48.400
+i have a bigger garden well unfortunately 
+this neighborhood got designed 10 years ago
+
+0:03:48.400,0:03:56.400
+there was an architect along with the with the 
+authorities here and they say in the contract
+
+0:03:56.400,0:04:04.160
+that this part this carport needs to be able to 
+hold one car why because if everyone would do do
+
+0:04:04.160,0:04:09.280
+this in the neighborhood there won't be enough 
+car spaces left so you know if you talk about
+
+0:04:09.280,0:04:15.680
+autonomy are we now really autonomy with our own 
+house no so if we would have moved to well a more
+
+0:04:15.680,0:04:20.400
+rural area in the netherlands then of 
+course maybe we'll have more autonomy
+
+0:04:20.400,0:04:27.040
+but in this case um is autonomy what we really 
+want because in this case for us it's close to
+
+0:04:27.600,0:04:34.240
+live close to our family now and of course i 
+have cats so are we truly always autonomous
+
+0:04:34.240,0:04:39.360
+well we have a cat door here right so we need to 
+abide by our cats because well eventually they're
+
+0:04:40.880,0:04:48.720
+they're in control usually so but to describe and 
+move on with autonomy we need to well define it
+
+0:04:48.720,0:04:54.240
+a bit so autonomy as described by mr pink as 
+the urge to direct one's own life without the
+
+0:04:54.240,0:05:00.080
+ability to control what when and how we work and 
+how and who we work with will never be completely
+
+0:05:00.080,0:05:04.720
+motivated to complete the task so that's autonomy 
+right and within the domain driven design
+
+0:05:05.440,0:05:10.800
+scene autonomy is when you look at the batman 
+context pattern right autonomy is a big thing
+
+0:05:11.360,0:05:18.000
+but we're lacking mastery and purpose there and 
+we're so focused on that autonomy so mr pink in
+
+0:05:18.000,0:05:24.880
+his book drive describes autonomy as direct one's 
+own life now are we could we actually ever be
+
+0:05:24.880,0:05:31.040
+completely autonomous and completely control and 
+have the ability to control what when and how we
+
+0:05:31.040,0:05:38.080
+work now if we will ask if philosophers and if 
+romeo would watch this he would agree then we're
+
+0:05:38.080,0:05:43.920
+born free but the first thing is our parents 
+right our parents control us and we follow the
+
+0:05:43.920,0:05:48.160
+instruction retaining only in some cases but this 
+is a big philosophical question that we're not
+
+0:05:48.160,0:05:52.880
+going into today because that will take weeks 
+maybe months maybe years maybe never to solve
+
+0:05:53.520,0:05:59.840
+so autonomy in here is uh well there's 
+an illusion of now if you look at the
+
+0:06:00.880,0:06:05.920
+definition it's the quality of state of 
+being self-government especially the right of
+
+0:06:05.920,0:06:10.880
+self-government the territory was granted autonomy 
+so if you look at the dictionary autonomous sound
+
+0:06:10.880,0:06:15.920
+like self-directing freeman and especially moral 
+independence personal autonomy now if you look
+
+0:06:15.920,0:06:22.960
+at my house where i live do i have the autonomy 
+to do that no i haven't because i'm part of a
+
+0:06:22.960,0:06:29.840
+village here so i'm not autonomous right and 
+and that's the thing with autonomy if we look at
+
+0:06:30.880,0:06:36.000
+software development and here you have uh jape 
+and mark saying i hate the word autonomy right
+
+0:06:36.000,0:06:41.440
+it's individuating i have no right to make my 
+own decisions that's what we hear i have the
+
+0:06:41.440,0:06:46.320
+right to make my own rules when we look at domain 
+driven design and software developer is that truly
+
+0:06:46.320,0:06:52.160
+what we really want that autonomy of course we 
+want some self-organization self-government but
+
+0:06:52.160,0:07:00.320
+we truly want autonomy because in this case in my 
+opinion autonomy can be compulsive right a goal on
+
+0:07:00.320,0:07:05.520
+its own instead of a means to an end but autonomy 
+in isolation is not enough it's part of a bigger
+
+0:07:05.520,0:07:11.120
+context like my home i'm living in now right it's 
+part of a bitter context i have neighbors i have
+
+0:07:11.840,0:07:16.080
+i have people living in this village so i 
+cannot really do what i want and the same goes
+
+0:07:16.080,0:07:21.360
+for software development right in software 
+development i'm building software with my
+
+0:07:21.360,0:07:27.280
+team preferably and of course i cannot do 
+what i want and that's the polarity here that
+
+0:07:27.280,0:07:34.480
+we're going to talk about the polarity is between 
+isolation and connectedness right us uh me versus
+
+0:07:34.480,0:07:41.200
+we and autonomy is on that skill and every time 
+we need to decide and balance these two things
+
+0:07:41.840,0:07:49.760
+right so autonomy is that bulk concept that we 
+use as we please but the concept needs granularity
+
+0:07:49.760,0:07:54.160
+it means different things on different 
+levels well we're doing ddd workshop and we
+
+0:07:54.160,0:07:58.800
+face the importance of language and meaning 
+all the time right so we want to be exact
+
+0:07:58.800,0:08:02.960
+on the word that we use what does it mean 
+and it's no different for autonomy when we're
+
+0:08:02.960,0:08:07.600
+going to use it autonomy defines boundary on 
+multiple level and that's why we're here today
+
+0:08:07.600,0:08:12.880
+we want to dig into this concept see what it means 
+on different levels tell stories about what we've
+
+0:08:12.880,0:08:18.960
+seen in organization and teams and how autonomy 
+can be misused misinterpreted and be a risk for
+
+0:08:18.960,0:08:23.680
+the record we're not saying autonomy is bad it 
+might come across that way now but that's not the
+
+0:08:23.680,0:08:30.800
+case autonomy is brilliant when we all know within 
+our relevant power what it means and applies so we
+
+0:08:30.800,0:08:35.520
+will share some learnings and observation while 
+we evelyn's not here so i'll take over for her
+
+0:08:36.080,0:08:40.080
+and that we think we might help you in 
+defining these powers more effectively
+
+0:08:40.640,0:08:45.040
+so where do we actually need autonomy lots 
+of teams and people state that we want to be
+
+0:08:45.040,0:08:51.440
+self-organizing and or self-steering both marked 
+as autonomous but there's a difference here
+
+0:08:51.440,0:08:57.280
+you can be self-organizing i can self-organize 
+my house but it still requires steering right the
+
+0:08:57.280,0:09:02.400
+government here scares me it happens all the time 
+teams asking for vision from leadership please
+
+0:09:02.400,0:09:07.680
+don't interfere with how do we do things here but 
+let us know what the end goal is where you want to
+
+0:09:07.680,0:09:12.560
+go with this company so the first question is 
+where do we need and we want autonomy and how
+
+0:09:12.560,0:09:18.560
+much do we want it right what's the skill uh and 
+that comes into defining boundaries well we're
+
+0:09:18.560,0:09:23.680
+in a domain design conference and boundaries are 
+like one of the core concepts in the window and
+
+0:09:25.040,0:09:29.040
+these boundaries are hard to define when we stick 
+with the bulk concept of autonomy that's why we
+
+0:09:29.040,0:09:33.680
+dive into different levels with pitfalls and 
+opportunities but first let's visualize this
+
+0:09:33.680,0:09:41.040
+polarity between connectedness and of course the 
+other one which is the part and the whole right
+
+0:09:41.040,0:09:47.840
+so this is what we're going to talk about autonomy 
+is part of the skill between that part and a whole
+
+0:09:47.840,0:09:52.000
+in system thinking you have it right part and a 
+whole and what connects me with these things and
+
+0:09:52.000,0:09:58.880
+this is a lemnis cut right it's a it has both 
+upsides and downsides between the two yeah so
+
+0:09:58.880,0:10:05.280
+if you look at the part the part is the eye it's 
+the more autonomy way right you have uniqueness
+
+0:10:05.280,0:10:11.040
+but you always also have isolation now if you look 
+at the whole like being part of a whole being part
+
+0:10:11.040,0:10:16.800
+of a team you have connectedness but the danger 
+there is also sameness right there's no uniqueness
+
+0:10:16.800,0:10:22.240
+anymore in it and this is what we need to manage 
+this is what we're gonna go into now first thing
+
+0:10:22.240,0:10:29.200
+um also we we talk a lot about polarities with 
+hin it's a friend of ours and she has this nice
+
+0:10:29.760,0:10:35.360
+fun fact internet so so the lemny scott you just 
+saw in the middle right comes from the latin word
+
+0:10:35.360,0:10:41.440
+lemny scotus what does it mean so i give you 
+10 seconds is it round corners decorated with
+
+0:10:41.440,0:10:47.760
+hanging records or the devil's curse so use the 
+chat and i will see maybe someone has an answer
+
+0:10:49.120,0:10:55.600
+so let's see so it's a ground corners decorated 
+with hanging arguments or the devil curse so
+
+0:10:55.600,0:11:02.240
+anyone has an id i don't see anything in the 
+chat so i'll just say it's decorated with
+
+0:11:02.240,0:11:06.160
+hanging rhythms some people say it might 
+be the developed skirt spotted songs so
+
+0:11:07.440,0:11:13.840
+let's continue with the talk so today we're 
+gonna talk or i'm gonna talk about four levels of
+
+0:11:13.840,0:11:20.560
+autonomy yeah so the first level is autonomy and 
+code i'm going to clearly go inside code because
+
+0:11:20.560,0:11:26.080
+there's this lenny scott as well and then we go 
+to teams then we go between teams and then we go
+
+0:11:26.080,0:11:30.640
+into organization and if you look at domain-driven 
+design this is the full area domain-driven design
+
+0:11:30.640,0:11:37.200
+and tilts right it's the whole thing we do for 
+software so let's go to autonomy and code and
+
+0:11:37.200,0:11:41.280
+there's no silver bullets and golden hammers 
+that's what i would like to start with right
+
+0:11:41.280,0:11:46.080
+there's no one way of doing things because it's 
+that balance that tight balance that we need
+
+0:11:46.720,0:11:53.200
+so when i started coding i came into a team and 
+well proper unit testing was a thing we needed to
+
+0:11:53.200,0:12:01.680
+do proper unit testing but back then i saw this 
+unit test as well i have a java class in this
+
+0:12:02.240,0:12:07.600
+in in this case and then i create one unit test 
+for that class right it's always one on one one
+
+0:12:07.600,0:12:15.120
+class one unit test and what happened is that at 
+some point i find myself creating a lot of mocking
+
+0:12:15.120,0:12:23.600
+stubbing faking in all these unit tests and that's 
+only one strategy we picked right one on one an
+
+0:12:23.600,0:12:29.520
+isolated strategy so we isolated these all there 
+but there was no connectness between the classes
+
+0:12:29.520,0:12:34.720
+and the classes should actually represent units 
+where there's a form of autonomy and isolation
+
+0:12:35.840,0:12:42.560
+so martin fowler recently put out this blog post 
+right about test shapes and there you see it in in
+
+0:12:42.560,0:12:47.520
+in the book by j fields working effectively with 
+unit tests you see you have two types of tests you
+
+0:12:47.520,0:12:53.520
+have the social tests which are often the tested 
+unit relies on other unit systems behavior right
+
+0:12:53.520,0:13:00.480
+but i'm not stubbing it away i'm using it as 
+a whole unit a unit of work a unit test so i'm
+
+0:13:00.480,0:13:06.800
+using everything and i'm not using any monks now 
+the other one here is the solitary test that's
+
+0:13:06.800,0:13:14.720
+the strategy i used at the start right i have 
+one unit one class i stop and prefer to isolate
+
+0:13:14.720,0:13:22.000
+that tested unit and you see i mocked it away 
+and both of these has side effects right think
+
+0:13:22.000,0:13:27.120
+about the connectedness and isolation again and 
+we need to manage that there's no one approach
+
+0:13:27.120,0:13:32.640
+here that you can take take the approach that 
+solves the purpose and a good friend of mine
+
+0:13:32.640,0:13:39.280
+thomas pierrot he he says and the goal 
+here is to look at the outside in and have
+
+0:13:39.920,0:13:46.480
+proper acceptance test coarse-grained connected 
+unit tests right which is in the middle
+
+0:13:46.480,0:13:52.080
+and we might go find grades in the unit test 
+which are more solitary tests right but first
+
+0:13:52.080,0:13:57.520
+of all we go here and then in the end we might 
+do some contract test integration test between
+
+0:13:58.400,0:14:05.200
+our systems but as long as our acceptance tests 
+which are core grade unit tests work i'm fine now
+
+0:14:05.200,0:14:10.400
+where do we do this on well we're in domain driven 
+design community so if you look at the bounded
+
+0:14:10.400,0:14:16.160
+context it has a model for a purpose it is a unit 
+of consistent language we can do tests on here
+
+0:14:16.160,0:14:22.800
+right tests are also part of that bounded context 
+the bounded context language is represented in
+
+0:14:22.800,0:14:29.680
+the tests as well as in the code as well as what 
+we speak etc etc so how would that look is let's
+
+0:14:29.680,0:14:34.000
+say in the middle and i'm using a hexagonal or 
+ports an adaptor's architecture but in the middle
+
+0:14:34.000,0:14:38.640
+i have my domain model represented in code right 
+with objects in this case i'm an object-oriented
+
+0:14:38.640,0:14:43.840
+programmer you can do this functional as well it 
+doesn't really matter but the model is exposed
+
+0:14:44.720,0:14:50.640
+in code and what you see is at the top i have 
+my acceptance test and my acceptance test will
+
+0:14:50.640,0:14:58.160
+run on the port that goes inside the domain and 
+then i mock away every object or every connection
+
+0:14:58.160,0:15:04.720
+that's outside my domain model i'll mock that away 
+and now my acceptance scenario will test my full
+
+0:15:06.240,0:15:10.640
+domain and these are really the 
+sociable tests from the highest level
+
+0:15:10.640,0:15:16.560
+and when we go deeper you'll see that oh maybe 
+this one object here is really complex so i need
+
+0:15:16.560,0:15:21.280
+to create a solitary test and maybe that object is 
+really complex so i'll make a solitary test right
+
+0:15:21.920,0:15:27.440
+and maybe these three objects together is 
+the aggregate so i also make a social more
+
+0:15:27.440,0:15:33.200
+sociable tester right so as you see there's no 
+one strategy for me the goal is to have this
+
+0:15:33.200,0:15:41.120
+acceptance scenario run against my domain model 
+and that's my end goal as long as these succeed
+
+0:15:42.480,0:15:49.120
+it's fine but of course this has long feedback 
+that's the downside of it so i need to go in depth
+
+0:15:51.280,0:15:56.240
+so how would that look in our polarity map again 
+here you see the solitary test on the left you see
+
+0:15:56.240,0:16:01.120
+the sociable test on the right and there you can 
+say well the good thing about the solitary test i
+
+0:16:01.120,0:16:07.760
+tested in isolation fast feedback on failure but 
+if i go to the negative it's cascading changes
+
+0:16:07.760,0:16:14.400
+on mocks and stubs and the loss of unit of work 
+cohesiveness right so we can fix that with the
+
+0:16:14.400,0:16:20.560
+sociable tests which are coherent no mocking or 
+coupler but failure of bug in other classes and
+
+0:16:20.560,0:16:26.880
+slower feedback of failure right balance we need 
+to constantly balance these two and i'll later
+
+0:16:26.880,0:16:33.760
+describe how we can balance this right but as you 
+can see on the top my goal is to feeling secure to
+
+0:16:33.760,0:16:40.240
+change the code and my fear is cascading changes 
+so as you can see there's no one way and if we
+
+0:16:40.240,0:16:46.880
+look at autonomy again right autonomy sits now in 
+the middle how can i get these two into balance
+
+0:16:48.800,0:16:54.320
+now then let's go to autonomy and teams and 
+there's this individual and interaction over
+
+0:16:54.320,0:16:59.280
+processes and tools right an individual can 
+be autonomous and so can be a team a team is
+
+0:16:59.280,0:17:04.000
+a collection of individuals that can either work 
+as one autonomous team or as a group of autonomous
+
+0:17:04.000,0:17:10.160
+individuals well right language and meanings 
+would be crucial the nuance here is crucial
+
+0:17:11.360,0:17:17.280
+so i have we have to break it to you but we are 
+in the end all hurt animals that really really
+
+0:17:17.280,0:17:21.920
+need to be liked by other people and get that 
+confirmation it's been described in cultural
+
+0:17:21.920,0:17:26.960
+anthropology a lot in sociology and as soon 
+as we start talking about relationships and
+
+0:17:26.960,0:17:32.080
+things get personal we get uncomfortable 
+that's the problem we might feel unsafe because
+
+0:17:32.080,0:17:37.520
+rejection is around the corner that's why we 
+love our precise technical problems so much right
+
+0:17:37.520,0:17:42.880
+i don't have to deal with other people but 
+the thing here is isolation in a person is
+
+0:17:42.880,0:17:47.760
+is not good for a person right we identify 
+ourselves through others so we need to have
+
+0:17:47.760,0:17:51.600
+that heard feeling we need to have that feeling 
+that we belong to someone there's actually
+
+0:17:52.320,0:17:56.480
+a lot of tests one test that went on in 
+the united states when they still isolate
+
+0:17:57.440,0:18:01.680
+people in prison right when they had that behavior 
+and they figure out it didn't work they didn't
+
+0:18:01.680,0:18:06.960
+self-reflect because they couldn't reflect 
+because in order to reflect you need the other
+
+0:18:06.960,0:18:11.120
+right you need that connectiveness so that's the 
+paradox we want to be autonomous but at the same
+
+0:18:11.120,0:18:15.760
+time we want to belong to a group of people when 
+we act as a group of autonomous individuals and
+
+0:18:15.760,0:18:20.960
+don't feel like a hurt we lose that feeling of 
+belonging right and in perceived individual and
+
+0:18:20.960,0:18:25.440
+autonomy and perceived team monument what 
+works for any team differs that's really
+
+0:18:25.440,0:18:30.720
+context depending on a team same as all my bounded 
+contacts are context dependents and what works
+
+0:18:30.720,0:18:36.080
+depends on that but they have to be on the same 
+page because otherwise things can get messy and we
+
+0:18:36.080,0:18:42.640
+can turn into a dictatorship right so imagine you 
+have a nice development team working on a product
+
+0:18:42.640,0:18:46.720
+everyone's doing their job but there's one 
+person that seems to call all the shots
+
+0:18:46.720,0:18:52.800
+it can be a tech lead that can be the person 
+that's the longest there uh it's probably the
+
+0:18:52.800,0:18:57.440
+person with the most knowledge that person has 
+undocumented knowledge most likely and that's a
+
+0:18:57.440,0:19:03.840
+problem this person can be brilliant and building 
+the best product but let's use rigs right so the
+
+0:19:03.840,0:19:08.080
+netherlands they call it the bus factor i would 
+now rather like to call the lottery factor so a
+
+0:19:08.080,0:19:13.360
+colleague told me that so if this person would win 
+the lottery person is gone from a team what now
+
+0:19:14.000,0:19:19.120
+but on the other hand you know it can also be nice 
+to have a lead developer making decisions again
+
+0:19:19.120,0:19:24.960
+we are hurt animals and sometimes we like the dog 
+making the decision for us guide us right guide us
+
+0:19:24.960,0:19:31.760
+to our home so what we have here is an autonomous 
+team with one autonomous individual that has most
+
+0:19:31.760,0:19:36.960
+power which can lead to undesired behavior and 
+that can grow because we don't want to lose that
+
+0:19:36.960,0:19:42.400
+person we get dependent on the person right you 
+get the downside of the laminate scat you know
+
+0:19:42.400,0:19:48.640
+the polarity and if we don't switch and we don't 
+manage that it becomes worse or worse and worse
+
+0:19:48.640,0:19:54.800
+a person can work in isolation because we assume 
+the person is doing the right thing meanwhile
+
+0:19:54.800,0:19:59.200
+we you have an autonomous team where stuff is 
+lurking beneath the surface this can grow and
+
+0:19:59.200,0:20:05.040
+grow and eventually explode leadership needs to 
+turn that ship around right it's leadership that
+
+0:20:05.040,0:20:11.840
+need to manage that again we need to do some sense 
+making to see where are we at and we need to be
+
+0:20:11.840,0:20:16.560
+able to talk about it define the boundaries what 
+do we expect of each other in terms of domains
+
+0:20:16.560,0:20:21.760
+teams but most importantly about what it means in 
+terms of behavior as an individual and as a member
+
+0:20:22.400,0:20:29.920
+so because autonomy is a bulk concept it can be 
+misused like said dictatorship is a potential risk
+
+0:20:29.920,0:20:35.760
+but we've also seen autonomy being used as 
+an excuse as a means to shift the blame to
+
+0:20:35.760,0:20:41.760
+someone else example an organization read about 
+autonomous teams want to do it maybe microservice
+
+0:20:41.760,0:20:45.600
+is right and there's your first flag don't just 
+copy-paste stuff because it works for someone else
+
+0:20:46.320,0:20:51.040
+watch on one of our previous talk to talk about 
+that and about cargo calling and the copy haste
+
+0:20:51.040,0:20:57.040
+based hell that's mutating but one very important 
+note here is that culture is crucial surprise
+
+0:20:57.040,0:21:02.160
+within this particular organization there was fear 
+fear of being held accountable distrust no room
+
+0:21:02.160,0:21:08.800
+for failure and a lot of pressure so for the teams 
+autonomy sounded pretty good because it would get
+
+0:21:08.800,0:21:14.000
+some of the pressure off or so they assumed 
+for management autonomy sounded good because
+
+0:21:14.000,0:21:20.160
+they interpreted that as full responsibility with 
+the teams which was good for their cover your ass
+
+0:21:20.160,0:21:25.680
+culture right it didn't look too long for this 
+to clash deadlines miss no clear communication
+
+0:21:26.480,0:21:30.240
+and lessons learned moving toward autonomy 
+because it works somewhere else or because
+
+0:21:30.240,0:21:35.200
+it might help you cover your ass won't bring you 
+anything sounds trivial but this happens you need
+
+0:21:35.200,0:21:40.880
+someone to expose this behavior and consequences 
+in the case of organization it was us doing that
+
+0:21:40.880,0:21:44.560
+instead of focusing on autonomy we start with 
+building trust and create a shared meaning
+
+0:21:45.680,0:21:50.160
+we need a shared meaning we need a shared 
+purpose and this is what drive mr pink always
+
+0:21:50.160,0:21:56.880
+also said right we need a purpose and well what do 
+you know domain driven design and abounded context
+
+0:21:56.880,0:22:03.600
+can help you with that because of down at context 
+it's a model for a specific purpose we know this
+
+0:22:03.600,0:22:08.480
+is what we do it for this is what we build it for 
+for this customer we're building this model right
+
+0:22:09.120,0:22:13.840
+and then we can use things like context mapping 
+and domain design to see the connectedness with
+
+0:22:13.840,0:22:18.480
+other teams which we're going to talk about 
+that later and within something nick tuna the
+
+0:22:18.480,0:22:25.120
+ddd crew up uh is this bounded context canvas 
+where you can describe that description right
+
+0:22:25.120,0:22:30.960
+this is really nice because now together with the 
+team we collaboratively model our purpose together
+
+0:22:30.960,0:22:35.360
+and we see what are our inbound and outbound 
+communication and this is how we stay connected
+
+0:22:35.360,0:22:41.120
+and define these bounded context problems but it's 
+not only about boundaries uh it's also the way
+
+0:22:41.120,0:22:49.040
+we develop our work and one thing i see in in 
+each phase of each uh sorts of programming and
+
+0:22:49.040,0:22:54.800
+now you'll see load code popping up is that 
+people have a problem here it says application
+
+0:22:54.800,0:22:59.520
+teams grows it slows down because multiple 
+developers compete to change the same code
+
+0:23:00.480,0:23:04.960
+first of all i don't see that as a problem i see 
+that as oh maybe we need to talk together and see
+
+0:23:04.960,0:23:10.000
+how this fit together but they see it as a problem 
+and that's the thing right it's not a problem
+
+0:23:10.000,0:23:15.440
+so what do they do they actually deliver a 
+different pace so they're going to do branching
+
+0:23:15.440,0:23:21.360
+nice you got a branch you get a branch everyone 
+gets a branch well do you hear the isolation
+
+0:23:21.360,0:23:25.360
+coming in here right just working your 
+isolated thing on your own purpose
+
+0:23:26.000,0:23:31.920
+and you'll lose connection there's no balance 
+here so what you'll see in that in that thing
+
+0:23:31.920,0:23:37.920
+is that the feedback is late right so this 
+is git flow by the way and as you can see
+
+0:23:37.920,0:23:44.080
+as if if this is the main line you see there's 
+no real feedback here because this happened and
+
+0:23:44.080,0:23:49.200
+you know long feedback and that can cause to 
+some cost fallacy well i've been working on
+
+0:23:49.200,0:23:54.880
+this course a really long time right and someone 
+else would say well yeah but that's not what we
+
+0:23:54.880,0:24:00.400
+discussed i mean i thought it would be a different 
+design and connected differently okay let's just
+
+0:24:00.400,0:24:06.160
+take some duct tape and fix that and we'll call it 
+technical debt which it's not it's craft there's
+
+0:24:06.160,0:24:12.400
+slow feedback he wasn't connected to show that 
+again on the polarity map you'll see right the
+
+0:24:12.400,0:24:18.560
+branch gives you freedom individual creativity 
+but you have loss of cohesive mental models well
+
+0:24:18.560,0:24:24.000
+you know bounded context is a shared model so 
+we're losing that the longer we are on the branch
+
+0:24:24.720,0:24:29.440
+but the positive effect of the trunk based so 
+let's say we do only mainline development is care
+
+0:24:29.440,0:24:36.560
+for the whole shared mental model team effort but 
+we have excessive conformity so trunk base people
+
+0:24:37.200,0:24:41.920
+see trunk based as being only on the 
+trunk which is not you can use branches
+
+0:24:42.480,0:24:49.280
+and how would we check that is look when we 
+observe our team and we see people competing to
+
+0:24:49.280,0:24:54.800
+just change the same code maybe we need to start 
+pairing and lobbying right and at some point you
+
+0:24:54.800,0:25:01.120
+can find signals that you're too long on that main 
+line then we go back and find the branch right
+
+0:25:01.120,0:25:06.560
+balance there's no one way to do it don't don't go 
+on and this is not trunk based development that's
+
+0:25:06.560,0:25:10.960
+defined right in trunk based development 
+you can do branching it's not about only
+
+0:25:10.960,0:25:17.120
+committing on the mainline code you could do 
+branching but don't take one approach over the
+
+0:25:17.120,0:25:22.080
+other so don't always take the trunk based 
+development or i mean mainline commits and
+
+0:25:22.080,0:25:27.840
+don't always take the branch implements balance 
+it choose every time what you're gonna need
+
+0:25:30.560,0:25:35.120
+so then to my favorite topic which is autonomy 
+between teams i already talked about it with
+
+0:25:35.120,0:25:41.040
+the context map so how does my team relate to the 
+other and and people think well let's do bounded
+
+0:25:41.040,0:25:47.840
+contacts microservices so we have autonomy and 
+and there again we can go towards isolation again
+
+0:25:48.880,0:25:56.720
+yeah so in this case autonomy between teams 
+microservices and can go on to a lot more
+
+0:25:56.720,0:26:03.440
+can la lead to the ivory towers to the 
+silos that's not what we want so one
+
+0:26:03.440,0:26:07.360
+thing that happened a few years ago is this book 
+called team topology that come out right and team
+
+0:26:07.360,0:26:14.560
+topology really loves domain driven design while 
+team topology is about teams and about fast flow
+
+0:26:14.560,0:26:20.320
+organizing business and technology for fast flow 
+of their teams domain-driven design is about
+
+0:26:21.280,0:26:28.240
+autonomy in models right and these really work 
+well together because these teams for fast
+
+0:26:28.240,0:26:34.400
+flow will be owners of these models and the 
+models has relationship with each other and
+
+0:26:36.000,0:26:41.440
+that's what i'm going to talk about really quickly 
+is if you look at what they describe the fourth
+
+0:26:41.440,0:26:46.640
+fundamental team topology is you have these 
+perhaps a platform team you don't always need
+
+0:26:46.640,0:26:52.160
+a platform team but let's say you need but in the 
+end it's about this middle team the stream aligned
+
+0:26:52.160,0:27:00.320
+team right the stream aligned team is picking 
+up value for the customer and releasing it in a
+
+0:27:00.320,0:27:08.880
+fast flow and because they cannot do that always 
+by themselves because there's this thing called
+
+0:27:08.880,0:27:14.000
+cognitive load because that's what we should think 
+about right about limiting the size of software
+
+0:27:14.000,0:27:17.520
+services and product to the cognitive load that 
+the team can handle so the stream align team
+
+0:27:18.080,0:27:22.880
+could be in a lot of complexity well one thing 
+we'll talk i'll talk about later is the enabling
+
+0:27:22.880,0:27:27.360
+team right where you need some new technology 
+some new testing framework perhaps or a new
+
+0:27:27.360,0:27:34.480
+database technology then another team can help 
+you uh periodically to implement that but a team
+
+0:27:34.480,0:27:40.480
+can also be accountable for one big ball of mud 
+bounded context right and that can be complex
+
+0:27:40.480,0:27:45.600
+and they will put on another team and that's what 
+we don't want we don't want two teams working on
+
+0:27:45.600,0:27:51.760
+the same well context in that way because they 
+use different languages and that's what we don't
+
+0:27:51.760,0:27:56.720
+want so what do we do because we cannot put 
+one team on it because the cognitive load is
+
+0:27:56.720,0:28:02.640
+too high now again domain driven design gives 
+can give you an answer here eric evan described
+
+0:28:02.640,0:28:07.840
+this there's no one way of doing it we don't all 
+want bounded context with anti-corruption layers
+
+0:28:07.840,0:28:12.880
+on it and and just be isolated no in this case 
+what we could start doing is form a partnership
+
+0:28:13.600,0:28:19.040
+clearly define two bounded contacts within that 
+big ball of mud see if we can do that and set up a
+
+0:28:19.040,0:28:24.480
+cooperative relationship between the two teams and 
+these teams establish a process for coordinating
+
+0:28:24.480,0:28:29.680
+planning of development so you lose a bit of 
+autonomy here but you decrease the cognitive
+
+0:28:29.680,0:28:35.120
+load yeah and and that's what domain-driven design 
+is all about it's about trade-offs none of these
+
+0:28:35.120,0:28:42.720
+strategic patterns are by default bad they just 
+are right even the confirmation pattern people say
+
+0:28:42.720,0:28:48.880
+the confirmation strategic pattern can be a bad 
+thing it doesn't have to be it's about trade-offs
+
+0:28:48.880,0:28:56.960
+so don't think about the um utopia that every 
+bounded context is autonomous no that's not
+
+0:28:56.960,0:29:04.000
+what it is um there's these several patterns eric 
+kevin's clearly discussed and there's more after
+
+0:29:04.000,0:29:09.200
+that you can use and it's all about that balance 
+and i was already talking about that enabling team
+
+0:29:09.200,0:29:13.520
+right so we have to stream align team and they 
+can afford partnership with other streamlined
+
+0:29:13.520,0:29:18.960
+teams and they need a platform team maybe maybe 
+there's a complicated subsystem team this like
+
+0:29:18.960,0:29:25.840
+for instance we need some data science for uh 
+doing much doing our stream align team but then we
+
+0:29:26.480,0:29:32.880
+go to this enabling team right i i already tell 
+you about the enabling team but the thing about
+
+0:29:32.880,0:29:37.120
+enabling teams there's a danger here if we 
+just have an enabling team like for instance
+
+0:29:37.120,0:29:44.880
+a test team or a architectural team right and 
+they act we need to manage that they actively be
+
+0:29:45.680,0:29:51.520
+avoid becoming ivory towers of knowledge dictating 
+technical choices for other teams to follow this
+
+0:29:51.520,0:29:56.480
+is what we usually see as a pattern we have a 
+architectural team dictating technical choices
+
+0:29:57.040,0:30:04.480
+or a testing team in isolation dictating this and 
+here's this brilliant comic agile right that says
+
+0:30:05.600,0:30:09.760
+there's one team is constantly 
+developing huge number of features
+
+0:30:09.760,0:30:16.560
+well nobody is using it anymore we got to stay 
+connected an architectural team in isolation is
+
+0:30:16.560,0:30:22.880
+that ivory tower team they're not helping teams 
+an enabling team is a supporting team there to
+
+0:30:22.880,0:30:28.480
+help the other teams and they have an end date 
+what's the purpose of that enabling team right
+
+0:30:29.360,0:30:35.360
+because what happens usually if we stay in 
+that isolation right they have freedom they
+
+0:30:35.360,0:30:41.040
+can go fast it's nice work ahead of new technology 
+they have uniqueness but if they stay too long at
+
+0:30:41.040,0:30:46.880
+isolation they have lots of equality isolation 
+they will become selfish but they will also get
+
+0:30:46.880,0:30:51.840
+the downside of the collaboration right they 
+themselves will get high cognitive load they
+
+0:30:51.840,0:30:57.120
+self will guess excessive conformity and sameness 
+and this is how a polarity works as well if you
+
+0:30:57.120,0:31:03.200
+stay too long in one polarity you get the bat of 
+the boat yeah and you're becoming that tower of
+
+0:31:03.200,0:31:09.600
+babel instead of customer centric and enabling 
+teams customer here are the stream align teams
+
+0:31:11.600,0:31:16.480
+and then let's talk about my second favorite 
+topic after branching is of course the skilled
+
+0:31:16.480,0:31:21.280
+agile frameworks which has their place 
+and which can be implemented correctly
+
+0:31:22.080,0:31:27.920
+but what i see here is a lot of isolation 
+patterns right so we need to manage this we
+
+0:31:27.920,0:31:32.400
+need to manage the connectiveness and the 
+relationship through these polarity modes
+
+0:31:35.200,0:31:42.000
+so autonomy organization so let's talk about this 
+last level right autonomy in an organization which
+
+0:31:42.000,0:31:47.840
+is again a continuous negotiation and this sounds 
+this sounds somewhat paradox right an autonomous
+
+0:31:47.840,0:31:53.600
+organization but this organization can consist of 
+autonomous teams individuals or maybe there's no
+
+0:31:53.600,0:31:59.760
+autonomy of all the thing is it's a continuous 
+negotiation what do we mean with autonomy
+
+0:31:59.760,0:32:04.320
+in organization where do we need provide 
+autonomy and what does it bring what does
+
+0:32:04.320,0:32:09.520
+autonomy mean for the way we collaborate what's 
+my role all very important question to consider
+
+0:32:09.520,0:32:15.040
+in this context right and let's start with vision 
+boundaries for both let's start about remembering
+
+0:32:15.040,0:32:20.080
+the thing we said about boundaries and vision in 
+the beginning of the talk define the boundaries
+
+0:32:20.080,0:32:25.600
+in the shape of a vision is what the leader team 
+teams should do the vision comes from leadership
+
+0:32:26.480,0:32:31.600
+what i hear when there's need for efficient within 
+team is in fact a call for boundary tell us what
+
+0:32:31.600,0:32:36.160
+the boundaries are in which we can decide how to 
+work this is also a job for a software architect
+
+0:32:36.160,0:32:42.880
+right we define the boundaries constraints for 
+innovation we don't decide how people do it so if
+
+0:32:42.880,0:32:47.440
+you want something to be done as a leader you set 
+the boundaries this is what i want and what do you
+
+0:32:47.440,0:32:52.320
+need for it so basically that's what leadership 
+should do right so people saying if we all have
+
+0:32:52.320,0:32:57.840
+autonomous teams we don't need leadership anymore 
+yes we do they manage these polarities and there's
+
+0:32:57.840,0:33:04.560
+a difference between uh the old school machiavelli 
+leaders right it's command and control it's ends
+
+0:33:04.560,0:33:09.040
+justify the means and what you see nowadays 
+a shift towards the collaborative leadership
+
+0:33:09.040,0:33:15.440
+right they set boundaries they set constraint they 
+make sure that the autonomous teams stay connected
+
+0:33:15.440,0:33:20.320
+with each other and this is leadership 
+this is middle management and this is uh
+
+0:33:22.560,0:33:26.960
+architects that might sit in between the teams and 
+i say in between the teams and not above the teams
+
+0:33:26.960,0:33:33.120
+because they're equal right and that's where our 
+topic is it's not a free pass it still requires
+
+0:33:33.120,0:33:38.000
+conversation right that's what we need we need 
+someone to create these connectedness and create
+
+0:33:38.000,0:33:44.720
+this conversation and we cannot stress enough 
+better collaboration direct communication is
+
+0:33:44.720,0:33:51.600
+not behavior if we want to expect something from 
+a team it needs to be observable right it needs to
+
+0:33:51.600,0:34:00.240
+say what outcome not output not tasks what outcome 
+can i expect from you uh well evelyn can talk a
+
+0:34:00.240,0:34:06.160
+lot about that season 4 is not here but she will 
+discuss that in a different talk later on what
+
+0:34:06.160,0:34:10.400
+exactly is behavior and how could we do 
+it so direct communication is not behavior
+
+0:34:11.360,0:34:16.400
+so who calls a shot i already told you that with 
+autonomy it can be confusing who gets to call the
+
+0:34:16.400,0:34:20.240
+shot which makes a decision which decision are 
+you allowed to make that's a hard question in
+
+0:34:20.240,0:34:25.120
+general but especially when there's autonomous 
+team it has to be made explicit which again is
+
+0:34:25.120,0:34:31.360
+a continuous negotiation boundaries this is this 
+is i got from the brilliant root milan and from j
+
+0:34:31.360,0:34:39.840
+bloom boundaries you create in negotiation yeah 
+it's a continuous negotiation there are no hard
+
+0:34:39.840,0:34:46.080
+boundaries usually they're not really hard it's 
+they're not fixed it's a continuous negotiation
+
+0:34:46.080,0:34:52.000
+if a boundary is fixed it's called a wall it's 
+not a boundary anymore so if you agree about
+
+0:34:52.000,0:34:56.400
+what autonomy means what you can expect from each 
+other and where the boundaries are you can also
+
+0:34:56.400,0:35:02.400
+determine who gets to make the decision who is 
+responsible for what eventually leadership calls
+
+0:35:02.400,0:35:07.760
+a shot obviously ranking and budgets but there 
+have to be that continuous negotiation with the
+
+0:35:07.760,0:35:13.120
+teams and people in the organization it's up to 
+leadership to collaborate on that thing right
+
+0:35:13.120,0:35:21.360
+collaborate leadership that's the thing we need if 
+we have autonomous teams we cannot have a a person
+
+0:35:21.360,0:35:28.160
+on top who do a machiavelli type of dictator 
+leadership they don't match unfortunately it's a
+
+0:35:28.160,0:35:35.120
+negotiation it's a skill now we gave them autonomy 
+and why aren't they doing anything with it right
+
+0:35:35.120,0:35:40.560
+and that's the frustration on most leadership 
+teams they're like we gave him that so why is
+
+0:35:40.560,0:35:44.480
+no one taking ownership and responsibility i asked 
+him to turn around that question what can you do
+
+0:35:44.480,0:35:49.600
+to help them take that ownership because it's 
+not like a you say well here's your ownership
+
+0:35:49.600,0:35:55.360
+goal that person also needs to be able to feel 
+okay to take that ownership right so that's the
+
+0:35:55.360,0:36:01.040
+question you should have asked to the the team do 
+you want ownership how do you want it again here
+
+0:36:01.040,0:36:06.320
+you see the negotiation right and this polarity 
+map will help you it's that task of the leadership
+
+0:36:06.320,0:36:12.960
+to make sure and manage these polarities of 
+autonomy and connectiveness and isolation right
+
+0:36:12.960,0:36:17.680
+so what's holding them that what they're afraid 
+of which risks do you see and that's collaborative
+
+0:36:17.680,0:36:24.080
+leadership right it's setting visions it's setting 
+this is where we want to go with the company what
+
+0:36:24.080,0:36:28.640
+do you need for it how do we set the boundaries 
+how do we set the structure together that works
+
+0:36:28.640,0:36:34.640
+for you again please don't copy-paste any spotify 
+model that doesn't exist anyway what does the
+
+0:36:34.640,0:36:39.840
+team need which boundaries and that's context for 
+sending don't come with the mature maturity model
+
+0:36:40.800,0:36:46.640
+maturity model learning is not linear it's 
+context dependent as we know in domain driven
+
+0:36:46.640,0:36:52.560
+design that's why we have to monitor contacts so 
+when there's autonomy everywhere do we still need
+
+0:36:52.560,0:36:59.200
+managers i already tell you managers we still 
+need them but they can exist in several roles
+
+0:36:59.200,0:37:04.000
+or forums that's again depending on your company 
+but i believe middle management is a crucial role
+
+0:37:04.560,0:37:09.680
+for starting this strategy right higher 
+management is about option middle management
+
+0:37:09.680,0:37:15.920
+is about strategy jay bloom really described 
+this well if you have a football team you have
+
+0:37:16.480,0:37:22.880
+the people above on the top they set 
+options but really who sets the strategy is
+
+0:37:23.440,0:37:29.200
+the coach right it's the middle manager sort of 
+saying that's how we should perceive it as well
+
+0:37:29.200,0:37:33.680
+there needs to be shift and they are in the middle 
+they have a hard job but managers still exist they
+
+0:37:33.680,0:37:39.520
+need to change their behavior as well from a 
+machiavelli style to a collaborative style so
+
+0:37:39.520,0:37:46.640
+how would that look like in in a polarity map so 
+j bloom actually doesn't call it agency he calls
+
+0:37:46.640,0:37:51.760
+it or autonomy he calls it agency that's what we 
+want right it's the balance between decentralized
+
+0:37:51.760,0:37:59.200
+decision and centralized decision and if we don't 
+balance these two then we get into indecisiveness
+
+0:37:59.760,0:38:06.000
+so centralized decision means empowering to the 
+group group can coordinate group active group
+
+0:38:06.000,0:38:11.280
+can actively decide and everyone feels included 
+that's centralized decision by a manager right
+
+0:38:11.280,0:38:16.080
+but the problem here is is that we can have queues 
+we can be dependent on this decision we have lack
+
+0:38:16.080,0:38:21.120
+of individual accountability no creativity 
+or spontaneously and disempowering to the
+
+0:38:21.120,0:38:26.480
+individual so we also want to have decentralized 
+decisions and again it's a it's a lemnis god
+
+0:38:26.480,0:38:32.240
+right which is empowering the individually it's 
+spontaneous and it's individual acting decisively
+
+0:38:32.800,0:38:37.280
+but the problem with this central decision is 
+that the group cannot coordinate they get fear
+
+0:38:37.280,0:38:42.320
+of missing out and burn off consequences so we 
+need that middle management with sort of like
+
+0:38:42.320,0:38:48.160
+a team topology style managing these polarities 
+managing the connectiveness between the team we
+
+0:38:48.160,0:38:55.120
+need to have software architects either in the 
+team as an as a virtual team together working
+
+0:38:55.120,0:39:00.160
+on that contacts map how do the models relate to 
+each other how does the autonomy in the team come
+
+0:39:00.160,0:39:07.360
+together right and one thing one thing to be aware 
+of is that patterns of autonomy and isolation are
+
+0:39:07.360,0:39:13.840
+fractile if you have isolated patches at the top 
+you will find them in the bottom as well they
+
+0:39:14.960,0:39:20.240
+go and cascade down to your organization so 
+if you see a isolated pattern inside the team
+
+0:39:20.880,0:39:25.840
+probably what you will see is that the managers 
+are isolation there's no feedback this is what i
+
+0:39:25.840,0:39:31.120
+usually find weird in this organization is that 
+a middle manager doesn't get any feedback from
+
+0:39:31.120,0:39:36.560
+the teams end of the year performance there's 
+no feedback from teams and for me that's weird
+
+0:39:36.560,0:39:41.440
+because the middle manager is there to set 
+strategies constraints and vision collaboratively
+
+0:39:41.440,0:39:46.160
+with the team so who could decide that they're 
+doing their job correctly it's mostly in my
+
+0:39:46.160,0:39:53.040
+opinion the team and of course their leadership 
+did they help create that vision of the company
+
+0:39:55.120,0:39:58.000
+so autonomy is that what we really really want
+
+0:39:58.880,0:40:04.480
+well we need to define and negotiate boundaries 
+continuously and we need to manage the polarities
+
+0:40:06.320,0:40:11.760
+and that's the end of the talk i hope you enjoyed 
+and we always say please leave the judging to the
+
+0:40:11.760,0:40:18.880
+cats the left ones are mine as you saw before 
+these are my cats and unfortunately evelyn is
+
+0:40:18.880,0:40:24.880
+here but she'll be happy that her cat is 
+brilliantly displayed on this talk again
+
+0:40:24.880,0:40:32.080
+as we always do so we have a twitter account 
+both of us please feel free to dm us or tweet us
+
+0:40:32.080,0:40:38.080
+we have an email we have a website and if you 
+want to contact us let us know thank you very
+
+0:40:38.080,0:40:43.360
+much for having me here so far and hopefully there 
+are some questions i can answer them thank you
+
+0:40:45.760,0:40:52.720
+okay thank you very much and thank 
+you on your sharing and our audience
+
+0:40:52.720,0:40:59.280
+have some questions in slido so i need 
+to share my screen wait a moment yeah
+
+0:41:01.600,0:41:12.560
+okay so kenny can can you see my screen yeah i can 
+see it okay the first question is can you explain
+
+0:41:12.560,0:41:19.840
+more about the social technical because 
+i think it is very abstracted concept
+
+0:41:20.480,0:41:27.200
+yeah so i don't consider myself the expert on 
+social technical i know uh a few people who are so
+
+0:41:27.200,0:41:33.680
+this is my explanation social technical considered 
+and please follow trond or j bloom and root milan
+
+0:41:33.680,0:41:40.880
+they can explain this a lot better but here's my 
+view on it usually what you see in companies is
+
+0:41:40.880,0:41:46.320
+that we only take account the technical so the way 
+i describe it let's say if you work in the office
+
+0:41:46.320,0:41:53.760
+and if you're back at the office again due to 
+corona we live inside a or we might work inside a
+
+0:41:53.760,0:42:00.080
+open office plan right so we all work in one 
+open office and if i go to companies and i see
+
+0:42:00.080,0:42:04.960
+them using this and that's a technical design 
+right that's the technical design of the open
+
+0:42:04.960,0:42:10.240
+office plan it's technically it's correct we 
+can put everyone there technically brilliant
+
+0:42:10.240,0:42:16.240
+but when we look at the social part which is the 
+which is the uh which is actually two parts is
+
+0:42:16.240,0:42:20.800
+the cognitive part and which is the social 
+part which is a difference you'll see that
+
+0:42:21.600,0:42:29.360
+how does the interaction go so they tried to use 
+this technical design to improve communication
+
+0:42:29.360,0:42:33.840
+but they saw it work at someone else now they 
+put it inside their company and what you'll see
+
+0:42:33.840,0:42:40.960
+is that at most open office spaces actually the 
+the the everything went down except the costs
+
+0:42:40.960,0:42:46.000
+right so the communication goes down because 
+we all have these nice headphones on because
+
+0:42:46.000,0:42:50.560
+we're all getting too much noise and cognitive 
+load right there's too much cognition going on
+
+0:42:50.560,0:42:56.800
+i get too much inside so social it goes down again 
+and these two interact with each other as you will
+
+0:42:56.800,0:43:03.760
+see in his open office plan now the open office 
+plan works because people collaboratively designed
+
+0:43:03.760,0:43:09.040
+them so where it worked they designed that 
+together so there's a brilliant talk by joe wright
+
+0:43:09.760,0:43:14.160
+at lean agile scotland talking about the history 
+of it and there it worked why because they took
+
+0:43:14.160,0:43:19.520
+the social account and the social is more of like 
+towards the culture part the cognition so they
+
+0:43:19.520,0:43:23.840
+looked what are your needs what are your social 
+needs and what's the behavior inside here and
+
+0:43:23.840,0:43:29.200
+let's collaboratively decide designed open office 
+space there it worked and then you saw other
+
+0:43:30.880,0:43:35.120
+companies copy paste in that because they 
+saw it improved technically it improved
+
+0:43:35.120,0:43:39.840
+the communication it improved blah blah blah so 
+they thought okay let's technically move it away
+
+0:43:40.400,0:43:47.120
+as a design in my company but they neglected the 
+social part and the same goes inside inside your
+
+0:43:47.120,0:43:51.920
+software development as an architect right if you 
+develop these autonomous system or microservices
+
+0:43:51.920,0:43:56.080
+you need to take into account the social part 
+within domain-driven design you see that the
+
+0:43:56.080,0:44:00.640
+strategic patterns are really social patterns 
+most of them right the partnership i talked about
+
+0:44:01.280,0:44:05.760
+that's really a social pattern how do we 
+interact with each other and usually we
+
+0:44:05.760,0:44:12.000
+just take in account okay let's just split these 
+software in part boundaries but we don't take in
+
+0:44:12.000,0:44:17.520
+account what does that happen to the culture 
+the team dynamics that's why team topology the
+
+0:44:17.520,0:44:23.520
+strategic patterns get more important now doesn't 
+need to say that the tactical isn't important they
+
+0:44:23.520,0:44:29.840
+need to be in balance so i hope that answers the 
+question this is how i see it but please there's
+
+0:44:29.840,0:44:35.840
+multiple people who who can talk about this in 
+the scene and i always start at the root milan
+
+0:44:38.400,0:44:45.360
+uh c is already i don't know how long in 
+the architecture world and sees a brilliant
+
+0:44:46.000,0:44:55.760
+explainer okay thank you for your experience and 
+the second question is do you think the level of
+
+0:44:55.760,0:44:59.440
+autonomy should be given depends on people's
+
+0:44:59.440,0:45:04.800
+majority but will that slow down 
+people's growth to become measures
+
+0:45:08.080,0:45:14.160
+yeah so here's again it's the polarity right 
+what can i what can my team do now and that's
+
+0:45:14.160,0:45:19.680
+an open discussion with the team right this is 
+what the purpose is we want to grow towards fear
+
+0:45:19.680,0:45:26.640
+where do you feel comfortable with taking autonomy 
+here right so autonomy you can give it to a team
+
+0:45:26.640,0:45:32.560
+but it also means that the team wants to have 
+that autonomy some people are afraid maybe to
+
+0:45:32.560,0:45:39.200
+get that autonomy but if you keep that stable 
+that that balance stable yes people won't grow
+
+0:45:39.200,0:45:48.320
+to become mature so that's only the the skill you 
+want to constantly manage as a manager right or as
+
+0:45:48.320,0:45:54.320
+a architect that's the polarity map so that's the 
+continuous improvement that you can embed in your
+
+0:45:54.320,0:46:00.240
+software development flow is okay where can we get 
+more autonomy and what do we need for it a good
+
+0:46:02.240,0:46:08.880
+a good thing maturity mapping it's called so 
+usually what we do is have a maturity model in
+
+0:46:08.880,0:46:13.920
+our learning but you can also do maturity mapping 
+which is based on worldly mapping and there you
+
+0:46:13.920,0:46:20.160
+can go context dependent how can we grow as 
+a where's the boundaries and how can we grow
+
+0:46:20.160,0:46:26.960
+as a as a team towards that more maturity right 
+but context dependent for our team so it can be
+
+0:46:26.960,0:46:33.360
+that one person has all the information about 
+that new uh about that new technology let's
+
+0:46:33.360,0:46:37.200
+say we do surface there's one person who's 
+brilliant at it but the rest not okay what
+
+0:46:37.200,0:46:43.520
+strategy will we take now to make sure other 
+people will do it so bearing mobbing and then
+
+0:46:44.160,0:46:49.440
+four weeks later you do it again or two weeks 
+later and you constantly keep sense making to
+
+0:46:49.440,0:46:55.520
+see how is it going now and how can we change 
+now so it's a it's not a static concept it's team
+
+0:46:55.520,0:47:01.520
+dynamic heidi heinfeld has a brilliant book about 
+team dynamics it's ever evolved it's not static
+
+0:47:05.760,0:47:10.160
+thank you for your answer and the next question is
+
+0:47:10.160,0:47:17.360
+how can we distinguish systems that have full 
+anonymity from those with particular anonymities
+
+0:47:20.800,0:47:25.680
+wow that's a really good question i need to think 
+about so how can the skin which is another full
+
+0:47:25.680,0:47:31.680
+autonomy from so it depends right first of all do 
+you want to have full autonomy and what does it
+
+0:47:31.680,0:47:39.760
+mean so for me i rather have agency if i get a job 
+i can fulfill it myself i can have the mastery of
+
+0:47:39.760,0:47:44.800
+purpose to do it myself that's what mr pink 
+talks about and if someone couldn't do that
+
+0:47:44.800,0:47:50.640
+and meet someone else then it's partial autonomy 
+and the strategic patterns can help there indeed
+
+0:47:50.640,0:47:55.520
+to map these out right what's the level of 
+maturity and is that okay or i mean what's
+
+0:47:55.520,0:48:01.360
+the level of autonomy and is that okay in this 
+given context for instance if i'm working in
+
+0:48:01.360,0:48:08.320
+a core model or domain model right i might want 
+to have more autonomy because i need to iterate
+
+0:48:08.320,0:48:16.080
+on that model a lot if i'm in a supportive domain 
+model maybe i'm okay with having less autonomy so
+
+0:48:16.080,0:48:22.000
+that would be the first question and i'm okay 
+with a with a more tight partnership between
+
+0:48:22.000,0:48:27.920
+teams because i don't have to go that fast 
+in that parts of the software structure so
+
+0:48:28.640,0:48:33.840
+i would do probably the too long and read do 
+some contacts mapping on the current system
+
+0:48:34.560,0:48:41.680
+and then map the strategic patterns on them and 
+see and these strategic patterns are on a scale of
+
+0:48:41.680,0:48:45.200
+autonomy themselves right so for 
+for instance the confirmation
+
+0:48:45.920,0:48:50.800
+pattern is like low autonomy the 
+anti-corruption layer is a bit higher
+
+0:48:52.240,0:48:57.440
+autonomy but there's a different scale as 
+well that's how i would do it context method
+
+0:49:01.600,0:49:09.520
+okay thank you very much and then the final 
+question is anonymous coding more or less anatomy
+
+0:49:12.560,0:49:17.120
+well there's the balance again uh and that's 
+the conversation you need to have with you in
+
+0:49:17.120,0:49:22.400
+your team right so usually what i do is we 
+pick up a new for instance a user story or
+
+0:49:22.400,0:49:27.520
+or something new i start with the connectiveness 
+right i start let's do maybe some mob
+
+0:49:27.520,0:49:32.240
+programming this morning let's let's figure 
+out together how we want to design this
+
+0:49:32.880,0:49:38.880
+then we mop that and and while we're mobbing 
+we're creating a shared mindset and connectiveness
+
+0:49:38.880,0:49:44.000
+but you know uh we cannot maintain that for a 
+long time it's the tight balance again so what
+
+0:49:44.000,0:49:47.840
+i do at some point people are clear 
+enough and they say okay you can do this
+
+0:49:47.840,0:49:53.600
+you can do that and i can do this everyone 
+will code but never work on their own branch
+
+0:49:53.600,0:50:00.480
+they will just keep committing to the same uh 
+main branch then so everyone stays connected
+
+0:50:00.480,0:50:05.200
+so people were saying how about code reviews right 
+they say i need to go on a branch because i need
+
+0:50:05.200,0:50:10.320
+to have a pr for me a review is continuous so 
+if people will just commit on the main line
+
+0:50:11.040,0:50:16.080
+then i if i start developing and i want to 
+commit on mainline i need to pull their commits
+
+0:50:16.080,0:50:23.440
+i see what they did if i see something that that 
+is like oh this is not what i expected i i will go
+
+0:50:23.440,0:50:30.800
+back and talk to them again and that's the lemony 
+scot right so what are the signals that you are
+
+0:50:30.800,0:50:38.640
+going towards isolation or towards too much 
+uh sameness and that's the balance you need to
+
+0:50:38.640,0:50:46.800
+talk to as a team in that polarity map so look at 
+polarity mapping me he and evelyn talked about it
+
+0:50:47.600,0:50:54.560
+on the event store so i'll share that blog post 
+later and start doing that with your team so
+
+0:50:54.560,0:51:00.000
+ins you get that trigger oh this is 
+not what i expect let's pair up again

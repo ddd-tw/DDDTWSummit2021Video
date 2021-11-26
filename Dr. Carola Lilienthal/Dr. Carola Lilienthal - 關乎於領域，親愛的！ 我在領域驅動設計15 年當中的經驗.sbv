@@ -1,0 +1,1627 @@
+0:00:11.520,0:00:18.560
+experiences from 15 years of the management 
+design okay so you can scan the qr code on the
+
+0:00:19.200,0:00:26.880
+on the top right and you can go to slider and 
+ask some questions so let's welcome dr carola
+
+0:00:26.880,0:00:34.720
+hello good morning phone good morning i mean good 
+morning from europe you know we have morning here
+
+0:00:36.480,0:00:43.840
+yeah it's afternoon here yeah perfect
+
+0:00:46.880,0:00:49.360
+should i start um sharing my slides
+
+0:00:50.320,0:00:57.840
+sure okay so current can can you try 
+showing your site yes sure here we go
+
+0:01:03.840,0:01:13.360
+can you see them yes very good perfect you can 
+start your speech thank you thank you thank you
+
+0:01:13.360,0:01:24.960
+very much hi everybody um in this talk i will show 
+you how to build systems in a way that makes sense
+
+0:01:24.960,0:01:34.240
+for the business and um how the main driven design 
+can help you to do that um my name is carola
+
+0:01:35.520,0:01:44.640
+and on twitter you can find me under my 
+handle cairoli i have studied computer science
+
+0:01:45.680,0:01:54.320
+at the university of hamburg and i gained my 
+diploma in 1995 and since then i have done a
+
+0:01:54.320,0:02:03.360
+lot of programming in c plus plus in java even in 
+visual basic and in c-sharp of course as well and
+
+0:02:03.360,0:02:11.520
+i have done a lot of consulting taking planes to 
+visit my customers and i work as an architect and
+
+0:02:11.520,0:02:19.200
+architectin this is the german female version 
+of an architect and in 2008 i handed in my
+
+0:02:20.240,0:02:28.240
+phd thesis with the title complexity of 
+software architecture i then turned um all
+
+0:02:28.240,0:02:35.520
+the things i found out in my doctor's thesis into 
+a business model for my company um we evaluate
+
+0:02:35.520,0:02:42.320
+the complexity of software architectures and 
+check whether they are sustainable and how many
+
+0:02:42.320,0:02:49.120
+technical depth they have all this is written 
+down in my book sustainable software architecture
+
+0:02:49.120,0:02:55.840
+with many examples and pitfalls that one 
+encounters on the way to a good architecture
+
+0:02:58.000,0:03:07.280
+i have been working since 1999 at my 
+company called wps workplace solutions
+
+0:03:08.480,0:03:19.920
+we started with 12 coders and today we 130 coders 
+in the company we really love modular software
+
+0:03:19.920,0:03:28.000
+systems with a good architecture and we have been 
+working with domain driven design since 200 2004.
+
+0:03:29.200,0:03:37.040
+we are located in germany in the middle 
+of europe and we are sitting in hamburg
+
+0:03:37.040,0:03:43.040
+and in berlin as well berlin is the capital 
+of germany as some of you might know
+
+0:03:44.800,0:03:52.320
+we are building enjoyable business software 
+this means um software that the user really
+
+0:03:52.320,0:04:01.040
+loves to work with um like this one here you can 
+see on the slide this is a software to coordinate
+
+0:04:01.040,0:04:07.680
+the construction works on the roads of different 
+different large towns um there are three towns
+
+0:04:07.680,0:04:14.320
+in germany that are using this system today 
+and one part of this system is a touch table
+
+0:04:15.200,0:04:22.000
+to make it possible that people from different 
+organizations from towns from water pipe companies
+
+0:04:22.000,0:04:27.840
+from telecommunication companies that they meet 
+and discuss their construction work together
+
+0:04:28.960,0:04:35.600
+and uh enjoyable business software from from 
+our point of view has a beautiful user interface
+
+0:04:36.320,0:04:44.240
+but also a good architecture since only a 
+system with a good sustainable architecture
+
+0:04:44.240,0:04:51.440
+can as well offer a long life good user 
+interface and good good procedures um
+
+0:04:54.320,0:05:01.200
+if we if if we want to have um a sustainable 
+architecture why do we why do we want that well
+
+0:05:01.200,0:05:08.960
+we want that because we want our software to have 
+a long useful life and thus pay off our investment
+
+0:05:08.960,0:05:16.800
+that we did in the beginning and from my point 
+of view software will only pay off our investment
+
+0:05:17.360,0:05:23.840
+if we have the lowest possible 
+maintenance cost and extension cost so
+
+0:05:23.840,0:05:31.120
+if if it's easy to change the system if it's 
+easy to extend the system then our investment
+
+0:05:31.680,0:05:38.480
+was a good one and we will have a system that 
+lives for a long time and this is only possible if
+
+0:05:39.120,0:05:45.360
+the system has a sustainable architecture if 
+it's easy to understand easy to change and
+
+0:05:45.360,0:05:51.840
+easy to extend this saves time and this saves 
+money if we have an architecture like that
+
+0:05:55.040,0:06:04.000
+this diagram illustrates our goal visually we 
+want to be able to keep adding a similar number
+
+0:06:04.000,0:06:12.800
+of features to our system for a long time to come 
+um on the on the um y-axis you you see um numbers
+
+0:06:12.800,0:06:19.600
+from 0 to 20 though those are the numbers of 
+features that we can deliver per release and
+
+0:06:19.600,0:06:27.440
+we want to have a high constant number there you 
+can see it starts around 16 features per release
+
+0:06:27.440,0:06:35.920
+and if you follow the green path then you stay 
+on the same level with the features that you
+
+0:06:35.920,0:06:44.240
+um can deliver per release um but complexity and 
+technical depth um often prevent us from doing
+
+0:06:44.240,0:06:52.080
+so and we end up with a sad norm down there the 
+curve goes down and we are not able to deliver
+
+0:06:53.440,0:06:58.640
+many features anymore per release which 
+is really frustrating for the users
+
+0:06:58.640,0:07:08.800
+and as well for the development team of course 
+during and after my phd we have analyzed a great
+
+0:07:08.800,0:07:15.520
+many systems of different ages sizes and 
+programming languages you can see various
+
+0:07:15.520,0:07:21.200
+programming languages here on this on 
+the slide in the middle of the slide
+
+0:07:22.240,0:07:29.360
+there is a pie chart showing how many systems 
+of which size we have analyzed so if you look
+
+0:07:29.360,0:07:37.680
+at the light blue um there is 120 in there so 
+we were able to analyze 120 systems and the
+
+0:07:37.680,0:07:45.040
+size is annotated on the side these systems had 
+a had a size up to um hundred thousand lines of
+
+0:07:45.040,0:07:53.440
+code so quite small hundred thousand lines of code 
+um those are systems like apps on smartphones or
+
+0:07:53.440,0:08:03.040
+the first version of of a software system but out 
+there are systems that are much larger um you can
+
+0:08:03.040,0:08:10.960
+see um the the purple ones half a million lines 
+of code we have looked at 150 systems of that size
+
+0:08:11.600,0:08:18.720
+and they are also out there a lot of systems 
+even bigger 1 million 5 million 15 million um
+
+0:08:19.680,0:08:28.960
+so there are a lot of quite huge systems out there 
+and many of these systems are developed in modern
+
+0:08:28.960,0:08:37.040
+programming languages like java c-sharp and so 
+on but they frustrate their developers a lot
+
+0:08:37.040,0:08:44.640
+because they have accumulated technical depth and 
+complexity over the years of their construction
+
+0:08:45.680,0:08:55.200
+and unfortunately some of them are micro service 
+architectures the great new architectural style
+
+0:08:55.200,0:09:02.880
+that was supposed to solve all our problems 
+when we were told about it around 2012.
+
+0:09:03.760,0:09:11.600
+um it used to be that people would call 
+me and say carola we have a legacy system
+
+0:09:12.240,0:09:19.200
+and we need help it's getting more and more 
+expensive and slower and slower to maintain
+
+0:09:20.240,0:09:27.600
+can you help us break the system into into 
+microservices so this was the past today
+
+0:09:28.400,0:09:35.200
+people call me and they say ah corolla 
+we have a microservice architecture and
+
+0:09:35.200,0:09:41.920
+maintenance is getting more and more 
+expensive and slow uh what have we done wrong
+
+0:09:42.880,0:09:50.400
+yes what is wrong well with a lot of microservice 
+architectures people have made the same mistake
+
+0:09:51.360,0:09:54.480
+the same mistakes they made with monoliths before
+
+0:09:57.120,0:10:05.680
+i stole this diagram here from simon brown because 
+it explains so well what that what was forgotten
+
+0:10:06.400,0:10:16.000
+on the y-axis you have modularity and on the on 
+the um x-axis you have the number of deployment
+
+0:10:16.000,0:10:23.760
+units so on the left side the two systems have 
+just one deployment unit on the right side you
+
+0:10:23.760,0:10:32.960
+have various or larger number of deployment units 
+and if you follow the y-axis those two systems on
+
+0:10:32.960,0:10:40.640
+the bottom have low modularity and the ones 
+up there have high modularity and what people
+
+0:10:40.640,0:10:49.120
+forgot was that a good architecture is actually 
+about creating independent modules therefore
+
+0:10:50.640,0:10:55.760
+a modular architecture is actually 
+the opposite to a big ball of mud
+
+0:10:55.760,0:11:04.000
+in a modular architecture independence of 
+modules is is the top priority so even if you
+
+0:11:04.000,0:11:11.120
+have just one deployment unit you should have 
+a modular monolith which is on the left side
+
+0:11:11.840,0:11:19.120
+on the top if you don't do that you will 
+end up with a big ball of mud not modular
+
+0:11:19.120,0:11:25.760
+and just one number of deployment units this is 
+the one monolithic big ball of mud down there
+
+0:11:26.720,0:11:32.640
+um no matter if you have a monolith 
+or a great number of deployment units
+
+0:11:33.200,0:11:40.640
+what is shown on the y-axis if you don't have 
+independent modules you have a big ball of mud
+
+0:11:40.640,0:11:49.600
+as well in a distributed system with a lot of 
+deployment units and that is much worse than a
+
+0:11:49.600,0:11:57.200
+monolithic big bowl of mud if modularity is not 
+your top priority your system will probably look
+
+0:11:57.200,0:12:05.920
+like this this diagram on the right side shows a 
+class cycle this is a strongly connected component
+
+0:12:08.560,0:12:15.280
+each square is a class and these classes are 
+connected with lines this is where they're huge
+
+0:12:15.840,0:12:23.200
+each other and the different colors um in the 
+diagram show that they come from 10 different
+
+0:12:23.200,0:12:31.680
+modules this system was developed 15 years ago i 
+mean it is in development since 15 years and today
+
+0:12:31.680,0:12:39.040
+and the whole system has 3 million lines 
+of code which means that this this tangled
+
+0:12:40.000,0:12:47.120
+class cycle that has half a million lines 
+of code takes a big part in the system
+
+0:12:48.240,0:12:55.520
+30 developers have been working on this system 
+for 15 years if you change one class in this
+
+0:12:55.520,0:13:01.200
+cycle you have to check the whole cyclic 
+structure to exclude possible side effects
+
+0:13:02.000,0:13:05.840
+this greatly slows down 
+maintenance and enhancement
+
+0:13:07.360,0:13:15.040
+another example even bigger 10 million lines of 
+code developed in java over the last 20 years
+
+0:13:15.680,0:13:21.680
+when they started nobody told them about 
+modularity monoliths and microservices
+
+0:13:22.480,0:13:29.600
+this was in 2000 these ideas did not even 
+exist at that time and you see the result
+
+0:13:30.400,0:13:38.080
+what you see there is 90 modules and they are 
+strongly connected you see arcs on the left
+
+0:13:38.080,0:13:44.640
+side and on the right side they all need each 
+other this is as well a real big ball of mud
+
+0:13:45.680,0:13:52.640
+and of course for the team a whole lot of extra 
+work for maintenance and enhancement what has
+
+0:13:52.640,0:14:01.280
+happened here nobody has reduced or controlled the 
+dependencies in these complex structures and what
+
+0:14:01.280,0:14:08.240
+can we do to prevent prevent this in 
+our micro service architectures well um
+
+0:14:09.360,0:14:16.320
+we do have very old principles at hand to 
+prevent the big ball of mud in our architecture
+
+0:14:16.880,0:14:25.840
+this is high cohesion and lose coupling within 
+a module the classes or packages should work
+
+0:14:25.840,0:14:32.800
+together to fulfill one responsibility this 
+responsibility connects them strongly together
+
+0:14:33.520,0:14:39.600
+and creates high cohesion other responsibilities 
+should be separated into their own module
+
+0:14:40.240,0:14:48.080
+and outside of the module we won't lose coupling 
+which means actually low coupling one module
+
+0:14:48.080,0:14:55.520
+doesn't need much from another module a module 
+should be complete from a domain point of view
+
+0:14:55.520,0:15:01.280
+this is what domain driven design is talking 
+about as well from outside of the module
+
+0:15:01.840,0:15:08.800
+only relevant features should be visible and 
+accessible details of the implementation should
+
+0:15:08.800,0:15:16.480
+remain hidden and this is why we call this 
+information hiding a good modular architecture
+
+0:15:16.480,0:15:26.800
+that follows these principles would look like this 
+we see here three modules each of them should have
+
+0:15:26.800,0:15:34.320
+one responsibility and therefore have high 
+cohesion within the key point is that we should
+
+0:15:34.320,0:15:41.440
+build this architecture in such a way that we have 
+as little coupling as possible between the modules
+
+0:15:42.080,0:15:52.320
+but but this is only possible if there 
+is an idea of a domain architecture
+
+0:15:52.880,0:15:59.520
+the main driven design has given us the the 
+mod the knowledge to create independent modules
+
+0:16:00.080,0:16:06.640
+one module for the sales context as you 
+can see here on the slide and another one
+
+0:16:06.640,0:16:14.480
+for the support context this is such a 
+wonderful idea and it works it creates
+
+0:16:14.480,0:16:23.120
+modules that have high coercion and low coupling 
+which means dependency control but unfortunately
+
+0:16:23.680,0:16:29.840
+not many systems have a domain architecture 
+the other day a client called me and said
+
+0:16:30.480,0:16:38.960
+karola we need help we are having a micro service 
+architecture woohoo yes i thought inside of myself
+
+0:16:40.240,0:16:45.200
+and he continued we are having a 
+microservice architecture for our platform
+
+0:16:45.200,0:16:52.800
+where customers can sell their second-hand 
+vehicles and we have 270 microservices
+
+0:16:53.760,0:17:00.960
+oh this is quite a lot i thought and what 
+is the problem well if we want to change
+
+0:17:00.960,0:17:10.560
+something in the database we have to discuss 
+this with all teams what what does this mean
+
+0:17:11.280,0:17:19.600
+well we looked at the thing and each 
+microservice was using a library called model jar
+
+0:17:21.440,0:17:27.760
+i ask them what this is and they say well 
+that's the interface to the database you know
+
+0:17:28.800,0:17:35.120
+the one and only database when the second 
+microservice was built they thought
+
+0:17:35.120,0:17:39.840
+that they could just reuse the work 
+of the first team on the domain model
+
+0:17:40.400,0:17:48.480
+so they took the model jar enhanced it for their 
+purpose and ended up with an overall domain model
+
+0:17:51.280,0:17:56.800
+i have an example for you with a similar 
+problem where we try to find a solution
+
+0:17:58.000,0:18:05.600
+i will explain the diagram to you in a second 
+but i will tell you the story before um a company
+
+0:18:05.600,0:18:12.160
+called called us to look at their architecture 
+and help them to divide it into microservices
+
+0:18:12.720,0:18:20.560
+and i asked them well what kind of architecture 
+do you have and normally people tell me we have a
+
+0:18:20.560,0:18:29.600
+layered architecture but this one was different 
+they said our architecture follows use cases
+
+0:18:31.360,0:18:38.960
+this is a criterion from the domain and i 
+thought finally no layered architecture this
+
+0:18:38.960,0:18:43.280
+will be exciting and what 
+you see here on the slide
+
+0:18:44.000,0:18:51.600
+is the architecture that we put on the source 
+code with a tool this tool is called sotograph
+
+0:18:52.880,0:18:59.920
+for each use case we have created a rectangle 
+and written the name of the use case next to it
+
+0:19:00.560,0:19:07.520
+as you can see here mailing import 
+export remove startup and so on
+
+0:19:08.720,0:19:14.720
+the dependencies between the systems parts that 
+are programmed into the source code as you know
+
+0:19:15.280,0:19:24.400
+are shown on the right side of the diagram 
+the green arcs go downwards so they represent
+
+0:19:24.400,0:19:31.600
+relationships from top to bottom so some class 
+in the mailing use case is using something from
+
+0:19:31.600,0:19:40.800
+the import export use case the red arcs colors 
+are not important at the moment the red arcs
+
+0:19:40.800,0:19:48.400
+represent relationships from bottom to top so 
+the remove use case there is a class in there
+
+0:19:48.400,0:19:55.200
+that needs something or that calls another 
+class from the import export use case
+
+0:19:58.240,0:20:05.360
+after collecting the use cases we looked at 
+the the dependencies and we thought well maybe
+
+0:20:05.360,0:20:08.640
+mailing import export and remove they could form
+
+0:20:08.640,0:20:13.280
+one microservice because they need each 
+other of course and then there is a gap
+
+0:20:15.440,0:20:22.800
+but um if you look downwards you find 
+something which is quite strange because
+
+0:20:23.600,0:20:30.960
+down there there is a part of the system called 
+model and you guess it this is the equivalent
+
+0:20:30.960,0:20:39.440
+of the model jar um i told them well this is not 
+a good idea if you wanted to cut your system into
+
+0:20:39.440,0:20:48.640
+microservices um we have to do something about 
+this and so we tried to distribute the classes
+
+0:20:48.640,0:20:56.320
+that are in this model jar um two to the other 
+to the use cases so we took classes in here and
+
+0:20:56.320,0:21:03.840
+moved them upwards some to the mailing some to the 
+import export where they probably belong because
+
+0:21:03.840,0:21:11.760
+they um belong to this um part of the of the of 
+the system um and they form the bases in there um
+
+0:21:14.320,0:21:20.960
+so um we started and i think we 
+stopped when we put some classes
+
+0:21:20.960,0:21:25.760
+into your calculation because then 
+um the thing already looked like that
+
+0:21:27.920,0:21:35.200
+as you can see on the right side we allocated 
+model classes to the other to the use cases
+
+0:21:35.200,0:21:45.120
+and all these extra um relationships dependencies 
+appeared they were all hidden in the model so you
+
+0:21:45.120,0:21:53.920
+can see now that mailing is as well has as well 
+connections to report and to editing many many new
+
+0:21:55.040,0:22:02.160
+new dependencies they were all hidden so what 
+we can see here is another big ball of mud
+
+0:22:05.200,0:22:11.680
+so please if you are building or 
+having a micro service architecture try
+
+0:22:11.680,0:22:19.440
+to divide your domain into subdomains with 
+small models try to create separate models
+
+0:22:21.920,0:22:30.800
+because then you will allow independent changes 
+um you will have high coercion and low loose
+
+0:22:30.800,0:22:37.360
+coupling and your team can work independently your 
+teams the different teams for each microservices
+
+0:22:38.160,0:22:47.600
+because each model and each sub-domain should be 
+small enough to be programmed by just one team
+
+0:22:47.600,0:22:56.240
+otherwise your team will feel like the chickens on 
+the right side these chickens have eaten pieces of
+
+0:22:56.240,0:23:04.480
+bread but unfortunately some children have tied 
+those bread pieces together with a rope and
+
+0:23:04.480,0:23:12.880
+after swallowing them the chickens are no longer 
+independent and they might even die together so
+
+0:23:12.880,0:23:21.440
+let's look at a solution here this is a banking 
+example a bank with three business areas account
+
+0:23:21.440,0:23:31.200
+managing credit business and security business 
+these three areas use the same classes account
+
+0:23:31.200,0:23:39.760
+customer credit and security to fulfill their 
+work so one big model jar for the whole system
+
+0:23:41.040,0:23:47.440
+if we want to break them down to the bottom 
+of the domain model we have to have much more
+
+0:23:47.440,0:23:54.800
+specific domain classes account and customer 
+are over here in the account managing and we
+
+0:23:54.800,0:24:01.520
+as well need credit customer and credit account 
+as and security account and security customer
+
+0:24:03.520,0:24:10.480
+if you follow this advice you will have separate 
+models for all your modules and each team can work
+
+0:24:10.480,0:24:19.440
+freely on their own domain model doesn't that 
+sound great yes but how do we get there well
+
+0:24:19.440,0:24:27.840
+we have to change our understanding of software 
+development in many organizations that i have
+
+0:24:27.840,0:24:34.480
+visited the responsibilities are clearly 
+distributed there's the role of the developers
+
+0:24:36.080,0:24:42.400
+and the role of the architect is understood like 
+this developer and architect are responsible for
+
+0:24:42.400,0:24:50.160
+technical questions their job is to define which 
+programming language is used which frameworks
+
+0:24:50.160,0:24:57.040
+and infrastructure is applied which database to 
+use the domain knowledge is something that the
+
+0:24:57.040,0:25:05.600
+business analysts have to deal with with however 
+this division of responsibility will not work if
+
+0:25:05.600,0:25:13.600
+we want our software to be structured according to 
+domain related domain related criterias to have a
+
+0:25:13.600,0:25:20.240
+domain related structure we have to make sure 
+that the software has its roots in the domain
+
+0:25:22.080,0:25:32.320
+and that the software is reflecting a reflection 
+of the domain because at the end the source code
+
+0:25:32.320,0:25:40.560
+only contains the understanding of the developers 
+not the requirements written down in the backlog
+
+0:25:40.560,0:25:47.440
+by the business analysts the source code is 
+the written down understanding that programmers
+
+0:25:48.000,0:25:54.320
+have of the domain nothing else that's exactly 
+what domain driven design wants to help us with
+
+0:25:54.880,0:26:00.240
+the goal of software development is to 
+translate the domain knowledge into software
+
+0:26:01.520,0:26:08.400
+to understand the domain properly we have 
+to talk to the domain experts they have the
+
+0:26:08.400,0:26:17.440
+domain knowledge in their head but we have 
+to do this in a language they understand
+
+0:26:19.840,0:26:26.000
+if not we will suffer from the model 
+monopoly this is a well-described problem
+
+0:26:26.000,0:26:31.920
+in psychology if you use a notation that 
+transports your understanding of something
+
+0:26:31.920,0:26:41.040
+to another person and you use a notation that only 
+you know you will have a monopoly on the model
+
+0:26:42.480,0:26:50.080
+a model like this for example this is a of course 
+an extreme example but the underlying message
+
+0:26:50.080,0:26:57.760
+of the model monopoly is if you show a model to 
+someone in a notation that is new for this person
+
+0:26:59.440,0:27:05.760
+um it is very difficult for the other person 
+to understand this model the notation you are
+
+0:27:05.760,0:27:12.880
+using for the model is a new language that the 
+user would have to learn to understand and keep
+
+0:27:12.880,0:27:19.520
+give feedback this will result in a feedback 
+like oh yeah this looks good quite complicated
+
+0:27:19.520,0:27:26.560
+i i see you thought a lot about it this is 
+what users say in a case like that and then you
+
+0:27:26.560,0:27:35.040
+end up with a software system that does not fit 
+the needs of your user how do we get to communi
+
+0:27:35.040,0:27:42.160
+communicate with results that our users understand 
+what should we do well domain driven design
+
+0:27:42.720,0:27:50.480
+recommends us to explore the domain together 
+with users and developers in workshops two
+
+0:27:50.480,0:27:58.000
+techniques have developed in recent years in the 
+domain driven design environment event storming
+
+0:27:58.000,0:28:06.720
+and domain storytelling these are both workshop 
+techniques that facilitate collaborative modeling
+
+0:28:07.760,0:28:14.240
+for an event storming session we meet with the 
+user and developers and model the process in
+
+0:28:14.240,0:28:22.320
+the domain with sticky notes on the wall each 
+sticky no note represent a domain event all
+
+0:28:22.320,0:28:29.440
+particip participants are invited to stick 
+notes which are then discussed and sorted
+
+0:28:29.440,0:28:36.240
+with the whole group afterwards this way you get 
+a quick overview of the process without thinking
+
+0:28:36.240,0:28:43.840
+about the software today today of course we are 
+doing event storming remotely on a mirror board
+
+0:28:45.760,0:28:52.400
+in a session for domain storytelling we also 
+meet with the users and developers and model the
+
+0:28:52.400,0:29:02.400
+process from the domain with actors who exchange 
+domain objects and concepts today we also do this
+
+0:29:02.400,0:29:09.120
+remotely with an open source tool called the main 
+story modeler let's look at this with an example
+
+0:29:11.200,0:29:19.760
+this is a domain story for a small art house 
+cinema in this little program cinema there is
+
+0:29:19.760,0:29:29.440
+the cinnabar manager and the ticket agent once a 
+week in this little cinema is issued a new weekly
+
+0:29:29.440,0:29:37.520
+schedule for the next week the process starts 
+in the upper left corner over here when the
+
+0:29:37.520,0:29:45.200
+advertising agency sends the plan for the 
+advertising bookings once the cinema manager has
+
+0:29:45.200,0:29:52.800
+received this plan he starts working on the 
+weekly schedule with his super great legacy system
+
+0:29:53.440,0:30:00.480
+sin is small the small yellow flash on 
+the icon of the weekly schedule indicates
+
+0:30:00.480,0:30:08.720
+that the cinesmall software is used here next the 
+cinema manager gets the plan for the possible film
+
+0:30:08.720,0:30:15.760
+shows from the film distributor and he looks at 
+the national wide number of visitors he negotiates
+
+0:30:15.760,0:30:22.800
+with the film distributor which film he can get 
+and finally he finalizes the weekly schedule
+
+0:30:23.760,0:30:30.960
+our legacy system cinesmall then generates 
+auditorium plans and the ticket agent can start
+
+0:30:31.520,0:30:39.200
+selling tickets for the new scheduled film shows 
+the customer comes to the cinema and asks for
+
+0:30:39.200,0:30:47.760
+tickets for a certain film show this the ticket 
+agent checks the auditorium plan to see if he
+
+0:30:47.760,0:30:54.880
+can find suitable seats in the auditorium for the 
+desired film show and this and he then sells the
+
+0:30:54.880,0:31:03.040
+seats to the customer this is very domain specific 
+as you can see you don't find any technical terms
+
+0:31:03.040,0:31:11.280
+in this domain story this is because domain driven 
+design asks us to be aware that the users speak a
+
+0:31:11.280,0:31:19.440
+different language than we do it's not good if 
+we impose our technical language on them that
+
+0:31:19.440,0:31:26.160
+would also be a kind of model monopoly in which 
+we use a model that the user does not understand
+
+0:31:27.600,0:31:34.320
+no we have to immerse ourselves into the 
+language of the domain experts and learn it
+
+0:31:35.520,0:31:42.720
+of course not everything but only the part that 
+we want to map in our software the part in which
+
+0:31:42.720,0:31:50.880
+our software this system should support the 
+users and what happens then in the software
+
+0:31:50.880,0:31:54.800
+are we sticking to our 
+technical terms in the software
+
+0:31:54.800,0:32:01.840
+in the source code no we also use the 
+domain specific terms in the source code
+
+0:32:03.600,0:32:11.200
+domain-driven design calls this a ubiquitous 
+language a language that we use in all
+
+0:32:11.200,0:32:21.040
+communication if we speak if we write if we create 
+diagrams and if we program in our source code
+
+0:32:23.440,0:32:30.080
+of course the domain specific ubiquit 
+ubiquitous language is only used in the domain
+
+0:32:30.080,0:32:37.200
+core of the application in the technical areas we 
+continue to use our technical programming language
+
+0:32:38.960,0:32:46.160
+sorry okay but now we have a domain application 
+core and i thought we want to have separate
+
+0:32:46.160,0:32:50.000
+domain models in the architecture with 
+high cohesion and low coupling right
+
+0:32:50.640,0:32:58.000
+how do we get that to achieve this domain 
+driven design taught us the strategic design
+
+0:33:00.080,0:33:04.880
+our software system supports 
+users in their work in a domain
+
+0:33:05.440,0:33:11.920
+the main drum design tells us that in a domain 
+above a certain size there should be sub domains
+
+0:33:13.440,0:33:17.760
+that can help us to divide our 
+software into bounded contexts
+
+0:33:20.560,0:33:28.880
+each bounded context sets explicit boundaries for 
+individual domain oriented paths in the software
+
+0:33:29.440,0:33:36.480
+and as well in the team organization each 
+bounded context is handled by exactly one team
+
+0:33:37.120,0:33:43.600
+we do all this because our goal 
+you remember is high cohesion and
+
+0:33:43.600,0:33:50.560
+lose coupling for our bounded context let's 
+go back to the process in the cinema and see
+
+0:33:50.560,0:33:58.880
+what we can do there you remember this if you 
+look closely at this process you can see there
+
+0:33:58.880,0:34:06.000
+are actually two entries that is two triggers 
+that set different parts of the process in motion
+
+0:34:07.200,0:34:14.480
+this is impo in an important criterion that 
+they could be two subdomains in the in here
+
+0:34:14.480,0:34:20.960
+you see the two triggers on the left and on 
+the right in addition the two sub-processes
+
+0:34:21.920,0:34:29.760
+are also decoupled in terms of time the left 
+one is performed once a week the weekly schedule
+
+0:34:29.760,0:34:37.360
+and the right one um whenever the customer 
+comes to the to the um to the cinema
+
+0:34:40.320,0:34:46.080
+so um in large com cinemas there are 
+also department for these two sub
+
+0:34:46.080,0:34:49.520
+processes the cinnabar 
+management and the ticket sales
+
+0:34:51.840,0:34:58.880
+the next very important indicator in here is found 
+in the middle when the left sub process is over
+
+0:34:58.880,0:35:06.160
+there is a flow of information in one direction 
+into the other sub-process the flow of information
+
+0:35:06.160,0:35:14.080
+is the weekly schedule and then the process 
+continues with the ticket sale a way back is
+
+0:35:14.080,0:35:24.000
+not possible this is a very very strong indicator 
+of of of a boundary between two bounded contexts
+
+0:35:24.000,0:35:30.480
+two subdomains the work in one subdomain is done 
+and the result is passed on to another sub domain
+
+0:35:31.200,0:35:38.000
+in the second sub domain work is continued 
+on the real result or with the result finally
+
+0:35:38.000,0:35:42.960
+you can do use this example to make another 
+point from domain driven design clear
+
+0:35:43.600,0:35:50.240
+the main driven design assumes that terms 
+in different subdomains can mean different
+
+0:35:50.240,0:35:57.360
+different things and we can also imagine that 
+here for our cinema the customer looks at a
+
+0:35:57.360,0:36:04.080
+weekly schedule to find out about the planned 
+film shows this weekly schedule is much less
+
+0:36:04.640,0:36:11.760
+detailed than the weekly schedule that the 
+cinema manager is working on he notes the
+
+0:36:11.760,0:36:16.480
+cleaning time of the cinema halls and 
+the ice cream sellers and much more
+
+0:36:20.800,0:36:27.680
+so let's summarize we can cut the domain 
+into sub-domains according to boundaries in
+
+0:36:27.680,0:36:35.120
+the business processes good indicators are the 
+information flow as you have seen the process
+
+0:36:35.120,0:36:43.120
+rhythms or the process triggers we can cut the 
+domain according to different uses of key concepts
+
+0:36:43.120,0:36:48.400
+in the domain or as well by departments 
+in the organization or groups of experts
+
+0:36:49.040,0:36:53.440
+so what does that mean for our architecture 
+with the domain core and the technical
+
+0:36:53.440,0:37:00.240
+separated from the domain core we get a domain 
+call that is divided into domain modules with
+
+0:37:00.240,0:37:06.800
+separate domain models and separate domain and 
+application services what would a solution in
+
+0:37:06.800,0:37:14.080
+software look like for our cinema if we split it 
+into two bounded contexts according to these rules
+
+0:37:14.880,0:37:20.320
+in a good solution we would have two 
+bounded contexts cinema manager and
+
+0:37:20.320,0:37:25.840
+ticket sales the bounded context cinema 
+manager would provide a user interface
+
+0:37:26.960,0:37:32.480
+for scheduling the weekly schedule 
+this user interface works on a service
+
+0:37:32.480,0:37:38.560
+that allows you to schedule movies in theaters 
+schedule advertise advertising for movies and
+
+0:37:38.560,0:37:44.960
+much more the service itself uses the weekly 
+schedule and the auditorium plan to do its work
+
+0:37:45.600,0:37:53.200
+the bounded context ticket sales pro would provide 
+a user interface as well but for the ticket sales
+
+0:37:53.200,0:38:01.600
+it works on a service itself and this service 
+uses the weekly schedule the auditorium plan
+
+0:38:01.600,0:38:08.240
+and the tickets of course to communicate which 
+with each other and the two bounded contexts
+
+0:38:08.240,0:38:16.160
+in exchange the weekly schedule and the auditorium 
+plan but this processing between the two bounded
+
+0:38:16.160,0:38:23.760
+contexts is done as in chronically they don't 
+depend on each other they are loosely coupled
+
+0:38:23.760,0:38:32.720
+a bad solution would be to divide the domain 
+according to the entities involved in the process
+
+0:38:32.720,0:38:41.120
+here we we will we will need direct coupling in 
+this solution in a solution um that is bad we
+
+0:38:41.120,0:38:48.240
+would have a service weekly schedule and a service 
+auditorium plan one service for each entity
+
+0:38:48.240,0:38:55.360
+both entities would be protected by services and 
+their interface and the methods that are necessary
+
+0:38:55.360,0:39:02.720
+to process the respective entities because the 
+methods are now each assigned to the service for
+
+0:39:02.720,0:39:12.000
+the entity at least the ticket sale user interface 
+much must work synchronously with both services
+
+0:39:12.000,0:39:18.560
+in addition there must be another service 
+for the tickets somewhere comparing these um
+
+0:39:19.840,0:39:27.200
+comparing these two solutions we see loose 
+coupling loose coupled bounded contexts on
+
+0:39:27.200,0:39:34.320
+the left green side and strongly coupled system 
+parts on the right side the main driven design
+
+0:39:34.320,0:39:42.960
+recommends us the left green side and strongly and 
+not to do strongly coupled systems on the right
+
+0:39:42.960,0:39:50.400
+side if you go the left green way you have to 
+live with the fact that you have the same entities
+
+0:39:50.400,0:39:57.360
+in different boundary compounded contexts the 
+weekly schedule is presented in both contexts
+
+0:39:58.080,0:40:04.080
+you can see that and the auditorium 
+plan as well but what is with reuse then
+
+0:40:06.480,0:40:10.320
+we have all learned in our software 
+engineering courses that we
+
+0:40:10.320,0:40:18.960
+should do dry dry a principle don't repeat 
+yourself and don't have duplicated code
+
+0:40:19.520,0:40:27.440
+and luckily enough domain driven design about 
+speaks about this as well imagine you are building
+
+0:40:27.440,0:40:35.120
+a system for four different sub-domains in the old 
+times companies have organized the work like this
+
+0:40:35.840,0:40:40.160
+a head team a team for the body a team 
+for the legs and a team for the tail
+
+0:40:40.960,0:40:47.520
+well there were a lot of interfaces between 
+these teams they have to talk a lot and to re
+
+0:40:48.240,0:40:54.640
+rely on each other to fulfill their jobs you see 
+all the the dependencies all the errors there
+
+0:40:56.560,0:41:02.800
+after a while reuse starts to take place 
+this is almost inevitable inevitable the
+
+0:41:02.800,0:41:08.720
+body team finds out that there are things 
+that all body teams need and the lag team
+
+0:41:08.720,0:41:13.680
+puts together the the yellow and 
+the blue part and the tails create
+
+0:41:15.200,0:41:25.760
+reusable systems as well this is inevitable 
+because what happens is um conway's law the
+
+0:41:25.760,0:41:35.120
+team conway's law says um that organizations with 
+design which are designing systems are constrained
+
+0:41:35.120,0:41:42.000
+to produce um designs which are copies of the 
+communication structures of their organization
+
+0:41:42.000,0:41:47.840
+which means if a team is working on something 
+this something gets closer together and then
+
+0:41:49.680,0:41:56.960
+reuse gets even further because some developers 
+change team and they start to use the framework of
+
+0:41:56.960,0:42:05.120
+of the old team and then we really have a big 
+ball of mud domain driven design says don't do
+
+0:42:05.120,0:42:14.000
+this go for domain excellence not for reuse let 
+teams build their own domain specific software
+
+0:42:14.000,0:42:22.240
+from ui to database if we call up our 
+model of our software again that means
+
+0:42:23.760,0:42:32.320
+no reuse in the domain application source code 
+here each piece of software should be a specific
+
+0:42:32.320,0:42:39.680
+piece of software for for its sub domains as 
+specifically as possible but in the technical
+
+0:42:39.680,0:42:46.960
+part of the system there we should definitely 
+do reuse that's for sure but not in the domain a
+
+0:42:46.960,0:42:54.960
+specific part and finally i want to show you that 
+it is possible to find out where you stand when
+
+0:42:54.960,0:43:03.200
+it comes to modularization within your system if 
+you want to know how modular your source code is
+
+0:43:03.200,0:43:10.080
+whether if it's microservices or monolith we can 
+measure this with the modularity maturity index
+
+0:43:10.640,0:43:20.720
+if the modularity is poor the system is rated 
+zero to four if the modularity is quite mediocre
+
+0:43:21.760,0:43:29.360
+we give four to eight as great and if the 
+modularity is good the system gets 8 to 10. um
+
+0:43:31.120,0:43:37.760
+the x-axis represents just the time and 
+now i will show you some some systems
+
+0:43:39.600,0:43:47.920
+you can see different cycles here each of which 
+stands for one system so these are 22 systems
+
+0:43:47.920,0:43:54.400
+in different programming languages some are 
+in the red area some in the yellow and some in
+
+0:43:54.400,0:43:59.920
+the green and on the x-axis is just the time this 
+was the first system this is the second and so on
+
+0:44:01.040,0:44:08.560
+the system up here was built in java and has 40 
+million lines of code it's very modular very good
+
+0:44:08.560,0:44:16.960
+this one unfortunately as well is java with a 
+very bad motor modularization this one is java
+
+0:44:16.960,0:44:24.800
+as well with some but not enough modularization 
+to arrive at the green area this one is c sharp
+
+0:44:24.800,0:44:32.640
+but this one up here is c sharp two so you can see 
+that the programming language has little influence
+
+0:44:32.640,0:44:39.360
+on the modularity unfortunately there's as 
+well php typescript and and plsql in there
+
+0:44:39.360,0:44:46.960
+us the developers and architects have to take 
+care of the modularity ourself how do we get to
+
+0:44:46.960,0:44:53.600
+this rating well we meet with our clients and we 
+analyze their system for modularity with various
+
+0:44:53.600,0:45:01.680
+tools you can see here the sonagraph team scale 
+structure 101 the psotograph and lattice all tools
+
+0:45:01.680,0:45:07.920
+that help us to find out about the modularity 
+there's a quite complex algorithm to calculate
+
+0:45:07.920,0:45:16.080
+the modularity maturity in text of course since 
+march 2020 our meetings are virtual as this one as
+
+0:45:16.080,0:45:23.120
+well if you want to know more about sustainable 
+software architecture and domain driven design
+
+0:45:23.120,0:45:31.840
+contact me via twitter or email look at my 
+book and thank you very much for your attention
+
+0:45:41.200,0:45:47.600
+okay thanks karola for your visit and 
+informational whole speech i really
+
+0:45:47.600,0:45:53.680
+find your speech very enjoyable yeah 
+thank you mom thank you yeah yeah and
+
+0:45:53.680,0:46:00.240
+now especially i love the metaphor of the tree 
+your sofia should root in the domain and your
+
+0:46:00.240,0:46:06.400
+modularity matrix that's really fun and 
+really inspiring and thoughtful yeah okay
+
+0:46:08.480,0:46:14.800
+let me see if you have any questions 
+please please post your question
+
+0:46:14.800,0:46:21.680
+on the slider and you can upload your question 
+so that i can see the question um better okay
+
+0:46:22.560,0:46:32.080
+so the first question is okay this one how do you 
+imply this kind of method on a star of company you
+
+0:46:32.080,0:46:38.960
+have any experience to share oh yeah yeah this 
+is a perfect question it's what it i understood
+
+0:46:38.960,0:46:47.760
+it rightly it was about startup was it yeah 
+no yeah yeah okay okay it was about startup
+
+0:46:47.760,0:46:53.120
+no because i can't see it on the screen at the 
+moment so this is why i asked okay okay stop stop
+
+0:46:54.560,0:47:02.240
+ah startup i can see the word even your wonderful 
+your wonderful language yeah okay so um um
+
+0:47:04.320,0:47:13.200
+um if i i mean in my company we start of course as 
+well new projects all the time we create software
+
+0:47:13.200,0:47:24.320
+for our customers and um what i do is i i get all 
+my colleagues trained so that they know how to to
+
+0:47:24.320,0:47:32.160
+create good architecture so a startup should as 
+well have um well uh formed developers that that
+
+0:47:32.160,0:47:40.480
+construct the new software that program you know 
+and then um one thing that anybody today should do
+
+0:47:40.480,0:47:47.040
+whatever software you write you have to do test 
+first or at least you have to write unit tests
+
+0:47:47.040,0:47:53.280
+you know maybe not before but you have to write 
+them and if your software is full of unit tests
+
+0:47:53.280,0:47:58.400
+there's a high percentage of source code 
+tested with unit tests your architecture
+
+0:47:58.400,0:48:04.720
+will be better this is an overall experience 
+that i made whenever i looked at any software
+
+0:48:04.720,0:48:10.640
+because if you want to test something you start 
+to create um separate pieces you know you have
+
+0:48:10.640,0:48:16.640
+you can't have a tangled structure this 
+is very difficult to test so please please
+
+0:48:16.640,0:48:24.080
+startups do tests do unit tests and this will help 
+a lot and then read books learn about modularity
+
+0:48:24.720,0:48:29.920
+and your your software will live a long 
+time so i hope this is a good help for the
+
+0:48:29.920,0:48:36.960
+startup um yeah test first yes sometimes you know 
+you have to create something because you do before
+
+0:48:36.960,0:48:42.960
+you do the test but test first is the best read 
+books exactly they all write it down in the chat
+
+0:48:43.520,0:48:49.600
+yeah yeah i totally agree i think some some good 
+practice applies everywhere no better than a big
+
+0:48:49.600,0:48:55.600
+company or in the startup okay i think we have 
+still have time for maybe two questions so next
+
+0:48:55.600,0:49:04.560
+one uh someone from anonymous okay she's very he 
+or she is very curious about whether we can apply
+
+0:49:04.560,0:49:11.360
+ddd in agile how to combine these two things to 
+build a more sustainable software and you share
+
+0:49:11.360,0:49:20.480
+some insights yes yes my company is working agile 
+since the beginning and agile actually fits very
+
+0:49:20.480,0:49:28.320
+very very well with domain driven design because 
+um if you do actually agile you have um continuous
+
+0:49:28.320,0:49:34.560
+contact with your users you after every 
+iteration you represent what you've done
+
+0:49:34.560,0:49:39.520
+and you discuss what what you can do next and 
+this is actually what domain driven design wants
+
+0:49:39.520,0:49:46.480
+the main driven design wants that we have a lot of 
+contact with our users that we discuss with them
+
+0:49:46.480,0:49:52.720
+so that the developers get better into the 
+domain understand more about the domain so
+
+0:49:52.720,0:49:58.720
+these two ideas fit perfectly with each other 
+there's no problem there i can see no problem
+
+0:50:00.720,0:50:05.520
+yes that's a good news yeah i think there's lots 
+of people because lots of people in taiwan knows
+
+0:50:05.520,0:50:13.600
+about asia so maybe it's a good starting point 
+for them to access yes okay i think we still have
+
+0:50:13.600,0:50:22.240
+time for for the final question the final question 
+is when transforming legacy system to microservice
+
+0:50:22.240,0:50:30.320
+we find problems like how to break the monolith 
+into parts and keep the data uh consistency yeah
+
+0:50:30.320,0:50:36.160
+do you have any suggestion about this about 
+how to do the migration or any kicks yeah
+
+0:50:36.160,0:50:42.800
+very good question yes it's a it's a big problem 
+because you have to cut the thing as i showed you
+
+0:50:42.800,0:50:49.120
+on the slide as well down to the database and you 
+have to separate the database into different parts
+
+0:50:49.120,0:50:56.800
+so you will have one database per microservice 
+and of course this is scary in the beginning
+
+0:50:56.800,0:51:02.560
+because you think oh my god i have the customer 
+here and i mean you have seen it on my diagram the
+
+0:51:02.560,0:51:08.000
+customer in the account management the customer 
+in the credit and it's always the same person
+
+0:51:08.000,0:51:15.280
+what does this mean well um actually it's not such 
+a problem because each bounded context works on a
+
+0:51:15.280,0:51:22.560
+part of the customer that the other one is not 
+working on and um you can transport the data
+
+0:51:22.560,0:51:32.880
+from one database microservice to the other um by 
+events and by um by what do you say by distributed
+
+0:51:32.880,0:51:39.520
+distributing the data from one microservice to 
+microservice and actually this is somewhat thing
+
+0:51:39.520,0:51:46.960
+we do in huge companies anyway we have a lot 
+of systems there and we always transport the
+
+0:51:46.960,0:51:53.680
+data about the customer from one system to the 
+other so it's not such a scary thing of course
+
+0:51:53.680,0:51:58.880
+you have to keep them consistent and that's 
+sometimes it takes time to get all the systems
+
+0:51:58.880,0:52:06.400
+in sync but you know with amazon netflix and all 
+those companies there is no need to be consistent
+
+0:52:07.280,0:52:13.040
+everywhere in the same moment you can have 
+some delay it's not a real problem in general
+
+0:52:15.760,0:52:22.000
+okay thank you very very insightful yeah and 
+they also rinse my bills about your speech
+
+0:52:22.000,0:52:27.280
+talking about sometimes maybe you should forget 
+about the micro service maybe you should consider
+
+0:52:27.280,0:52:35.360
+more about your modularity and the context yeah 
+yes cool absolutely thank you again yeah thank
+
+0:52:35.360,0:52:41.600
+you again very much and we are very pleased 
+to have you here yeah thank you yeah uh okay
+
+0:52:41.600,0:52:47.280
+so the session ends here if you have any more 
+questions or if you want to have a talk with
+
+0:52:47.280,0:52:53.760
+corolla you can go to the private room with her 
+and you can have a good talk so thank you corona
+
+0:52:53.760,0:53:04.160
+again and the next session will start at 4 4 4 30 
+yeah uh well okay 4 30. so the next speaker will
+
+0:53:04.160,0:53:13.520
+be lucas so okay see you see you everyone goodbye 
+bye bye thank you thank you everyone thank you

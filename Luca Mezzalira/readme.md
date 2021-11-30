@@ -1,0 +1,1 @@
+[DDDesign Taiwan 2021 Conference] Luca Mezzalira - 通過六邊形架構進化的 AWS Lambda - https://youtu.be/Y7MB7SSOZvE

@@ -151,1819 +151,1844 @@ and the sector system must support hearings and we need support 
 on reviewing applications and many more use cases
 
 36
-00:03:48,000 --> 00:03:55,040
+00:03:48,000 --> 00:03:52,836
 so the problem was that we didn't really 
-understand how all these isolated requirements
+understand how all these
 
 37
-00:03:55,040 --> 00:03:59,760
-make up a whole software system for for 
-proving road work we hadn't really understood
+00:03:52,836 --> 00:03:57,132
+isolated requirements make up a whole software system
 
 38
-00:03:59,760 --> 00:04:06,560
-the basic business processes behind it so 
-how does a proving roadwork typically work
+00:03:57,132 --> 00:04:02,388
+for for proving road work we hadn't really 
+understood the basic business processes behind it
 
 39
+00:04:02,388 --> 00:04:06,560
+so how does a proving roadwork typically work
+
+40
 00:04:06,560 --> 00:04:12,320
 that was the questions that we asked our domain 
 experts when we brought him together in a room
 
-40
+41
 00:04:12,320 --> 00:04:17,440
 and in front of a whiteboard and 
 this is the story that holders
 
-41
-00:04:25,520 --> 00:04:31,840
-so construction company has won a tender for 
-a road work project and before they can start
-
 42
-00:04:31,840 --> 00:04:37,440
-they need to obtain a permit so that they 
-can close the road to traffic so the story
+00:04:25,520 --> 00:04:30,457
+so construction company has won a tender for a road work project
 
 43
-00:04:38,640 --> 00:04:43,520
-starts where the project supervisor awards 
-the contract to the construction company
+00:04:30,457 --> 00:04:36,046
+before they can start they need to obtain a permit 
+so that they can close the road to traffic
 
 44
-00:04:45,360 --> 00:04:48,800
-and then they can submit the 
-application for the permit
+00:04:36,046 --> 00:04:43,520
+so the story starts where the project supervisor awards 
+the contract to the construction company
 
 45
-00:04:48,800 --> 00:04:51,680
-using this new software system 
-that we were supposed to build
+00:04:45,360 --> 00:04:48,800
+and then they can submit the application for the permit
 
 46
-00:04:55,680 --> 00:05:01,200
-now the stakeholders told us that the 
-project supervisor should be notified
+00:04:48,800 --> 00:04:51,680
+using this new software system that we were supposed to build
 
 47
-00:05:01,200 --> 00:05:08,400
-whenever a new application comes in because they 
-need to review the application and compare it
+00:04:55,680 --> 00:05:01,200
+now the stakeholders told us that the project supervisor should be notified
 
 48
-00:05:08,400 --> 00:05:14,240
-with the tender documents now we didn't 
-understand that requirement at first and
+00:05:01,200 --> 00:05:04,325
+whenever a new application comes in
 
 49
-00:05:14,240 --> 00:05:21,360
-they explained us well there can be for example 
-different dates in the application than in the
+00:05:04,320 --> 00:05:10,260
+because they need to review the application 
+and compare it with the tender documents
 
 50
-00:05:21,360 --> 00:05:28,880
-tender documents if for example the construction 
-company doesn't have the necessary resources
+00:05:10,360 --> 00:05:13,792
+now we didn't understand that requirement at first and
 
 51
-00:05:28,880 --> 00:05:35,520
-or maybe the weather has changed then they need to 
-delay the construction work and that's why dates
+00:05:13,792 --> 00:05:17,046
+and they explained us well there can be
 
 52
-00:05:36,240 --> 00:05:41,120
-could differ in the application for 
-the permit and in the tender documents
+00:05:17,040 --> 00:05:20,700
+for example different dates in the application
 
 53
-00:05:43,360 --> 00:05:49,440
-so once the application is reviewed another 
-role comes into play a traffic authority
+00:05:20,700 --> 00:05:22,468
+than in the tender documents
 
 54
+00:05:22,468 --> 00:05:26,138
+if for example the construction company
+
+55
+00:05:26,138 --> 00:05:28,880
+doesn't have the necessary resources
+
+56
+00:05:28,880 --> 00:05:31,393
+or maybe the weather has changed
+
+57
+00:05:31,390 --> 00:05:34,120
+then they need to delay the construction work
+
+58
+00:05:34,120 --> 00:05:37,441
+that's why dates could differ
+
+59
+00:05:37,441 --> 00:05:41,120
+in the application for the permit 
+and in the tender documents
+
+60
+00:05:43,360 --> 00:05:46,617
+so once the application is reviewed
+
+61
+00:05:46,617 --> 00:05:49,440
+another role comes into play a traffic authority
+
+62
 00:05:51,280 --> 00:05:52,800
 they draft the permit
 
-55
-00:05:55,200 --> 00:06:02,480
-and they determine the concerned authorities 
+63
+00:05:55,200 --> 00:05:58,462
+and they determine the concerned authorities
+
+64
+00:05:58,462 --> 00:06:02,480
 for a hearing so concerned authorities
 
-56
+65
 00:06:03,440 --> 00:06:08,320
 those are for example police communities 
 public transport everyone who could
 
-57
+66
 00:06:08,320 --> 00:06:13,120
 be affected by a construction site and 
 they get a link to the hearing documents
 
-58
+67
 00:06:14,480 --> 00:06:21,280
 and can review the permit and they can submit 
 statements where they say either it's okay or
 
-59
+68
 00:06:21,280 --> 00:06:26,320
 they can raise concerns like maybe they have 
 a marathon planned or something like that
 
-60
+69
 00:06:27,520 --> 00:06:33,840
 that would have an influence 
 on the construction site
 
-61
+70
 00:06:35,200 --> 00:06:40,000
 so the traffic authority then considers 
 these statements and issues the permit
 
-62
+71
 00:06:43,680 --> 00:06:47,840
 and the permit is then sent 
 to the construction company
 
-63
+72
 00:06:49,200 --> 00:06:58,000
 now this whole hearing process here and drafting 
 the permit and revising the draft considering the
 
-64
+73
 00:06:58,000 --> 00:07:03,600
 statements made by the concerned authorities that 
 is something that can be repeated several times
 
-65
+74
 00:07:04,800 --> 00:07:12,000
 but in this story we looked at a happy path 
 scenario so everything is fine the first draft
 
-66
+75
 00:07:12,000 --> 00:07:20,320
 becomes the final permit and this is often 
 a typical way of using domain storytelling
 
-67
+76
 00:07:20,320 --> 00:07:29,840
 we start with a happy path and then later look 
 into a more complicated variations of the process
 
-68
+77
 00:07:38,400 --> 00:07:44,080
 so this little story and visualizing 
 that story helped us to understand in
 
-69
+78
 00:07:44,080 --> 00:07:48,320
 much more detail what the 
 system was supposed to do
 
-70
+79
 00:07:51,040 --> 00:07:55,120
 and this is one of the typical 
 cases for using domain storytelling
 
-71
+80
 00:07:55,120 --> 00:08:01,200
 to think about new software systems and 
 how they should support business processes
 
-72
+81
 00:08:03,840 --> 00:08:05,280
 now how does this method work
 
-73
+82
 00:08:08,320 --> 00:08:14,400
 many people especially software developers tend 
 to think about business processes and visualize
 
-74
+83
 00:08:14,400 --> 00:08:22,400
 business processes like this as a rather abstract 
 but complete description of everything that could
 
-75
+84
 00:08:22,400 --> 00:08:30,160
 possibly happen so it's about different paths in 
 one picture with the main storytelling we choose a
 
-76
+85
 00:08:30,160 --> 00:08:37,120
 different approach we think that a good example is 
 better than a bad abstraction so we want examples
 
-77
+86
 00:08:37,120 --> 00:08:43,040
 first and from that knowledge from that foundation 
 we can later build abstractions in our software
 
-78
+87
 00:08:45,360 --> 00:08:50,240
 so usual usually it's sufficient to model two 
 or three of the most important versions of the
 
-79
+88
 00:08:50,240 --> 00:08:55,760
 business process so the happy path maybe an 
 important variation or common error scenario
 
-80
+89
 00:08:57,520 --> 00:09:01,680
 so if we look at individual paths and
 
-81
+90
 00:09:03,920 --> 00:09:09,840
 therefore we don't need any any 
 gateways or switches or ifs or
 
-82
+91
 00:09:09,840 --> 00:09:11,920
 case statements in our pictographic language
 
-83
+92
 00:09:16,640 --> 00:09:20,960
 now domain stories can have different 
 scopes the story that i showed you about
 
-84
+93
 00:09:20,960 --> 00:09:26,880
 the construction site was i would say 
 about medium on a medium level of detail
 
-85
+94
 00:09:27,840 --> 00:09:33,920
 to give you some more idea how domain stories can 
 can look i'll introduce you to another example
 
-86
+95
 00:09:34,480 --> 00:09:42,560
 this time it's about a movie theater so on 
 the left side we see the process of going
 
-87
+96
 00:09:42,560 --> 00:09:50,080
 to the movies so this is a end-to-end business 
 process from the customer's point of view so we
 
-88
+97
 00:09:50,080 --> 00:09:56,720
 have a moviegoer here they buy a ticket from a 
 cashier and then you buy snacks and drinks from
 
-89
+98
 00:09:56,720 --> 00:10:03,840
 a concession stand and they showed a ticket to the 
 usher to get access to the movie theater and so on
 
-90
+99
 00:10:06,160 --> 00:10:13,120
 on the right side we see a much more 
 detailed picture that tells you the story
 
-91
+100
 00:10:13,120 --> 00:10:20,320
 of buying tickets we have a moviegoer who 
 picks seats and buys for the tickets and so on
 
-92
+101
 00:10:21,840 --> 00:10:28,400
 so time buying tickets was one step in the 
 course grade story on the left and it's now
 
-93
+102
 00:10:28,400 --> 00:10:35,680
 a whole story on its own in the more detailed 
 story on the right and that's just one way of
 
-94
+103
 00:10:38,000 --> 00:10:43,920
 illustrating different scopes of stories 
 now no matter the level of detail or the
 
-95
+104
 00:10:43,920 --> 00:10:48,560
 scope of the story you will always need 
 a pictographic language to visualize it
 
-96
+105
 00:10:51,040 --> 00:11:01,520
 so our pictographic language is comprised of a 
 set of symbols so we have actors the person or the
 
-97
+106
 00:11:02,640 --> 00:11:06,960
 people or the software systems who 
 are active in the story who do things
 
-98
+107
 00:11:07,920 --> 00:11:13,840
 and we have work objects those are the things that 
 they use it can be information physical things
 
-99
+108
 00:11:14,800 --> 00:11:20,960
 digital objects with activities depicted 
 as arrows and we use textual annotations
 
-100
+109
 00:11:23,040 --> 00:11:29,520
 now to give those icons a concrete meaning we 
 label them so we have a customer ticket bias and
 
-101
+110
 00:11:29,520 --> 00:11:33,920
 so on and if we look at the pictographic 
 language in a little bit more detail
 
-102
+111
 00:11:34,880 --> 00:11:40,960
 we can have for example different actors so most 
 commonly we use a single person a group of people
 
-103
+112
 00:11:40,960 --> 00:11:47,040
 a system but depending on the domain that you're 
 in you can change and adapt the set of symbols
 
-104
+113
 00:11:47,680 --> 00:11:56,000
 for example i did a couple of the main stories 
 in in the harbor domain so ships are important
 
-105
+114
 00:11:56,000 --> 00:11:59,280
 actors there and then have a little 
 ship icon that represents a ship
 
-106
+115
 00:12:01,360 --> 00:12:09,200
 the same is true for the work objects we also use 
 different icons there most commonly to express
 
-107
+116
 00:12:09,200 --> 00:12:17,120
 the medium of a book object so for example if i 
 call the cashier in the box office of the cinema
 
-108
+117
 00:12:17,120 --> 00:12:24,800
 and ask about a reservation for a movie tonight 
 and then i would draw this with a telephone icon
 
-109
+118
 00:12:26,080 --> 00:12:33,280
 if they then send me a reservation as an email i 
 will use this email icon and if i decide to print
 
-110
+119
 00:12:33,280 --> 00:12:41,200
 the reservation at home i will use the document 
 icon with that pictographic language we can build
 
-111
+120
 00:12:41,200 --> 00:12:49,280
 sentences and the idea is that the sentence in the 
 pictographic language reads almost like you would
 
-112
+121
 00:12:49,280 --> 00:12:57,520
 write a natural language sentence now to tell a 
 story we of course need more than one sentence
 
-113
+122
 00:12:57,520 --> 00:13:04,480
 so what do we do we append sentences and 
 we express the order by numbering them
 
-114
+123
 00:13:05,680 --> 00:13:08,720
 so that's how you find your 
 way through the domain story
 
-115
+124
 00:13:12,800 --> 00:13:17,200
 now the pictographic language is just 
 one aspect of the main storytelling
 
-116
+125
 00:13:18,720 --> 00:13:25,520
 equally if not more important is that it is also a 
 workshop format a way of bringing people together
 
-117
+126
 00:13:25,520 --> 00:13:31,120
 and what happens in the minds of the participants 
 of the bookshop is very important so it's the
 
-118
+127
 00:13:31,120 --> 00:13:36,240
 picture is not just it's not the only result 
 also being there being present in the workshop
 
-119
+128
 00:13:38,240 --> 00:13:42,160
 if you miss this campfire experience 
 it's not the same just looking at
 
-120
+129
 00:13:42,160 --> 00:13:45,520
 the result showing the picture to 
 someone who was not at a workshop
 
-121
+130
 00:13:45,520 --> 00:13:48,400
 that's not the same as actually 
 being there and contributing to it
 
-122
+131
 00:13:50,800 --> 00:13:56,000
 so what do we need for a workshop well we 
 need people to tell us a story the story tells
 
-123
+132
 00:13:56,000 --> 00:13:59,520
 and what is a storyteller 
 without someone who listens so
 
-124
+133
 00:13:59,520 --> 00:14:07,920
 we need listeners our storytellers are usually 
 the domain experts users stakeholders and
 
-125
+134
 00:14:07,920 --> 00:14:15,840
 our listeners are usually members of a development 
 team business analysts usability experts and so on
 
-126
+135
 00:14:16,560 --> 00:14:21,040
 and often we don't have just one storyteller 
 but we have several storytellers so every
 
-127
+136
 00:14:21,040 --> 00:14:24,640
 role that is involved in a business 
 process can contribute to the story
 
-128
+137
 00:14:28,160 --> 00:14:35,680
 now storytelling is not just a one-way activity 
 it's more of a dialogue of a discussion
 
-129
+138
 00:14:36,960 --> 00:14:44,080
 so storytellers or domain experts are not always 
 born storytellers so they needs a little help
 
-130
+139
 00:14:44,080 --> 00:14:51,280
 that's where moderator comes comes in handy 
 and also the listeners can ask questions to
 
-131
+140
 00:14:51,280 --> 00:14:57,120
 move disturbing forward so typically we would 
 ask what's happening next or how do you know
 
-132
+141
 00:14:57,120 --> 00:15:02,240
 that you have to do this now or where do you get 
 the information from to write it down somewhere
 
-133
+142
 00:15:02,960 --> 00:15:09,920
 and so on so we want the vivid conversation 
 that moves forward and while the story is
 
-134
+143
 00:15:09,920 --> 00:15:20,160
 told it is important that it is also visualized 
 and that's again a job that the moderator has
 
-135
+144
 00:15:20,720 --> 00:15:28,000
 so we visualize the story using the pictographic 
 language while it is told so that gives everyone a
 
-136
+145
 00:15:28,000 --> 00:15:34,720
 chance to see if we understood the story correctly 
 or after any mistakes in it so what will happen is
 
-137
+146
 00:15:34,720 --> 00:15:41,040
 that the domain experts so tell us say oh no you 
 missed a step or no that's not what i said i used
 
-138
+147
 00:15:41,040 --> 00:15:49,200
 a different word or can you draw the arrow to can 
 you turn it around this is wrong so this is very
 
-139
+148
 00:15:49,200 --> 00:15:55,920
 available and immediate feedback that we get for 
 that to work everyone needs to be able to see the
 
-140
+149
 00:15:57,360 --> 00:16:04,320
 visualized story so we use tools for that for 
 example we can use whiteboards and sticky notes
 
-141
+150
 00:16:04,320 --> 00:16:13,360
 or digital blackboards or we could use the tool 
 that uh i used to show you the old work story
 
-142
+151
 00:16:13,360 --> 00:16:19,920
 it's called egon i o it's open source runs in your 
 browser you can check it out econo is also the url
 
-143
+152
 00:16:21,280 --> 00:16:27,360
 now there's a lot more of course to 
 discuss and learn about domain storytelling
 
-144
+153
 00:16:30,000 --> 00:16:35,200
 i've written a book about this method together 
 with my colleague henning schwentner so if you are
 
-145
+154
 00:16:35,200 --> 00:16:40,800
 curious go and check out domainstorytelling.org 
 you will find all sorts of links there including
 
-146
+155
 00:16:40,800 --> 00:16:47,040
 links to the book and you can even save some 
 money if you buy directly from edison wesley via
 
-147
+156
 00:16:47,040 --> 00:16:52,160
 the informant store you can use this component 
 called domain story and get a nice discount
 
-148
+157
 00:16:56,080 --> 00:17:04,240
 now how has domain storytelling influenced ddd 
 and how is d2d influenced domain storytelling
 
-149
+158
 00:17:04,960 --> 00:17:12,960
 well so far i haven't really talked about ddd 
 in fact i've barely even talked about software
 
-150
+159
 00:17:12,960 --> 00:17:17,840
 or developing software or modeling software 
 and that is because domain storytelling
 
-151
+160
 00:17:18,960 --> 00:17:24,080
 is a modeling method that helps you to have 
 meaningful conversations about business processes
 
-152
+161
 00:17:24,640 --> 00:17:30,080
 so building software for this processes is just 
 one of many use cases for the main storytelling
 
-153
+162
 00:17:30,880 --> 00:17:35,680
 you could use it to analyze weaknesses and 
 problems or you could use it to help newly
 
-154
+163
 00:17:35,680 --> 00:17:40,160
 hired employees to learn about your business 
 people do that and you're happy with it
 
-155
+164
 00:17:42,320 --> 00:17:46,080
 however i mostly use it in 
 software development projects
 
-156
+165
 00:17:46,800 --> 00:17:50,640
 and there are some projects where 
 i use domain storytelling like this
 
-157
+166
 00:17:52,960 --> 00:17:59,840
 so i would start with analyzing the domain 
 analyzing the problem spaced as is situation
 
-158
+167
 00:18:00,480 --> 00:18:05,120
 modeling it together with the domain experts so 
 we get a couple of domain stories out from that
 
-159
+168
 00:18:05,120 --> 00:18:10,160
 that is something that we can learn from get 
 feedback from we used it as a basis to design
 
-160
+169
 00:18:10,160 --> 00:18:16,480
 a new improved process software supported process 
 we model that with to be domain stories that show
 
-161
+170
 00:18:16,480 --> 00:18:23,120
 us the future situation again we get feedback 
 from that we use that to derive requirements
 
-162
+171
 00:18:23,120 --> 00:18:30,240
 on a course grade or a medium grade level for 
 example user stories or use cases and again we get
 
-163
+172
 00:18:30,240 --> 00:18:36,560
 feedback on those requirements and then we build 
 software and of course we develop it iteratively
 
-164
+173
 00:18:36,560 --> 00:18:41,680
 and incrementally that means we only take a 
 couple of those requirements and refine them
 
-165
+174
 00:18:41,680 --> 00:18:47,680
 and when you go to the next sprint iteration we 
 take another set of requirements and refine them
 
-166
+175
 00:18:47,680 --> 00:18:54,560
 so it's a constant process of refinement 
 now this process is or this description
 
-167
+176
 00:18:54,560 --> 00:19:00,400
 of software development is not entirely 
 wrong but it's certainly not completely
 
-168
+177
 00:19:00,400 --> 00:19:09,840
 right it's it's a bit too waterfally for me 
 and that changed with the main driven design
 
-169
+178
 00:19:10,400 --> 00:19:13,440
 in more and more of my projects i get to use ddd
 
-170
+179
 00:19:13,440 --> 00:19:17,920
 and eric evans provided his own metaphor 
 for the software development cycle
 
-171
+180
 00:19:18,880 --> 00:19:23,840
 and that metaphor is the model exploration 
 whirlpool and it looks like that
 
-172
+181
 00:19:27,360 --> 00:19:32,480
 so the whirlpool metaphor suggests 
 that there are interconnected cycles
 
-173
+182
 00:19:32,480 --> 00:19:38,480
 of storytelling modeling and coding and it 
 is about learning and about making mistakes
 
-174
+183
 00:19:39,600 --> 00:19:46,800
 so we have activities that focus on housing 
 and documenting scenarios and modeling them
 
-175
+184
 00:19:46,800 --> 00:19:55,360
 telling stories walking through them refocus 
 proposing models explore the language and take
 
-176
+185
 00:19:55,360 --> 00:20:01,280
 those models turn them into code learn from that 
 experiment then go back to your scenarios and
 
-177
+186
 00:20:03,680 --> 00:20:10,800
 model more scenarios and other cases and so on so 
 it's this constant whirlpool i think this model
 
-178
+187
 00:20:10,800 --> 00:20:18,320
 captures much better what is actually going on 
 in a ddd style development project on the other
 
-179
+188
 00:20:18,320 --> 00:20:24,640
 hand this model is not as neat as the one i showed 
 you before it looks a bit messy and maybe that is
 
-180
+189
 00:20:24,640 --> 00:20:33,840
 the reason why this metaphor is often neglected 
 when people talk about ddd yet i think the more
 
-181
+190
 00:20:35,760 --> 00:20:42,160
 the more i think about it the more i reflect on it 
 the more powerful this metaphor becomes for me and
 
-182
+191
 00:20:42,160 --> 00:20:50,000
 i mean it's easy to see that when you highlight 
 how often the term scenario or story appears
 
-183
+192
 00:20:50,720 --> 00:20:59,440
 in the in the whirlpool that there's a connection 
 to the main storytelling so for me domain
 
-184
+193
 00:20:59,440 --> 00:21:07,360
 storytelling fills this gap of how to actually 
 gather my my scenarios how do i model them
 
-185
+194
 00:21:08,960 --> 00:21:15,840
 but how to return them how bring how do i 
 bring them closer to developing software
 
-186
+195
 00:21:18,400 --> 00:21:23,840
 so that's a way that domain storytelling can help 
 with this model exploration whirlpool makes it
 
-187
+196
 00:21:23,840 --> 00:21:30,800
 more tangible but it also had an influence 
 on domain storytelling because it helps me
 
-188
+197
 00:21:30,800 --> 00:21:36,960
 to better understand how to integrate the main 
 storytelling into the domain driven design process
 
-189
+198
 00:21:37,520 --> 00:21:42,160
 and it helps me to choose the right scope 
 for a story so which level of granularity
 
-190
+199
 00:21:42,160 --> 00:21:48,640
 am i interested in am i analyzing the current 
 process or am i deciding a new process and so
 
-191
+200
 00:21:48,640 --> 00:21:53,680
 on so i think this is very helpful for that 
 for choosing the right scope of a story
 
-192
+201
 00:21:56,640 --> 00:22:01,040
 now the second aspect that has influenced the main
 
-193
+202
 00:22:01,040 --> 00:22:04,960
 storytelling and the development of 
 the method is collaborative modeling
 
-194
+203
 00:22:07,040 --> 00:22:15,600
 before i became a ddd practitioner and a ddd coach 
 i was active in the academic modeling community
 
-195
+204
 00:22:15,600 --> 00:22:20,400
 and the software and enterprise architecture 
 communities and in the requirements engineering
 
-196
+205
 00:22:20,400 --> 00:22:28,880
 community and i always felt a bit like an outsider 
 in and one of the reasons why this is different
 
-197
+206
 00:22:28,880 --> 00:22:40,000
 with the ddd community is that ddd practitioners 
 have realized the value of collaborative modeling
 
-198
+207
 00:22:40,000 --> 00:22:47,680
 while i had felt that for some time it really 
 became evident to me at explore ddd conference
 
-199
+208
 00:22:47,680 --> 00:22:52,960
 in the u.s where paul raynor drew this picture 
 it shows collaborative modeling is one of the
 
-200
+209
 00:22:52,960 --> 00:22:58,320
 most important concepts of ddd it's one of 
 its pillars so i felt right at home of course
 
-201
+210
 00:23:03,600 --> 00:23:05,040
 while i'd felt that for some
 
-202
+211
 00:23:07,280 --> 00:23:19,440
 time that collaborative modeling is an 
 important pillar of ddd i think that many people
 
-203
+212
 00:23:19,440 --> 00:23:24,560
 use it synonymously with a brainstorming 
 ever since alberto pandolini came up with it
 
-204
+213
 00:23:26,160 --> 00:23:29,280
 so i use events dormant too 
 here you see my colleagues
 
-205
+214
 00:23:31,440 --> 00:23:36,160
 in a big picture event storming 
 session or some of my colleagues
 
-206
+215
 00:23:36,160 --> 00:23:40,640
 and i think of it as well 
 i have a modeling toolbox
 
-207
+216
 00:23:40,640 --> 00:23:47,600
 and in this toolbox there are several tools like 
 event storming and domain storytelling and um
 
-208
+217
 00:23:48,240 --> 00:23:56,240
 i think that in many projects you will have to use 
 more than one modeling method and you definitely
 
-209
+218
 00:23:56,240 --> 00:24:01,520
 have an advantage if there are several tools in 
 your toolbox and you know how to choose between
 
-210
+219
 00:24:01,520 --> 00:24:06,400
 those tools and when to choose which tool that 
 will increase your changes your chance of success
 
-211
+220
 00:24:09,520 --> 00:24:17,440
 now thinking of it as a toolbox is one way of 
 seeing it but i think collaborative modeling
 
-212
+221
 00:24:17,440 --> 00:24:25,760
 could also be described as a family of methods 
 with different relationships between them and
 
-213
+222
 00:24:27,600 --> 00:24:36,560
 the more i became experienced with ddd the more 
 i looked at collaborative modeling as this family
 
-214
+223
 00:24:39,120 --> 00:24:47,200
 so in my mind i would say that by now i see 
 software development as a series of conversations
 
-215
+224
 00:24:47,200 --> 00:24:50,800
 that are aided by modeling with different
 
-216
+225
 00:24:51,600 --> 00:24:55,520
 members of this collaborative modeling 
 family so with different tools
 
-217
+226
 00:24:58,800 --> 00:25:05,440
 the community behind those methods or tools 
 they've started to write a book called
 
-218
+227
 00:25:05,440 --> 00:25:09,280
 the visual collaborate collaboration 
 tools book you can find it on leanpub
 
-219
+228
 00:25:09,840 --> 00:25:16,400
 and download it from there so this is a really 
 thriving community and it's great to see
 
-220
+229
 00:25:16,400 --> 00:25:23,040
 um that this family is ever expanding and to 
 see new connections made between those tools
 
-221
+230
 00:25:23,840 --> 00:25:27,840
 so this is definitely something 
 that has influenced me a lot
 
-222
+231
 00:25:30,240 --> 00:25:33,040
 now the final thought i want 
 to share with you today is
 
-223
+232
 00:25:34,880 --> 00:25:38,320
 one of the most important concepts i think in ddd
 
-224
+233
 00:25:38,320 --> 00:25:45,760
 and that is that language and models are bounded 
 by the context so this is really an eye opener
 
-225
+234
 00:25:49,040 --> 00:25:52,480
 i mean words can mean different 
 things to different people
 
-226
+235
 00:25:52,480 --> 00:25:58,640
 right so even if those people work in the same 
 organization they might have different ideas
 
-227
+236
 00:25:58,640 --> 00:26:06,400
 for example in our movie theater what could ticket 
 mean so for one person it could be a sellable unit
 
-228
+237
 00:26:06,400 --> 00:26:11,440
 that generates a profit and for the other person 
 it could mean a piece of paper that is validated
 
-229
+238
 00:26:11,440 --> 00:26:17,680
 in order to grant access to a movie theater so if 
 you look at this course-grade domain story from
 
-230
+239
 00:26:17,680 --> 00:26:24,240
 before again cashier might think of the ticket as 
 something that they sell it has a price and so on
 
-231
+240
 00:26:24,240 --> 00:26:27,280
 and they are sure well they are not really 
 interested in the price they are just
 
-232
+241
 00:26:27,280 --> 00:26:33,120
 checking if it's the right date and time right 
 movie and then the ground access so they both
 
-233
+242
 00:26:33,840 --> 00:26:41,840
 say ticket but they mean different concepts when 
 they mean ticket now this will often happen in
 
-234
+243
 00:26:43,120 --> 00:26:47,920
 coarse grained domain stories or also other 
 collaborative modelling techniques that when
 
-235
+244
 00:26:47,920 --> 00:26:52,080
 you have different stakeholders to use the same 
 terms without meaning exactly the same thing
 
-236
+245
 00:26:53,600 --> 00:27:00,160
 and this is not necessarily a problem especially 
 on this core screen level but i'll i want to show
 
-237
+246
 00:27:00,160 --> 00:27:08,560
 you an example where it really was a problem 
 for me to moderate the modeling session because
 
-238
+247
 00:27:08,560 --> 00:27:15,440
 there was an immediate problem that luckily i 
 could resolve with the help of bounded contexts
 
-239
+248
 00:27:16,880 --> 00:27:22,400
 so this is yet another domain that 
 tell you about this time it's a
 
-240
+249
 00:27:24,720 --> 00:27:31,520
 fixtures company called awesome browser games 
 so a company that provides a platform for
 
-241
+250
 00:27:31,520 --> 00:27:38,400
 playing browser games but it's based on a true 
 story so in the workshop in a real workshop we
 
-242
+251
 00:27:38,400 --> 00:27:43,520
 got different people from different departments 
 together domain expert software developers
 
-243
+252
 00:27:43,520 --> 00:27:48,880
 and we wanted to start with a course grain 
 domain story that shows us an end-to-end
 
-244
+253
 00:27:48,880 --> 00:27:54,560
 process so a first-term user signs up plays 
 their first game gets built for the game
 
-245
+254
 00:27:56,320 --> 00:28:01,440
 so someone started and say well the first step 
 is that the user opens an account with awesome
 
-246
+255
 00:28:01,440 --> 00:28:08,800
 browser games and immediately someone said no they 
 said no the account is much is created much later
 
-247
+256
 00:28:08,800 --> 00:28:15,280
 i know that for a fact but the first person 
 replied no no no no you are wrong this is the
 
-248
+257
 00:28:15,280 --> 00:28:20,320
 first step i know it i know that for a fact this 
 is the first thing that we do we open the account
 
-249
+258
 00:28:23,680 --> 00:28:28,160
 well in the words of martin fowler
 
-250
+259
 00:28:29,760 --> 00:28:35,120
 single conceptual model is a tricky piece to 
 work with and that was what we were trying to
 
-251
+260
 00:28:35,120 --> 00:28:41,520
 do here build a single conceptual model 
 for terms that could not be reconciled
 
-252
+261
 00:28:43,600 --> 00:28:48,320
 so bounded contexts to the rescue what 
 did we do to resolve this situation
 
-253
+262
 00:28:48,880 --> 00:28:56,320
 move on forward well i said okay let's assume 
 for a moment that the first person is right
 
-254
+263
 00:28:56,320 --> 00:29:01,120
 and that the account is open in the first step 
 and then the continued modeling and eventually
 
-255
+264
 00:29:01,120 --> 00:29:06,800
 arrived at uh the step here the step five in the 
 picture where the second person thinks that their
 
-256
+265
 00:29:06,800 --> 00:29:13,120
 account is created and we used different icons 
 to show that we mean different things here so
 
-257
+266
 00:29:13,120 --> 00:29:18,720
 different kinds of accounts possibly and 
 when we talked about it it became evident
 
-258
+267
 00:29:19,520 --> 00:29:29,360
 that one person thought about the account in 
 the context of use user registration and the
 
-259
+268
 00:29:29,360 --> 00:29:36,800
 other person was thinking about accounts in 
 the context of what we call the game management
 
-260
+269
 00:29:36,800 --> 00:29:44,320
 so there are actually two kinds of accounts here 
 one that are per user and the other one is per
 
-261
+270
 00:29:44,320 --> 00:29:49,280
 user and per game so if you play different games 
 you have different accounts one for each game
 
-262
+271
 00:29:50,560 --> 00:29:57,520
 so luckily we had this concept of bounded 
 context that helped us to resolve this issue
 
-263
+272
 00:29:58,320 --> 00:30:04,080
 otherwise i don't think the workshop would 
 have been a success but with this revelation
 
-264
+273
 00:30:05,760 --> 00:30:08,560
 and we could move on forward 
 and had a successful workshop
 
-265
+274
 00:30:09,920 --> 00:30:17,520
 and actually you can use this kind of differences 
 in languages to spot and find and identify
 
-266
+275
 00:30:17,520 --> 00:30:23,280
 bounded context so that's also a way how we use 
 domain storytelling for finding bounded contexts
 
-267
+276
 00:30:25,120 --> 00:30:28,480
 you've you've actually seen 
 another example already
 
-268
+277
 00:30:28,480 --> 00:30:33,680
 where we used bounded context and we remodeled 
 them in a domain story and that was of course the
 
-269
+278
 00:30:34,240 --> 00:30:40,400
 cinema example so again on the left in the 
 course grain story we see in the rectangles
 
-270
+279
 00:30:41,040 --> 00:30:45,520
 different contexts so we have ticket 
 sales and snack sales and entrance control
 
-271
+280
 00:30:46,160 --> 00:30:53,120
 and in the more detailed domain story that story 
 plays within one context within the ticket sales
 
-272
+281
 00:30:53,120 --> 00:30:58,000
 context and of course we want to make sure that 
 within the ticket sales context we have the same
 
-273
+282
 00:30:58,000 --> 00:31:04,400
 idea of the of the terms that are used there 
 so that we need our ubiquitous language right
 
-274
+283
 00:31:07,840 --> 00:31:14,000
 so these are the three things where i think 
 ddd has really influenced domain storytelling
 
-275
+284
 00:31:14,000 --> 00:31:19,840
 and influenced its development and also my 
 personal modeling practices so we have this idea
 
-276
+285
 00:31:19,840 --> 00:31:26,160
 of the model exploration whirlpool a powerful 
 metaphor a bit neglected in the ddd community
 
-277
+286
 00:31:26,160 --> 00:31:34,560
 sadly and we have this this big big community of 
 collaborative modeling that is not only within ddd
 
-278
+287
 00:31:34,560 --> 00:31:38,400
 but also extending to other communities like 
 behavior different development for example
 
-279
+288
 00:31:40,560 --> 00:31:46,160
 and we have this game-changing concept of 
 bounded context so the idea that language
 
-280
+289
 00:31:46,160 --> 00:31:50,960
 and models are bounded by the context 
 that really changed my modeling practices
 
-281
+290
 00:31:53,280 --> 00:31:59,120
 now if you want to know more about domain 
 storytelling go check out domainstorytelling.org
 
-282
+291
 00:31:59,120 --> 00:32:05,200
 you will find my slides on speaker deck and now 
 i'm looking forward for your questions thank you
 
-283
+292
 00:32:07,760 --> 00:32:12,160
 okay thank you very much about dr steven overstory
 
-284
+293
 00:32:12,880 --> 00:32:27,840
 and right now let me see what's 
 question that the participants asked
 
-285
+294
 00:32:29,200 --> 00:32:38,080
 so there are a lot of questions on slido 
 right yeah okay can you see my screen
 
-286
+295
 00:32:39,040 --> 00:32:49,280
 yes i can okay the first question is i saw there 
 is no round trip between each component could you
 
-287
+296
 00:32:49,280 --> 00:32:58,080
 tell us what motivated you to create create this 
 one-way direction to express the message flow
 
-288
+297
 00:33:00,560 --> 00:33:09,840
 so i think this question refers to the roadwork 
 construction example that i gave if i'm correct
 
-289
+298
 00:33:10,720 --> 00:33:18,160
 um yeah so um this is something very 
 typical uh for software developers
 
-290
+299
 00:33:19,120 --> 00:33:29,680
 we often think in this kind of request response a 
 pattern um or yeah or like you you call a method
 
-291
+300
 00:33:29,680 --> 00:33:37,360
 and then you get a return value or something like 
 that i mean um you can use the main storytelling
 
-292
+301
 00:33:37,360 --> 00:33:44,240
 in that way but often i think it's the better 
 idea to to use it to express an intention
 
-293
+302
 00:33:45,520 --> 00:33:50,960
 otherwise the the picture becomes very messy 
 with a lot of back and forth and back and forth
 
-294
+303
 00:33:50,960 --> 00:33:57,520
 and back and forth without really gaining without 
 pushing the story forward so the idea is that you
 
-295
+304
 00:33:57,520 --> 00:34:05,120
 express intention and not necessarily things like 
 um you know you enter something in the system in
 
-296
+305
 00:34:05,120 --> 00:34:10,320
 the web page you press the button and then the 
 web page renders a new html page and then you
 
-297
+306
 00:34:10,320 --> 00:34:15,840
 press the next button and then it renders a new 
 html page this would be very boring that's not a
 
-298
+307
 00:34:15,840 --> 00:34:23,280
 good story there's not a lot of information in it 
 that's that drives the conversation forward um so
 
-299
+308
 00:34:23,280 --> 00:34:29,840
 that's what i want to avoid and i focus more on 
 what is the intention of this step and then it's
 
-300
+309
 00:34:29,840 --> 00:34:38,320
 okay to have just a one-way information flow or 
 one way direction yeah so that's that's the idea
 
-301
+310
 00:34:40,080 --> 00:34:45,040
 okay thank you for your answer and 
 the second question is have you ever
 
-302
+311
 00:34:47,120 --> 00:34:52,560
 have you ever met someone asking about 
 the compression between domestic 12
 
-303
+312
 00:34:52,560 --> 00:34:56,160
 domestory telling and even 
 swarming how do you think about it
 
-304
+313
 00:34:58,400 --> 00:35:03,680
 again that is a very common question and 
 as you saw in the in the slides uh i put
 
-305
+314
 00:35:03,680 --> 00:35:09,120
 one picture of our event stopping session 
 in there that i facilitated so i use both
 
-306
+315
 00:35:10,080 --> 00:35:18,880
 methods plus many more i would say for the last 
 three years or so i've used event storming and
 
-307
+316
 00:35:18,880 --> 00:35:24,800
 domain storytelling about uh to the same 
 amount like 50 50 something like that
 
-308
+317
 00:35:28,240 --> 00:35:34,880
 there is an overlap there are situations where you 
 can use one or the other and will still get a good
 
-309
+318
 00:35:34,880 --> 00:35:40,400
 result out of it but there are also situations 
 where i think one is better than the other and one
 
-310
+319
 00:35:40,400 --> 00:35:50,080
 of the indicators for me is what is this process 
 about or what information are you looking um
 
-311
+320
 00:35:50,080 --> 00:35:57,360
 to to learn what what are interested in if it's 
 about many people collaborating with each other
 
-312
+321
 00:35:57,360 --> 00:36:02,800
 so if you have a business process it involves 
 many people or even many software systems and
 
-313
+322
 00:36:02,800 --> 00:36:07,920
 information goes from one person to the next and 
 back and you're interested in the communication
 
-314
+323
 00:36:07,920 --> 00:36:15,520
 patterns and and learning how people collaborate 
 then i think domain storytelling is the better
 
-315
+324
 00:36:15,520 --> 00:36:20,080
 approach because the story is centered 
 around the the people around the actors
 
-316
+325
 00:36:20,080 --> 00:36:26,560
 and you can really see who is doing what with 
 whom if on the other hand you're more interested
 
-317
+326
 00:36:26,560 --> 00:36:33,360
 in this time series like in in rainstorming you 
 have this timeline from left to right and status
 
-318
+327
 00:36:33,360 --> 00:36:39,520
 changes and this happened better and that happened 
 that happened that event storming is is i think
 
-319
+328
 00:36:39,520 --> 00:36:48,240
 the better approach but as i said um i use i use 
 both there are situations where you can use both
 
-320
+329
 00:36:48,240 --> 00:36:56,720
 and you can also combine it for example in the 
 project that i'm currently working on we started
 
-321
+330
 00:36:56,720 --> 00:37:02,240
 with domain storytelling to figure out the the 
 process that this new software system should build
 
-322
+331
 00:37:02,800 --> 00:37:09,840
 and then the development team decided they want to 
 implement the software using event sourcing so for
 
-323
+332
 00:37:09,840 --> 00:37:17,280
 big picture level we had domain stories and for 
 design level uh for the system design we switched
 
-324
+333
 00:37:17,280 --> 00:37:24,800
 to event streaming because it fits much better to 
 an event-sourced way of building systems there are
 
-325
+334
 00:37:24,800 --> 00:37:31,360
 more ways to combine it i have to refer you to the 
 book for that we have a couple of examples there
 
-326
+335
 00:37:31,920 --> 00:37:42,400
 um yeah so okay thank you very much okay um the 
 first question is can domestory trolling can use
 
-327
+336
 00:37:42,400 --> 00:37:49,840
 as a metastatology or a tool for class design 
 in the implementation of ddd technical design
 
-328
+337
 00:37:54,960 --> 00:37:56,720
 i think there was a follow-up from
 
-329
+338
 00:37:59,600 --> 00:38:03,840
 kim in the in the chat so it depends on different 
 perspective and how much focus you're looking
 
-330
+339
 00:38:04,560 --> 00:38:08,320
 for in time series consequences or 
 the actors relationships yes yes
 
-331
+340
 00:38:08,320 --> 00:38:13,920
 i think that's right that's uh it's a 
 good summary okay now to the next question
 
-332
+341
 00:38:13,920 --> 00:38:20,320
 sorry so can the mentor telling be used as a 
 methodology or tool for class design yes it can
 
-333
+342
 00:38:23,040 --> 00:38:28,160
 the funny thing about it is that domain 
 storytelling well its predecessors are
 
-334
+343
 00:38:28,160 --> 00:38:36,800
 actually rather old so the first ancestor the 
 first predecessor is from the 1990s and it was
 
-335
+344
 00:38:36,800 --> 00:38:45,200
 heavily influenced by object oriented modeling so 
 you can still still see that influence and i think
 
-336
+345
 00:38:45,200 --> 00:38:55,120
 it is suitable as a tool for class modeling when 
 you want an object oriented approach and it also
 
-337
+346
 00:38:55,120 --> 00:39:01,680
 fits nicely into the the ddd thinking because 
 you can look at the work objects and say okay
 
-338
+347
 00:39:02,320 --> 00:39:10,000
 this is going to be either an entity or aggregate 
 or maybe a value object and the arrows that depict
 
-339
+348
 00:39:10,000 --> 00:39:18,080
 the activities well those are the um that is the 
 behavior of the entities and the work objects
 
-340
+349
 00:39:18,720 --> 00:39:28,320
 so um for example in this construction example we 
 had permits and we had hearings and the hearing
 
-341
+350
 00:39:28,320 --> 00:39:35,520
 was started then statements um are considered 
 and these are all the things that later become
 
-342
+351
 00:39:35,520 --> 00:39:42,560
 entities and aggregates so a hearing for example 
 we model the hearing it's an aggregate and and
 
-343
+352
 00:39:42,560 --> 00:39:48,880
 stuff like that so that works um what do you need 
 for that you need to main storytelling that you
 
-344
+353
 00:39:48,880 --> 00:39:53,680
 so you need the main stories that are rather 
 fine-grained so if you're on a very overview
 
-345
+354
 00:39:53,680 --> 00:40:02,400
 level this wouldn't work but if if you model it 
 rather fine-drained then you have enough language
 
-346
+355
 00:40:02,400 --> 00:40:07,280
 and enough expressiveness in the model that 
 you can defer object-oriented design from that
 
-347
+356
 00:40:09,680 --> 00:40:17,520
 okay thank you very much and the next question 
 is domestic trolling as a methodology of
 
-348
+357
 00:40:17,520 --> 00:40:24,320
 implementing ddd what do you think is 
 advantage and what about the disadvantage
 
-349
+358
 00:40:31,200 --> 00:40:38,480
 most of the time i used to mean storytelling 
 as a communication tool and the thing that
 
-350
+359
 00:40:38,480 --> 00:40:43,680
 is apart from what i just explained from that 
 from the previous question with how you can use
 
-351
+360
 00:40:43,680 --> 00:40:51,840
 it to implement it but mostly um i think it's 
 about bringing people people together having
 
-352
+361
 00:40:51,840 --> 00:40:58,720
 meaningful conversations about the domain and 
 that is something that domain storytelling is uh
 
-353
+362
 00:40:58,720 --> 00:41:07,600
 really good at helping with this so this would be 
 the the main advantage and um then you can drive
 
-354
+363
 00:41:07,600 --> 00:41:13,680
 the conversation into different directions for 
 example you can use it to find uh bounded contexts
 
-355
+364
 00:41:13,680 --> 00:41:21,040
 so that would be a typical way of using it uh to 
 implement ddd or you can use it on a lower level
 
-356
+365
 00:41:21,040 --> 00:41:27,440
 um to to come up with object oriented design 
 using entities and aggregates and so on
 
-357
+366
 00:41:29,440 --> 00:41:35,120
 what about disadvantages well i'm a 
 bit biased here of course i really
 
-358
+367
 00:41:35,120 --> 00:41:41,840
 love the main storytelling so it's it's 
 hard to think about disadvantages but
 
-359
+368
 00:41:44,720 --> 00:41:52,560
 now with the feedback okay um but 
 um well maybe let's put it this way
 
-360
+369
 00:41:52,560 --> 00:41:58,800
 it's not the right tool for everything so 
 that's why i always talk about this toolbox
 
-361
+370
 00:41:59,440 --> 00:42:08,720
 and um i've had situations where i thought using 
 this this modeling method is a good idea and
 
-362
+371
 00:42:08,720 --> 00:42:14,720
 then we go into the workshop and it just doesn't 
 work for some reason for for whatever reason and
 
-363
+372
 00:42:14,720 --> 00:42:19,840
 then it's always good if you have this toolbox 
 of other modeling tools and say okay i'm sorry
 
-364
+373
 00:42:19,840 --> 00:42:26,000
 this conversation is not going forward but i 
 have an idea uh let's use for example let's
 
-365
+374
 00:42:26,000 --> 00:42:30,880
 use example mapping to to to figure that out or 
 let's use event storming and then you can switch
 
-366
+375
 00:42:32,000 --> 00:42:37,920
 so um i think this would be a disadvantage like 
 um treating it as a one-size-fits-all tool for
 
-367
+376
 00:42:37,920 --> 00:42:44,800
 every situation that's not going to work you 
 you will need different tools in your toolbox
 
-368
+377
 00:42:48,640 --> 00:42:55,120
 okay and then the next is uh 
 domestic trolling suitable as a ddd
 
-369
+378
 00:42:55,120 --> 00:43:02,080
 implementation necessary complex domain 
 such as the banking or financial industry
 
-370
+379
 00:43:04,800 --> 00:43:07,600
 yes i think so for complex domains
 
-371
+380
 00:43:10,160 --> 00:43:14,400
 my colleagues and i have have used 
 this technique and its predecessors
 
-372
+381
 00:43:14,400 --> 00:43:24,400
 for uh 15 years and we applied it in complex 
 domains like healthcare banking insurance
 
-373
+382
 00:43:28,880 --> 00:43:33,680
 managing ports for example we had stuff like
 
-374
+383
 00:43:35,600 --> 00:43:42,720
 disaster management disaster disaster response 
 teams so a whole lot of different domains
 
-375
+384
 00:43:42,720 --> 00:43:52,160
 logistics of course um e-commerce so it's not 
 really bound to one domain it's really for for
 
-376
+385
 00:43:52,160 --> 00:43:57,440
 pretty much every domain so i have not encountered 
 a domain yet where i say okay this doesn't
 
-377
+386
 00:43:57,440 --> 00:44:04,080
 fit here um yeah so i would definitely to 
 say this is uh usable in complex domains
 
-378
+387
 00:44:06,080 --> 00:44:16,000
 okay thank you for your presentation um have you 
 run into a suitable where one object can either be
 
-379
+388
 00:44:16,000 --> 00:44:26,320
 a working object or an actor in different sequence 
 of one dst image how do we deal with it it's a
 
-380
+389
 00:44:26,320 --> 00:44:37,520
 good question it's already a bit advanced so well 
 within the domain of course it can happen that um
 
-381
+390
 00:44:38,320 --> 00:44:42,560
 in in one domain story something is an 
 actor and in one domain is something is
 
-382
+391
 00:44:42,560 --> 00:44:48,960
 a work object similarly to in in one valid 
 context you can model something as an entity
 
-383
+392
 00:44:48,960 --> 00:44:52,720
 and in the next bounded context it's a 
 value object because it doesn't change
 
-384
+393
 00:44:53,440 --> 00:44:58,320
 so that's possible but this question is 
 about in the same picture in the same domain
 
-385
+394
 00:45:00,800 --> 00:45:09,760
 again this is not a common case but it can 
 happen for example um if we think about
 
-386
+395
 00:45:09,760 --> 00:45:16,160
 something like user management user registration 
 you sign up for something you are the user you're
 
-387
+396
 00:45:16,160 --> 00:45:23,280
 the actor then i'm only as an actor and you open 
 your account and then the system um creates a user
 
-388
+397
 00:45:23,280 --> 00:45:31,200
 as a representation of the of the human being 
 then we have user as an actor and then we have
 
-389
+398
 00:45:31,200 --> 00:45:38,240
 user as a work object with the same picture but 
 that's not a problem at all you just have to use
 
-390
+399
 00:45:38,240 --> 00:45:44,960
 a different icon to represent that so i would use 
 this little stick figure for the for the actor
 
-391
+400
 00:45:44,960 --> 00:45:52,080
 for the person and um for example the icon set 
 that i use that's the google material i can set
 
-392
+401
 00:45:53,200 --> 00:46:00,000
 they have another smaller picture of a user with 
 a little check mark and that's the one that i
 
-393
+402
 00:46:00,000 --> 00:46:09,120
 typically use for stuff like um user account um so 
 that's um that's the way um how i deal with it so
 
-394
+403
 00:46:09,120 --> 00:46:13,840
 use different icons to represent those 
 different concepts and then it works
 
-395
+404
 00:46:19,760 --> 00:46:20,260
 okay
 
-396
+405
 00:46:22,560 --> 00:46:28,880
 as the realization of protons or service 
 product methodology or tool does domain
 
-397
+406
 00:46:28,880 --> 00:46:35,840
 storytelling usually it's a great with to 
 foreign or complete agile development process
 
-398
+407
 00:46:35,840 --> 00:46:42,080
 from requirements analysis to system development
 
-399
+408
 00:46:42,080 --> 00:46:43,840
 uh very nice so um
 
-400
+409
 00:46:47,360 --> 00:46:57,760
 one of the tools of the methods that i use um 
 a lot in combination with domain storytelling
 
-401
+410
 00:46:57,760 --> 00:47:04,560
 is user story mapping. Why? 
 Because of two reasons so
 
-402
+411
 00:47:08,320 --> 00:47:14,640
 domain storytelling is always 
 about scenarios so about typically

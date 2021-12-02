@@ -166,28 +166,23 @@ so what do
 we do we append sentences and we express the order by numbering them 
 so that's how you find your way through the domain story
 now the pictographic language is just one aspect of the main storytelling 
-
 equally if not more important is that it is also a workshop format
 a way of bringing people together 
 and what happens in the minds of the participants of the bookshop 
-is very important so it's the picture is not just 
-it's not the only result 
+is very important so it's the picture is not just it's not the only result 
 also being there being present in the workshop 
 if you miss this campfire experience 
 it's not the same just looking at the result 
 showing the picture to someone who was not at a workshop
-that's not the same as actually being there 
-and contributing to it
-so what do we need for a workshop well
-we need people to tell us a story 
-the story tells and what is a storyteller without someone
-who listens so we need listeners our storytellers are usually the domain experts users stakeholders 
-and our listeners are usually members of a development team 
-business analysts usability experts and so on 
-and often we don't have just one storyteller 
-but we have several storytellers 
-so every role that is involved in a business process 
-can contribute to the story
+that's not the same as actually being there and contributing to it
+so what do we need for a workshop 
+well we need people to tell us a story the story tells 
+and what is a storyteller without someone who listens so we need listeners 
+our storytellers are usually the domain experts, users stakeholders 
+and our listeners are usually members of a development team, 
+business analysts, usability experts and so on.
+and often we don't have just one storyteller but we have several storytellers 
+so every role that is involved in a business process can contribute to the story
 now storytelling is not just a one-way activity 
 it's more of a dialogue of a discussion 
 so storytellers or domain experts are not always born storytellers
@@ -196,118 +191,115 @@ that's where moderator comes comes in handy
 and also the listeners can ask questions 
 to move disturbing forward 
 so typically we would ask what's happening next 
-or how do you know 
-that you have to do this now 
+or how do you know that you have to do this now 
 or where do you get the information from 
-to write it down somewhere 
-and so on so 
-we want the vivid conversation 
-that moves forward and while the story is told 
-it is important that it is also visualized 
-and that's again a job that the moderator has so 
-we visualize the story using the pictographic language 
-while it is told so that gives everyone a chance to see 
-if we understood the story correctly or after any mistakes in it 
+to write it down somewhere and so on 
+
+so we want the vivid conversation that moves forward 
+and while the story is told it is important that it is also visualized 
+and that's again a job that the moderator has 
+so we visualize the story using the pictographic language while it is told 
+so that gives everyone a chance to see if 
+we understood the story correctly or after any mistakes in it 
 so what will happen is that the domain experts 
-so tell us say oh no you missed a step or no 
-that's not what i said i used a different word or 
-can you draw the arrow to can you turn it around 
-this is wrong so this is very available and immediate feedback 
-that we get for that to work 
-everyone needs to be able to see the visualized story 
+so tell us say "oh no you missed a step" or 
+"no that's not what i said i used a different word" or 
+"can you draw the arrow to. can you turn it around this is wrong" 
+so this is very available and immediate feedback that we get 
+for that to work everyone needs to be able to see the visualized story 
 so we use tools for that for example 
 we can use whiteboards and sticky notes 
 or digital blackboards or we could use the tool 
 that uh i used to show you the old work story 
-it's called egon i o it's open source runs in your browser 
-you can check it out econo is also the url now 
-there's a lot more of course to discuss and learn about domain storytelling
-I've written a book about this method
-together with my colleague henning schwentner 
+it's called "Egon.io" it's open source runs in your browser 
+you can check it out egon.io is also the url 
+
+now there's a lot more of course to discuss and learn about domain storytelling
+I've written a book about this method together with my colleague Henning Schwentner 
 so if you are curious go and check out domainstorytelling.org
-you will find all sorts of links there 
-including links to the book 
+you will find all sorts of links there including links to the book 
 and you can even save some money 
 if you buy directly from edison wesley via the informant store
 you can use this component called domain story and get a nice discount
 now how has domain storytelling influenced DDD 
-and how is DDD influenced domain storytelling well so far 
-I haven't really talked about DDD in fact 
-I've barely even talked about software 
-or developing software or modeling software 
-and that is because domain storytelling is a modeling method 
-that helps you to have meaningful conversations about business processes 
-so building software for this processes is just one of many use cases 
-for the main storytelling 
+and how is DDD influenced domain storytelling 
+well so far I haven't really talked about DDD 
+in fact I've barely even talked about software or developing software or modeling software 
+and that is because domain storytelling 
+is a modeling method that helps you to have meaningful conversations about business processes 
+so building software for this processes is just one of many use cases for the main storytelling 
 you could use it to analyze weaknesses and problems 
-or you could use it to help newly hired employees 
-to learn about your business 
+or you could use it to help newly hired employees to learn about your business 
 people do that and you're happy with it
 however I mostly use it in software development projects 
 and there are some projects where I use domain storytelling like this
+
 so I would start with analyzing the domain 
 analyzing the problem spaced as is situation 
 modeling it together with the domain experts 
 so we get a couple of domain stories out from that 
-that is something that we can learn from get feedback 
-from we used it as a basis 
-to design a new improved process software supported process 
+that is something that we can learn from get feedback from 
+we used it as a basis to design a new improved process software supported process 
 we model that with to be domain stories that show us the future situation 
 again we get feedback from that 
-we use that to derive requirements on a course grade 
-or a medium grade level 
+we use that to derive requirements 
+on a course grade or a medium grade level 
 for example user stories or use cases 
 and again we get feedback on those requirements 
-and then we build software and of course 
-we develop it iteratively and incrementally 
-that means we only take a couple of those requirements 
-and refine them and when you go to the next sprint iteration 
+
+and then we build software and of course we develop it iteratively and incrementally 
+that means we only take a couple of those requirements and refine them 
+and when you go to the next sprint iteration 
 we take another set of requirements and refine them 
 so it's a constant process of refinement 
 now this process is or this description of software development is not entirely wrong 
 but it's certainly not completely right 
 it's it's a bit too waterfally for me 
 and that changed with the main driven design
-in more and more of my projects 
-I get to use DDD and Eric Evans provided his own metaphor 
-for the software development cycle 
-and that metaphor is the model exploration whirlpool and it looks like that
+in more and more of my projects I get to use DDD 
+and Eric Evans provided his own metaphor for the software development cycle 
+and that metaphor is the model exploration whirlpool 
+and it looks like that
 so the whirlpool metaphor suggests 
-that there are interconnected cycles of storytelling modeling 
-and coding and it is about learning and about making mistakes 
-so we have activities that focus on housing and documenting scenarios 
-and modeling them telling stories walking through them 
-refocus proposing models explore the language 
-and take those models turn them into code learn 
-from that experiment then go back to your scenarios
+that there are interconnected cycles of storytelling modeling and coding 
+and it is about learning and about making mistakes 
+so we have activities that focus on housing and documenting, 
+scenarios and modeling them,  telling stories, walking through them refocus 
+proposing models explore the language 
+and take those models turn them into code 
+to learn from that experiment then go back to your scenarios
 and model more scenarios and other cases and so on 
-so it's this constant whirlpool 
-I think this model captures much better 
-what is actually going on in a DDD style development project 
-on the other hand 
-this model is not as neat as the one i showed you before
-it looks a bit messy and maybe that is the reason 
-why this metaphor is often neglected 
-when people talk about DDD yet 
-I think the more 
-the more I think about it the more I reflect on it 
-the more powerful this metaphor becomes for me 
-and I mean it's easy to see that when you highlight 
-how often the term scenario or story appears in the in the whirlpool 
-that there's a connection to the main storytelling so for me domain storytelling fills this gap of 
+so it's this constant whirlpool
+
+I think this model captures much better what is actually going on 
+in a DDD style development project 
+on the other hand this model is not as neat as the one i showed you before
+it looks a bit messy 
+and maybe that is the reason why this metaphor is often neglected 
+when people talk about DDD 
+yet I think the more 
+the more I think about it the more I reflect on it the more powerful this metaphor becomes for me 
+and I mean it's easy to see that 
+
+when you highlight how often the term scenario or story appears 
+in the in the whirlpool that there's a connection to the main storytelling 
+so for me domain storytelling fills this gap of 
 how to actually gather my my scenarios 
 how do I model them but 
 how to return them how bring 
 how do I bring them closer to developing software
-So that's a way that domain storytelling can help with 
-this model exploration whirlpool makes it more tangible 
+
+So that's a way that domain storytelling can help with this model exploration whirlpool makes it more tangible 
 but it also had an influence on domain storytelling 
-because it helps me to better understand 
-how to integrate the main storytelling into the domain driven design process 
+because it helps me to better understand how to integrate 
+the main storytelling into the domain driven design process 
 and it helps me to choose the right scope for a story 
-so which level of granularity am I interested in am I analyzing the current process 
+so which level of granularity am I interested in 
+am I analyzing the current process 
 or am I deciding a new process and so on
-so I think this is very helpful for that for choosing the right scope of a story
+so I think this is very helpful for that 
+for choosing the right scope of a story
+
 now the second aspect that has influenced the main storytelling 
 and the development of the method is collaborative modeling
 before I became a DDD practitioner and a DDD coach 
@@ -638,4 +630,4 @@ uh very nice so um
 one of the tools of the methods 
 that I use um a lot in combination with domain storytelling
 is user story mapping why because of two reasons so
-domain storytelling is always about scenarios so about typically  
+domain storytelling is always about scenarios so about typically

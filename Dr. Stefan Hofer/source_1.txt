@@ -426,7 +426,7 @@ that really changed my modeling practices
 now if you want to know more about domain storytelling 
 go check out domainstorytelling.org 
 you will find my slides on speaker deck 
-and now I'm looking forward for your questions, thank you
+and now I'm looking forward for your questions, thank you.
 
 Okay thank you very much about Dr. Stefan Hofer's sharing.
 and right now let me see what's question that the participants asked
@@ -467,10 +467,10 @@ and as you saw in the in the slides uh I put
 one picture of our event stopping session in there 
 that I facilitated so I use both methods plus many more 
 I would say for the last three years or 
-so i've used event storming and domain storytelling about uh to the same amount like 50 50 something like that
+so I've used event storming and domain storytelling about uh to the same amount like 50 50 something like that
 there is an overlap there are situations 
 where you can use one or the other and will still get a good result out of it 
-but there are also situations where i think one is better than the other 
+but there are also situations where I think one is better than the other 
 and one of the indicators for me is 
 what is this process about or 
 what information are you looking um to to learn 
@@ -487,17 +487,17 @@ on the other hand
 you're more interested in this time series like in in rainstorming 
 you have this timeline from left to right and status changes 
 and this happened better and that happened that happened that 
-event storming is is i think the better approach 
-but as i said um 
-i use i use both there are situations 
+event storming is is I think the better approach 
+but as I said um 
+I use I use both there are situations 
 where you can use both and you can also combine it 
-for example in the project that i'm currently working on 
+for example in the project that I'm currently working on 
 we started with domain storytelling to figure out the the process 
 that this new software system should build and then the development team decided 
 they want to implement the software using event sourcing 
 so for big picture level we had domain stories and for design level uh for the system design 
 we switched to event streaming because it fits much better to an event-sourced way of building systems 
-there are more ways to combine it i have to refer you to the book for 
+there are more ways to combine it I have to refer you to the book for 
 that we have a couple of examples there 
 um yeah 
 so okay thank you very much 
@@ -506,7 +506,7 @@ or a tool for class design in the implementation of ddd technical design
 I think there was a follow-up from kim in the in the chat 
 so it depends on different perspective and how much focus you're looking for 
 in time series consequences or the actors relationships 
-yes yes i think that's right that's uh it's a good summary 
+yes yes I think that's right that's uh it's a good summary 
 okay now to the next question sorry so can the mentor telling be used as a methodology or tool for class design 
 yes it can
 the funny thing about it is that 
@@ -514,7 +514,7 @@ domain storytelling well its predecessors are actually rather old
 so the first ancestor the first predecessor is from the 1990s 
 and it was heavily influenced by object oriented modeling 
 so you can still still see that influence 
-and i think it is suitable as a tool for class modeling 
+and I think it is suitable as a tool for class modeling 
 when you want an object oriented approach 
 and it also fits nicely into the the ddd thinking 
 because you can look at the work objects and say okay 
@@ -534,9 +534,9 @@ okay thank you very much
 and the next question is domestic trolling as a methodology of implementing ddd 
 what do you think is advantage and what about the disadvantage
 most of the time I used to mean storytelling as a communication tool 
-and the thing that is apart from what i just explained from that 
+and the thing that is apart from what I just explained from that 
 from the previous question with how you can use it to implement it 
-but mostly um i think it's about bringing people people together 
+but mostly um I think it's about bringing people people together 
 having meaningful conversations about the domain and 
 that is something that domain storytelling is uh really good at helping with this 
 so this would be the the main advantage 
@@ -551,23 +551,23 @@ so it's it's hard to think about disadvantages
 but now with the feedback okay um but um well maybe let's put it this way 
 it's not the right tool for everything 
 so that's why I always talk about this toolbox 
-and um i've had situations where i thought using this 
+and um I've had situations where I thought using this 
 this modeling method is a good idea and then we go into the workshop 
 and it just doesn't work for some reason for for whatever reason 
 and then it's always good if you have this toolbox of other modeling tools 
-and say okay i'm sorry this conversation is not going forward 
-but i have an idea uh 
+and say okay I'm sorry this conversation is not going forward 
+but I have an idea uh 
 let's use for example 
 let's use example mapping to to to figure that out or 
 let's use event storming and then 
-you can switch so um i think this would be a disadvantage like um 
+you can switch so um I think this would be a disadvantage like um 
 treating it as a one-size-fits-all tool for every situation 
 that's not going to work you you will need different tools in your toolbox
 okay and then the next is uh 
 domestic trolling suitable as a DDD implementation necessary complex domain 
 such as the banking or financial industry
 yes I think so for complex domains
-my colleagues and i have have used this technique 
+my colleagues and I have have used this technique 
 and its predecessors for uh 15 years 
 and we applied it in complex domains like healthcare banking insurance managing ports 
 for example we had stuff like disaster management disaster disaster response teams 
@@ -575,8 +575,8 @@ so a whole lot of different domains logistics
 of course um e-commerce 
 so it's not really bound to one domain 
 it's really for for pretty much every domain 
-so i have not encountered a domain yet where i say okay this doesn't fit here um yeah 
-so i would definitely to say this is uh usable in complex domains 
+so I have not encountered a domain yet where I say okay this doesn't fit here um yeah 
+so I would definitely to say this is uh usable in complex domains 
 okay thank you for your presentation 
 um have you run into a suitable 
 where one object can either be a working object or an actor in different sequence of one 
@@ -598,9 +598,9 @@ and then the system um creates a user as a representation of the of the human be
 then we have user as an actor and then we have user as a work object with the same picture 
 but that's not a problem at all you just have to use a different icon to represent that 
 so I would use this little stick figure for the for the actor for the person and um 
-for example the icon set that i use that's the google material 
+for example the icon set that I use that's the google material 
 I can set they have another smaller picture of a user with a little check mark 
-and that's the one that i typically use for stuff like um user account um so that's um 
+and that's the one that I typically use for stuff like um user account um so that's um 
 that's the way um how I deal with it 
 so use different icons to represent those different concepts and then it works
 okay

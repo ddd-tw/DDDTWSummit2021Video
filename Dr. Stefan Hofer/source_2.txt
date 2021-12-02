@@ -1,0 +1,703 @@
+Thompson Station Hobart
+Indiana lockdown
+John Cena Logo
+Stephen Colbert
+No it does take a note 10 plus
+Hello Taiwan
+My name is Jeff and Hoover
+And I love a good story
+To imagine
+It is 20000 years ago
+Listen to middle of winter
+And the tribe of tastes people sit around a won't fire
+It is quiet except for the cracking firewood
+Did one of the elders Christian throat
+Many summers ago
+A lot of Pies on the Wonder through our hunting grounds
+Across the largest heard that anyone had ever seen
+And as to Elda she has a story one of the People starts to use colorful rocks and coal
+To paint a picture
+And to this everyday
+We can see this picture in the capable
+Innocence that is what we want to do with the main storytelling
+Columbus Park of Fire
+Tell a story and paint a picture
+Storytelling is at the heart of human communication
+And it still works and HR software
+Main storytelling is one of the techniques that brings domain experts
+Put up Elmo's business analyst in software development teams together
+It helps them to overcome misunderstandings
+Interested, language to helps you to talk about business processes and requirements
+French short built better business software
+Today I'm going to introduce you to domain storytelling by showing you a short stay mode
+Tenable explain the method and finally I will tell you a little bit about the influence that.
+Fidgety head-on
+How to make storytelling and maybe also the inference that
+DDS
+DDD and its community
+So I will tell you another story
+This time it is about a softer system
+That my colleagues and I built a couple of years
+I go
+It's a softer system that was
+Supposed to help approve road work
+So what happened was with a group of stakeholders and they already had a set of requirements
+Just had all the system must support issuing permits
+Enthesitis system must support hearings and we need support and reviewing applications and
+Many more use cases
+So the problem was that we didn't really understand how old is
+Isolated requirements make up a whole software system 44 proofing rotruck we hadn't really understood
+Basic business processes behind it
+So how does
+Approving vote that typically work
+Pickles two questions
+That we asked our domain experts from reporting together in a room
+And in front of whiteboard
+And Tim just as the story to told us
+Sol Construction Company
+Has Walnut tender for a whole book project
+Before they can start still need to obtain a permit so that they can close the road to traffic
+Soda story
+Starts with the project supervisor at what's the contract to the construction company
+And then they can submit application for the permit using this new software system that we were supposed to build
+Now the stakeholders told us that the project supervisor should be notified whenever you
+Application comes in because they need to leave your application and compare it
+With the tender documents and we didn't understand that requirement at first
+And they explained why Latham Dikembe flick sample different dates in
+Application then independent documents if for example the
+A construction company and doesn't have the necessary resources or maybe the weather has trained
+Then they need to delay the construction work and that's why dates quotes differ
+Indication for the permit and independent documents
+So once the application is a Butte
+Another role comes into play a traffic Authority
+They dropped the permit
+And stay determined the concerned authorities for a hearing
+So concerned authorities
+Those are for example police communities public transport everyone who could be affected by construct
+Auction site and think it a link to the hearing documents
+And can review their permit
+And they can submit statements what is a attitude okay or they can raise concerns
+Maybe there's another phone plans or something like that would have some influence on their
+So the testicles are with you then consider these statements and issues to permit
+And the permit has been sent to the construction company
+Not this whole healing process here and drafting the
+Permit
+And revising the draft considering statements made by the concerned authorities
+That is something that can be repeated several times
+I'm Puttin this story block that I happy path scenario so everything is fine
+The first draft becomes 25 permit
+Anthem
+This is often typical
+A way of using domain storytelling we start with a Happy Paws and then later look into
+I'm more complicated
+Variations of the process
+So this little story and visualizing that stories helped us to understand
+Much more detail
+I'm watched assistant was supposed to do
+And this is one of the typical cases for using the main storytelling to think about
+Ubisoft assistance and how they shoot
+Supportassist process
+How does this method work
+Many people especially software developers tend to think about
+Business processes and visualize business processes like this
+S
+Radha abstract
+But
+Complete description of everything that could possibly happen
+So it's about
+Different Pops in one picture
+But the main story telling me choose a different approach
+Do you think that a good example
+It's better than a badass traction so we won't examples first and from that Knowledge from the temptation
+Lace-up.
+Spectrum signal software
+So usually usually sufficient tomorrow to or three of the most important persons after business process so they happy
+Even important Iration well come on Everson
+So we look at individual house
+And
+Therefore we don't need any
+Any gateways or switches or it's okay statements and I'll pictographic language
+Nevermind stove is connected from Scopes
+I just needed a shoulder about the construction site was
+I would say about medium on a medium level of detail
+To give you some more idea how to Main Service can can look
+How would you say to another example
+This time it's about a movie theater
+So on left side with c
+The process of going to the movies
+So this is
+End-to-end business process
+From the customers point of view
+We have a moviegoer here
+To buy a ticket
+Soma Kesha and then you buy snacks and drinks from a concession stand and it showed a ticket to
+To get access to the movie theater and Swan
+On the right side we see a much more detailed
+Picture
+Chelsea just OB
+Buying tickets with a movie go up
+Cool
+Exceeds and Tobias for the tickets and 21
+So tight buy tickets one-step in cross-grain story on the left
+And it's not a whole story on its own and then we'll teach her story on the right
+That's just
+One Way Out
+Illustrating different scopes of stories
+Don't know Melody level of detail the scope of the story you always need a pictographic language
+Two people Isaac
+So our pictographic language is
+Comprised of
+Set of symbols
+So weird actors
+The person
+People are the subsystems
+Who asked for the stormy who do things
+And fifth look up shirts
+Those are the things that they use
+Canby Mason physical things
+Dick Trickle objects
+With activities
+Deepika caseros
+A textual invitation
+How to get dos
+I can secrete meaning we label them
+So whatever customer tickets by since 1
+And if you look at the picture graphic language in a little bit more detail
+We can have foot simple different access to most commonly
+Single person group of people system but depending on the domain that you're in you can
+Changing a set of symbols
+For example I did a couple of two main service in
+How about the main ships and pork neck to stand that has little ship item that represents
+Battleship
+The same is true for the book upstairs
+We also use different I can stare
+What's comalito
+Expressive medium of a backup track
+Tupac sampled
+I called the cashier in the Box Office of the cinema and ask about reservation for
+A movie tonight
+Instant Hotel draw this with our telephone
+Item
+If they didn't sent me a reservation as an email I will use to seem like him
+And if I decide to Prince the reservation at home I will use the document.
+Recette pictographic language
+We can build sentences
+Anti-theist
+The sentence
+In the pictographic language reads almost like
+You would write a natural
+Language sentence
+How to tell a story we have cost more than one sentence so what do we do
+Penned sentences
+Andre Express to order a number Indian
+So that's how you find your way to the main story
+Touted pictographic language is just one aspect of the main storytelling
+Equally if not more important is that it is also a workshop
+We're speaking people together
+Happens in the minds of two participants of the Bookshop
+I'm just very important so it's the picture Snapchat
+It's not the only result
+Also being there being present in the workshop
+Euphemistic campfire experience it's not the same just looking at the result
+Showing picture to someone who was not at the Bookshop that's not the same as actually being there contributing to it
+So what do we need for Workshop well we need people to tell us a story.
+And what is a Storyteller without someone who listens
+You need to listen us
+I'll stay hotels are usually the domain experts
+Uses
+Stakeholders
+And I'll listen to say usually members of a development team
+I'm business analysts
+Usability experts in Suwanee
+And often we don't have just one Storyteller but we're supposed to tell so every road is involved in a business
+Process can contribute to the story
+Storytelling is not just
+One-way activity
+It's more of a dialogue of a discussion
+So
+Stamatelos what domain experts are not ogres born storytellers
+So they didn't even go help that's what motivated comes
+Comes in handy and also to listeners can
+Ask questions to move to still before but
+So typically we would ask
+What's happening next
+Well how do you know that you have to do this now
+Where'd you get your information from
+Strong budget down somewhere
+And Salon
+So we don't have a conversation that moves or what
+And while the story is told it is important that it is also visualized
+Chocolate
+Motivator
+Has
+So we visualize the story using the pictographic language
+While it is told
+Everyone a chance to see if
+We understood the story correctly or any mistakes
+So what will happen is that the domain experts so tell us a Ono you missed a step
+Oh no that's not what I said I used two different word or can you draw the arrow to kill tonight around
+This is wrong
+So this is available and immediate feedback
+For that to work everyone needs to be able to see the
+The Last Story
+So we use tools for that for example we can use
+Whiteboards and sticky notes or digital blackboards
+Or we could use
+The tool that I used to show you the
+Holbrook story is called Egan IO its open-source Ramsey new browser
+Check it out you can dial salsa de UL
+Now that's a lot more of course to discuss and learn about the main storytelling
+African a book about this semester together with my colleague heading shrimp
+So if you are curious go and check out stomach still attending. Org you will find
+All sorts of things to include links to the book and you can even save some money if your part directly from
+We had an informant store
+Can use this coupon code to main story get an ice disc
+How has
+Domain storytelling
+Insensitivity and how is t2d influence domain storytelling
+So far I haven't really talked about
+DDD
+Success
+Belly from top to bottom
+Software development software modeling software
+And that is because domain storytelling
+It's a mothering mess with that helps you to have meaningful conversations about business processes
+The billing software for this process is just one of many use cases for the Main Street
+You could use it to enter last weaknesses and problems or you could use it to help newly hired employees to learn about
+Business
+People do that
+And you're happy with it
+However I mostly use it in software development projects
+And there are some portraits we're used to make storytelling like this
+So I would stop with analyzing
+But the main analyzing the problem space to is is
+Situation
+Modeling it together with the domain experts to get a couple of the main stories out from that
+It is something that we can learn from Conceited from
+Can you sit as a basis to design a new windproof process software supported process
+The model that was to be two main service that shows the future situation
+I didn't forget seat back from that
+Are you set to dehart requirements
+Coarse grained remedium quaint level Forks a user stories
+Are use cases
+Anna Kendrick
+Requirements
+And thank you both software and tacos with development attractively in its mentally
+That means we only take a couple of those requirements and refine them
+And Anna go to next Sprint activation will take another set of requirements and refine them so
+It's a constant process of
+Refinement
+That this process is what is description of of software development
+It's not entirely wrong but it's certainly not completely right
+It sucks
+To Walter for me for me and that changed with the main room design
+Mon mothma portraits I get to use dd&a Kevin's provided his own metaphor for the song
+Software development cycle
+That metaphor is the model exploration whirlpool and it looks like that
+Soda volt pool metaphor suggests that there are interconnected cycles of Storytelling
+Modeling and coding
+And it's about learning and about making mistakes
+So we have activities that focus on housing and documenting scenarios and
+Modeling time telling stories
+Booking through them refocus
+Posing models Exploder language
+Handsome
+Take those models turned into cold learn from that experiment then go back to your scenarios and
+Modern War scenarios and other cases and so on
+What does constant whirlpool
+I think this mobile captures much better but it's actually going on
+And DDD style development project
+Ariana anstice model is not as neat as 21-02 before it's looks a bit messy
+And maybe that is the reason why this mess metaphor is often
+Neglected when people talk about DDD
+I think the more
+The more I think about it tomorrow reflects a little more powerful this metaphor becomes for me
+And I mean it's easy to see
+That
+Can you highlight how often the term scenario still reappears
+In the whirlpool
+That there's a connection to domain storytelling
+So for me
+Tomato telling feels to step of how to actually
+Gotta
+My my scenarios how do I model them
+How to return them
+Hoping to bring them closer to developing software
+So that's a way that students Hotel you can help with this more exploration Whirlpool makes it more
+Tangible
+But it also the influence on domain storytelling
+Because it helps me to better understand how to integrate
+Donate storytelling into that domain driven design process
+And it helps me to choose the right
+Scope for Stoney so which level of penalty am I interested in
+I'm analyzing the process or deciding a new process and so on
+So I think this is very helpful for that
+Choosing the right scope of a story
+As aspect that
+Has influence the main storytelling and development of the method is collaborative modeling
+Before became a DDD practitioner
+Coach
+I was active in the academic modeling community
+And a soft one Enterprise architecture communities
+At the end of the climate Center even community
+And I always felt a bit like an outsider
+And one of two reasons
+Why does is different if the DVD Community is that DDD practitioners
+Realize the value of collaborative modeling
+While I had felt it for some time will it became evident to me
+Ads
+Exploded Edie conference in the US
+Pepolino Drew this picture
+Petros collaborative modeling is one of the most important concepts of tdd
+Pillows
+But I felt it for some
+Time that
+Clematis modeling is
+Important pillar of
+DDD
+I think that many people use it synonymously with a brainstorming everything's okay
+So I use events coming to hear you see my colleagues
+The big picture brainstorming session
+How some of my colleagues
+And I think of it as
+I have a molding tool box
+And Industry Pakistan several tools
+Bike event storming and domain storytelling
+And
+I think that
+Many projects you will have to use more than one modeling method
+And you definitely have an advantage if disabled Tools in your toolbox and you know how to choose
+Between those tools invented to switch to it will increase your chances of success
+No thinking of it as a toolbox is
+One way of seeing it
+But I think Lotus modeling could also be described as a family of Networks
+Different relationships between them
+And
+The more I became experience 50dd dimora looked at
+A collaborative molding has his family
+So in my mind
+I would say that
+I now see software development as a series of conversations
+Edith by modeling
+With different
+Members of declarative modeling
+Family
+I'm the community behind those methods or tools they started to write a book
+Call temperature Club
+Correction tools book you can find it on ringtone
+Download it come down
+So this is a really thriving community
+And it's great to see that
+This family is ever expanding and to see new connections made between two stools
+So this is definitely something that I'm has influenced me a lot
+Notify no fault I want to share with you today is
+One of the most important concepts of Thinkin DDD and get us to the language and models abound
+Context
+What is Australian iopener
+I mean
+What's
+Can mean different things to different people right
+So
+Please make those people work in the same organization to might have different ideas
+For example in a movie theater
+What could stick at mean
+So for one person it could be a syllable unit
+Degenerates a prophet
+And for the other person to come in a piece of paper that is Savella dated in order to Grant access to a movie theater
+So if you look at the score screen to the main story from before again
+Cassia might think of the ticket is something that they sell at this price and so on
+Usher well they're not really interested in the price they're just checking if it's the right State and time let movie in Sindhi
+Texas
+So
+The both
+Say tickets bottom indifferent
+Concepts Hindi mean ticket
+Have this will often happen in
+Call screens domain stories are also a collective modeling techniques that stakeholders
+Used to sing transit mean exactly the same thing
+This is not necessarily a problem
+Especially in this course clean up
+But
+I want to show you an example where Julie was a problem for me
+I'm too moderate the
+The mother exception
+Because it was immediate problem
+Bed
+Luckily I could resolve with the help of found a contacts
+So this is yet another domain that tell me about
+The time is
+Pictures company called awesome browser games
+A company that provides a platform for playing browser games
+But it's based on a true story
+So in the workshop in his Workshop pick a different people from different departments together
+Terminix bug software Developers
+And while we wanted to stop at for clothes screen to main story
+That shows us an end-to-end process of first-time user science app
+Place the first game gets billed for
+So someone stopping and see while the first step is that the user opens an account with some browser games
+And immediately someone said no
+Does a note that count as much as great as much later I know that for a fact
+But the first person replied no no no no no
+You are welcome
+This is the first step I know it I know that for a fact this is the first thing that we do they open the account
+Well
+The words of Martin Fowler
+A single conceptual model is tricky piece to work with
+Decals for trying to do a build a single conceptual model
+Terms that cannot be reconciled
+So bounded contexts due to the rescue what did we do to resolve the situation
+Come forward
+But I said okay let's assume for a moment that
+The first person is right and that's the account is open in the first step and then be continued modeling
+And eventually arrived at just stepped your distant far from the picture
+But the second person thinks that the account is created
+And we used to different items
+To show that
+Women different things are so different kinds of accounts possibly
+And when we talked about it it became evident
+Bad
+One person
+Thought about
+The account in a context of user user registration
+And the other person
+I was thinking about accounts in a context of
+Game management
+So that actually two kinds of accounts here
+Wounded
+User display use a game so if you play different
+Games with different accounts one feeds game
+So luckily we had status
+Concept of bounded contacts that help us to resolve this issue otherwise I don't think
+They looked up with a peanut success but with this
+Revelation 14
+And actually you can use this kind of differences languages
+To spot and find the identify bounded context so that's also way
+How we used to maintain contacts
+If you have to actually seeing another example already we used found context and Vivian mobile.
+Send me the story of caustic
+Cinema example
+So then on the left in the crosswind story receive in the rectangles
+I'm Different contacts
+So if ticket sales next 1000
+And the more detailed adamant story
+That story place within one context within the ticket sales context and of course we want to make sure that would
+In the ticket sales context
+We have to say Madea
+I'll start times today used there so
+That we need all ubiquitous language
+So these are the three things where I think DDS within influence domain storytelling
+Influenced its development and also
+My personal modeling practice
+So we have to City of the mobile exploration whirlpool
+Powerful metaphor
+Neglected in the DD Community Saturday
+And with this spectacle community of collaborative modeling
+That is
+But only within DDD but also extending to other communities like behavioral development for example
+And we have to
+Game-changing concept of
+Found a context to the Adidas language remodels abounded by the contacts
+Will you change my modeling practice
+If you want to know more about stuman storytelling go check out to my store today.
+Will find my stats on speaker.
+And now I'm looking forward
+Questions
+Thank you
+Okay thank you very much about touch-ups taken over story
+Siderite
+Okay can you see my screen
+Okay the first question is
+A song There Is No round trip between each component
+Could you tell us what motivated you to do
+Created created this one-way direction to his Crush
+Message flow
+I think this question refers to the
+Examples of the case it's not sound correct
+So
+This is something that is typical of for software Developers
+We often sing in this kind of request response
+Tatem
+Well you would like you you call the message and then you get a return with you
+Do something like that
+You can use the main storytelling in that way but I think it's the better
+I did too
+To use it to express an intention
+Otherwise the picture becomes very messy with a lot of back and forth and back and forth and tickets
+Without communicating without pushing the story forward
+So that idea is that you express intention
+And not necessarily things like
+You know you ain't the something in the system in the Backpage to press the button and then the webpage randerson UHD
+When you press the next button
+Then it rained Us in uht milk a very boring that's not that's not a lot of
+Information in its b b drives the conversation forward
+So that's what I want to avoid and a focus more on
+What is the intention of is that it's okay to have just one way information flow
+Direction
+Guardian
+Okay thank you for your answer
+Second question is
+Have you ever met someone asking about the compression between domestic travel
+Think about it
+Question-and-answer solid the slides football pictures
+I've been smoking Session India
+Precipitated
+Do you spoof
+Plus many more
+I would say for the last
+The same amount like 50 50 something like that
+That is an overlap there are situations where can you use one or the other and we'll still
+Get a good result out of it
+But they're also situations where I think one is better than the other and one of the
+Indicators for me is what is this process about or what information
+Are you looking to to learn but what I interested in
+If it's about many people collaborating with each other so if you have a business process today rules
+Many people on East medisoft assistants and information goes to one person to the next and back
+And you're interested in the communication patterns and loading how people collaborate
+Been a thing domain storytelling rooster better approach because it destroys Center.
+People are going to extras
+And you can we go see who is doing what
+It's on the other hand if you're more interested in this time series like nothing in the rain storm timeline
+From left to right
+Status changes and just getting better and better and better
+Event storming
+But this is it
+Are you are you supposed to use
+Both
+And you can also combine it
+For example in in the perfect that I'm currently working on Vista
+David wisdom in storytelling to figure out the process that this new software system should build
+And then the development team decided they want to implement the software using event sourcing
+So for Big Picture level with domain stories and 40 sign Rebel
+For the system design we switched to events forming because it's much better to an event
+Inconsistent
+Their MO is to combine it's a Subaru for you to be booked for that
+With a couple of examples
+Okay is there is question is
+Cantonment
+Or a tool design in the examination of EDD technical design
+I think there was a follow-up from
+Gym in the in the chat so depends on different perspective and how much you're looking
+Funtime serious consequences zodiac relationship status
+Chicken sandwich
+Fastest time
+Yusuf
+The funny thing about it is that the midst of it telling its predecessors are actually rather
+So that the first
+Ancestor the first Pig accessories from the 1990s
+And it was heavily influenced by object-oriented modeling
+So you can seal still see that influence and I think it is
+Suitable
+It's a tool for class modeling when you weren't an object oriented approach
+And it also fits nicely into the digital thinking because you can look at the world
+Objection Pilkey
+This is going to be at an entity or at your gate or baby and very upset
+Empty Aerosmith's depict activities
+Well those are the
+Behavior
+So what's ample construction example we had
+Permits and we had hearing and the hearing was started and statements
+I'll consider it
+And he's all just takes the bait that become entities than Aggregates hearing flip sample beat
+The hearing is an aggregate
+And and and stuff like that so that was what do you need for that you need to me
+Make storytelling you need to make service that are out of fine-grained
+But if you're not a very overview level this wouldn't work
+But if you mostly try to find range
+Then you have enough language and expressiveness in the model
+If you can before tickling touch this time
+Okay thank you very much
+And the next question is
+Mystery trolling employment in DVD
+What do you think it is at advantage
+And
+Disadvantage
+Most of the time Houston in storytelling as a communication tool
+And the think that is
+Apostle motortrust explained from there for the previous question with how you can use it to implemented
+But mostly I think it's about bringing people people together
+Having meaningful conversations about the domain and that is something that to domain storytelling
+Really good at helping with this
+So this would be the main advantage
+And
+Then you can drive the conversation two different directions for example you can use it to find
+Obama contacts that would be a typical by fusing it to implement EDD
+Or you can use it on a lower level
+Design using energy saver Gibson's one
+What about disadvantage ships well I'm a bit biased your clothes everyday
+Ostomy storytelling so
+It's a time to think about this advantages but
+Box
+Maybe just put it this week
+It's not the right tool for everything
+So that's why I always talked about his toolbox
+End
+I've had situations where
+I thought you said this mother is a good idea and then we go into the workshop and it just doesn't work
+For some reason for for whatever reason and then it's always good if your stool box of other modeling tools
+Okay I'm sorry this conversation is not going forward but I have an idea let's use for example
+Complimenting 222 figured it out oil let's use events for me and then you can switch
+So I think this will be a disadvantage like tweeting it is a one-size-fits-all tools4ever
+Situation that's not going to work
+You evil
+It's different stool to get to Bucks
+Okay
+DDD implementation
+Such as in a banking
+Aura financial industry
+Cocoaplex domains
+My colleagues and I have refused to stick meat and its predecessors for
+Complex domains like healthcare banking insurance
+Meditrim ports for sample stuff like
+Disaster management disaster Disaster Response teams so
+A whole lot of different domains Logistics of course
+E-commerce
+So it's not really
+Bounce 21 domain 2344 pretty much every domain
+So I guess nothing counted adomania twice LP dispersant picture
+So I would stay true to say this is musically complex to me
+Okay thank you
+Orientation
+How do you run into a football player one object can either be a working object
+Oregon indifference sequence of 1pst image
+How do we deal with it
+Advanced
+So
+Weather
+What day does the name of course it can happen that
+In Wonderland story something is an external in wonderment service something is the workup check
+Similarly two-in-one Bobbitt contact you can model something is an entity
+And in the next round of context it's a video check because he doesn't change
+So if it's possible but this question is about in the same picture in the same room easily
+Again
+For example if we think about something like
+Use a management user registration you sign up for something you other user your than actor them
+And you open your account
+And then the system creates a user as a representation of the
+Human being
+Then we have
+User as an extra antenna web user is a work of check to the same picture
+Another problem at all to use a different I can
+To hit the sense that
+So I would use this to stick figure for the for the extra for the person
+And f*** somebody I can set that I use it's the Google material I can set
+They have another smaller picture of a diffuser before the check mark
+And it's the one that I typically use for stuff like user account
+Batman
+So that's that's the way how I deal with it so you stiffen icons to represent those two
+Different concepts
+Infinity Wars
+Okay
+Oster realization of protaras or service
+Astrology or 20 that's domain storytelling usually it's just great
+Crystal form or complete angel
+Evo payments process
+Requirements to system development
+So
+One of the
+Tools of the methods that are used a lot in combination with
+Domain storytelling
+Is user story mapping
+Why
+Because of two reasons so
+Always about
+Cenarios do about typical

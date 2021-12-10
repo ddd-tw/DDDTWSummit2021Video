@@ -1,0 +1,371 @@
+[02:02]
+Thank you, 
+
+Yes, 
+
+So unfortunately Evelyn couldn't be here today, and while I'm start talking.
+
+I'll start to share my screen. 
+
+So yes, Evelyn is struck ill this morning, 
+so unfortunately she cannot come.
+
+So uh all the best uh to her and um let me get the chat up as well.
+
+So if you have questions or comments during this talk you can.
+
+I'll see the chat and maybe I can react to it.
+
+So today will be a talk about autonomy is that what we really want, 
+and I'm really humbled to be back at ddd taiwan for the second year, 
+and I really like it.
+
+Unfortunately not in taiwan, 
+my wife would have really loved it, 
+she is addicted to bubble tea.
+
+She really wants to go there one day, 
+so hopefully next year we'll go there.
+
+So talking about that let me share a personal story first.
+
+So me and my wife recently moved houses, 
+it was around in the neighborhood, 
+and yeah we move our main goal is to live close by her parents 
+also my parents live close for us.
+
+It's important to have family close to us, 
+and the added benefit is since my mother-in-law comes from Asia, 
+she gives us a lot of food which is also important to us, 
+but we moved houses recently, 
+and this earlier this year, 
+and if you look at autonomy you would think
+Well, I have a house now I can do whatever I want on that house 
+
+which unfortunately is not the case.
+
+If you look at my garden here in the back,
+right, and there's a carport you would say well let's just add more garden to the carport, 
+and I have a bigger garden well.
+
+Unfortunately this neighborhood got designed 10 years ago, 
+there was an architect along with the with the authorities here,
+and they say in the contract that this part this carport needs to be able to hold one car.
+
+Why? 
+
+Because if everyone would do this in the neighborhood there won't be enough car spaces left, 
+so you know if you talk about autonomy are we now really autonomy with our own house.
+
+No. 
+
+So if we would have moved to well a more rural area in the netherlands then 
+of course maybe we'll have more autonomy, but in this case um is autonomy what we really want?
+
+Because in this case for us it's close to live close to our family now, 
+and of course i have cats.
+
+So are we truly always autonomous well? 
+
+We have a cat door here right.
+
+So we need to abide by our cats, because well eventually they're in control usually, 
+so, but to describe and move on with autonomy, we need to well define it a bit.
+
+So autonomy as described by Mr. Pink as the urge to direct one's own life without the ability to control what when and how we work and how,
+ and who we work with, will never be completely motivated to complete the task.
+
+So that's autonomy right and within the Domain-Driven-Design scene,
+autonomy is when you look at the batman context pattern right. 
+
+Autonomy is a big thing, but we're lacking mastery and purpose there, 
+and we're so focused on that autonomy.
+
+So Mr. Pink in his book drive describes autonomy as direct one's own life now. 
+
+Are we... Could we actually ever be completely autonomous? 
+And completely control and have the ability to control what when and how we work. 
+
+Now if we will ask: if philosophers and if romeo would watch this, 
+he would agree then we're born free, but the first thing is our parents right, 
+our parents control us and we follow the instruction retaining only in some cases, 
+but this is a big philosophical question that we're not going into today.
+
+Because that will take weeks maybe months maybe years maybe never to solve, 
+so autonomy in here is uh well there's an illusion of. 
+
+Now, if you look at the definition, 
+it's the quality of state of being self-government, 
+especially the right of self-government the territory was granted autonomy.
+
+So if you look at the dictionary,
+autonomous sound like self-directing freeman and especially moral independence personal autonomy now.
+
+If you look at my house where I live do I have the autonomy to do that.
+
+No, I haven't, because I'm part of a village here.
+
+So I'm not autonomous right, 
+and that's the thing with autonomy.
+
+If we look at software development and here, 
+you have uh... Jabe and Marc saying: I hate the word autonomy right, 
+it's individuating. 
+
+I have no right to make my own decisions that's what we hear, 
+I have the right to make my own rules. 
+
+When we look at Domain Driven Design,
+and software developer is that truly what we really want that autonomy 
+of course we want some self-organization self-government, 
+but we truly want autonomy. 
+
+Because in this case, in my opinion autonomy can be compulsive right.
+
+A goal on its own instead of a means to an end but autonomy in isolation is not enough.
+
+It's part of a bigger context like my home, I'm living in now right.
+
+It's part of a bitter context I have neighbors I have people living in this village, 
+so I cannot really do what I want 
+and the same goes for software development right.
+
+In software development I'm building software with my team preferably, 
+and of course I cannot do what I want, 
+and that's the polarity here that we're going to talk about.
+
+The polarity is between isolation and connectedness right. 
+us uh... Me versus we and autonomy is on that skill, 
+and every time we need to decide and balance these two things right.
+
+So autonomy is that bulk concept that we use as we please, 
+but the concept needs granularity.
+
+It means different things on different levels well, 
+we're doing DDD workshop, 
+and we face the importance of language and meaning all the time right.
+
+So we want to be exact on the word that we use what does it mean, 
+and it's no different for autonomy when we're going to use it.
+
+Autonomy defines boundary on multiple level, and that's why we're here today.
+
+We want to dig into this concept see what it means on different levels tell stories about 
+what we've seen in organization and teams and how autonomy can be misused misinterpreted 
+and be a risk. 
+
+For the record, we're not saying autonomy is bad it might come across that way now, 
+but that's not the case.
+
+Autonomy is brilliant 
+when we all know within our relevant power what it means and applies.
+
+So we will share some learnings and observation while we... 
+Evelyn's not here, so I'll take over for her, 
+and that we think we might help you in defining these powers more effectively.
+
+So where do we actually need autonomy lots of? 
+Teams and people state that we want to be self-organizing and or self-steering both marked as autonomous, but there's a difference here.
+
+You can be self-organizing I can self-organize my house, 
+but it still requires steering right.
+
+The government here steers me, it happens all the time.
+
+Teams asking for vision from leadership. 
+
+Please don't interfere with how do we do things here, 
+but let us know what the end goal is.
+
+Where you want to go with this company. 
+
+So the first question is where do we need and we want autonomy,
+ and how much do we want it right.
+
+What's the skill uh... and that comes into defining boundaries well.
+
+We're in a Domain Driven Design conference and boundaries are like one of the core concepts in the window, 
+and these boundaries are hard to define when we stick with the bulk concept of autonomy.
+
+That's why we dive into different levels with pitfalls and opportunities. 
+
+But first, let's visualize this polarity between connectedness,
+and of course the other one which is the part and the whole right.
+
+So this is what we're going to talk about.
+
+Autonomy is part of the skill between that part and a whole in system thinking you have it right.
+
+Part and a whole and what connects me with these things and this is a Lemniscate right.
+
+It's a... it has both upsides and downsides between the two yeah.
+
+So if you look at the part, the part is the eye. 
+
+It's the more autonomy way right.
+
+You have uniqueness, 
+but you always also have isolation now.
+
+If you look at the whole like being part of a whole being part of a team, 
+you have connectedness.
+
+But the danger there is also sameness right.
+
+There's no uniqueness anymore in it, and this is what we need to manage.
+
+This is what we're gonna go into now.
+
+First thing um... also we talk a lot about polarities with him.
+
+It's a friend of ours and she has this nice fun fact internet.
+
+So... the Lemniscate you just saw in the middle right comes from the latin word lemniscatus what does it mean?
+
+So I give you 10 seconds is it round corners decorated with hanging ribbons 
+or the Devil's curse, 
+so use the chat, 
+and I will see maybe someone has an answer.
+
+So let's see.
+
+So it's a ground corners decorated with hanging ribbons or the devil curse so anyone has an idea? 
+
+I don't see anything in the chat, so I'll just say: it's decorated with hanging rhythms.
+
+Some people say it might be the developed skirt spotted songs.
+
+So let's continue with the talk so today we're gonna talk or I'm gonna talk about four levels of autonomy yeah.
+
+So the first level is autonomy in code, 
+I'm going to clearly go inside code.
+
+Because there's this Lemniscate as well, 
+and then we go to teams then we go between teams and then we go into organization.
+
+And if you look at Domain-Driven Design this is the full area,
+Domain-Driven Design and tilts right.
+
+It's the whole thing, we do for software.
+
+So let's go to autonomy in code,
+and there's no silver bullets and golden hammers.
+
+That's what I would like to start with right.
+
+There's no one way of doing things, 
+because it's that balance that tight balance that we need.
+
+So when I started coding I came into a team, 
+and well proper unit testing was a thing.
+
+We needed to do proper unit testing, 
+but back then I saw this unit test as well.
+
+I have a java class in this, 
+in this case, and then I create one unit test for that class right.
+
+It's always one on one, one class one unit test and what happened is that at some point.
+
+I find myself creating a lot of mocking stubbing faking in all these unit tests, 
+and that's only one strategy we picked right one on one, an isolated strategy. 
+
+So we isolated these all there, but there was no connectness between the classes, 
+and the classes should actually represent units 
+where there's a form of autonomy and isolation.
+
+So Martin Fowler recently put out this blog post right about test shapes, 
+and there you see it in the book 
+by Jay Fields "Working effectively with unit tests". 
+
+You see you have two types of tests you have the social tests 
+which are often the tested unit relies on other unit.
+
+Systems behavior right, 
+but I'm not stubbing it away.
+
+I'm using it as a whole unit, 
+a unit of work a unit test.
+
+So I'm using everything,
+and I'm not using any mocks now.
+
+The other one here is the solitary test 
+that's the strategy I used at the start right.
+
+I have one unit one class I stop and prefer to isolate that tested unit. 
+
+And you see I mocked it away and both of these has side effects right.
+
+Think about the connectedness and isolation again, 
+and we need to manage that there's no one approach here 
+that you can take the approach that solves the purpose.
+
+And a good friend of mine Thomas Pierrot, he says and the goal here is to look at the outside in, 
+and have proper acceptance test coarse-grained connected unit tests right.
+
+Which is in the middle and we might go find grades in the unit test which are more solitary tests right.
+
+But first of all we go here and then in the end 
+we might do some contract test integration test between our systems.
+
+But as long as our acceptance tests which are core grade unit tests work I'm fine now.
+
+Where do we do this on? well, we're in Domain Driven Design community.
+
+So if you look at the bounded context, it has a model for a purpose.
+
+It is a unit of consistent language, we can do tests on here right.
+
+Tests are also part of that bounded context.
+
+The bounded context language is represented in the tests as well as in the code as well as what we speak etc.
+
+So how would that look is.
+
+Let's say.
+
+In the middle and I'm using a hexagonal or ports and adaptor's architecture.
+
+But in the middle I have my domain model represented in code right.
+
+With objects in this case, I'm an object-oriented programmer.
+
+You can do this functional as well.
+
+It doesn't really matter, but the model is exposed in code.
+
+And what you see is at the top I have my acceptance test, 
+and my acceptance test will run on the port that goes inside the domain.
+
+And then I mock away every object or every connection that's outside my domain model.
+
+I'll mock that away,
+and now my acceptance scenario will test my full domain.
+
+And these are really the sociable tests from the highest level.
+
+And when we go deeper, 
+you'll see that oh maybe this one object here is really complex.
+
+So I need to create a solitary test, 
+and maybe that object is really complex.
+
+So I'll make a solitary test right.
+
+And maybe these three objects together is the aggregate.
+
+So I also make a social more sociable tester right.
+
+So as you see there's no one strategy for me.
+
+The goal is to have this acceptance scenario run against my domain model. 
+
+And that's my end goal as long as these succeed.
+
+It's fine, but of course this has long feedback.
+
+That's the downside of it.
+
+So I need to go in depth.
+[15:49]

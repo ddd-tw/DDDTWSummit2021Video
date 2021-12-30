@@ -1,0 +1,202 @@
+so then to my favorite topic which is autonomy between teams 
+
+i already talked about it with the context map 
+
+so how does my team relate to the other 
+
+and and people think well let's do bounded contacts microservices 
+
+so we have autonomy and and there 
+
+again we can go towards isolation 
+
+again yeah so in this case autonomy between teams microservices 
+and can go on to a lot more can la lead to the ivory towers to the silos 
+
+that's not what we want 
+
+so one thing that happened a few years ago is this book called team topology 
+
+that come out right and team topology really loves domain driven design 
+while team topology is about teams 
+and about fast flow organizing business 
+and technology for fast flow of their teams 
+
+domain-driven design is about autonomy in models right 
+
+and these really work well together 
+because these teams for fast flow will be owners of these models 
+and the models has relationship with each other 
+
+and that's what i'm going to talk about really quickly is 
+
+if you look at what they describe the fourth fundamental team topology 
+is you have these perhaps a platform team 
+
+you don't always need a platform team 
+but let's say you need 
+
+but in the end 
+it's about this middle team the stream aligned team right 
+
+the stream aligned team is picking up value for the customer and releasing it in a fast flow 
+
+and because they cannot do that always by themselves 
+because there's this thing called cognitive load 
+
+because that's what we should think about right 
+
+about limiting the size of software services 
+and product to the cognitive load 
+that the team can handle 
+
+so the stream align team could be in a lot of complexity 
+
+well one thing we'll talk 
+
+i'll talk about later 
+is the enabling team right 
+
+where you need some new technology some new testing framework perhaps 
+or a new database technology 
+
+then another team can help you 
+uh periodically to implement that 
+
+but a team can also be accountable for one big ball of mud bounded context right 
+
+and that can be complex 
+and they will put on another team 
+and that's what we don't want 
+
+we don't want two teams working on the same well context in that way 
+
+because they use different languages 
+and that's what we don't want 
+
+so what do we do 
+because we cannot put one team on it 
+because the cognitive load is too high now 
+
+again domain driven design gives can give you an answer here 
+
+eric evan described this there's no one way of doing it 
+
+we don't all want bounded context with anti-corruption layers on it 
+and and just be isolated 
+
+no in this case 
+what we could start doing 
+is form a partnership clearly define two bounded contacts within that big ball of mud 
+
+see if we can do that 
+and set up a cooperative relationship between the two teams 
+and these teams establish a process for coordinating planning of development 
+
+so you lose a bit of autonomy here 
+but you decrease the cognitive load yeah 
+and and that's what domain-driven design is all about 
+
+it's about trade-offs none of these strategic patterns are by default bad 
+
+they just are right 
+
+even the confirmation pattern 
+
+people say the confirmation strategic pattern can be a bad thing 
+
+it doesn't have to be 
+
+it's about trade-offs 
+
+so don't think about the um utopia 
+that every bounded context is autonomous 
+
+no that's not what it is 
+
+um there's these several patterns 
+eric kevin's clearly discussed 
+
+and there's more after that you can use 
+and it's all about that balance 
+and i was already talking about that enabling team right 
+
+so we have to stream align team 
+and they can afford partnership with other streamlined teams 
+and they need a platform team 
+
+maybe maybe there's a complicated subsystem team 
+
+this like for instance 
+
+we need some data science for uh doing much doing our stream align team 
+
+but then we go to this enabling team right 
+
+i i already tell you about the enabling team 
+but the thing about enabling teams 
+there's a danger here 
+
+if we just have an enabling team like for instance 
+
+a test team 
+or a architectural team right 
+and they act we need to manage that 
+they actively be avoid becoming ivory 
+towers of knowledge dictating technical choices for other teams to follow 
+
+this is what we usually see as a pattern 
+
+we have a architectural team dictating technical choices 
+or a testing team in isolation dictating this 
+and here's this brilliant comic agile right 
+
+that says there's one team is constantly developing huge number of features well 
+
+nobody is using it anymore 
+we got to stay connected an architectural team in isolation 
+is that ivory tower team 
+
+they're not helping teams 
+
+an enabling team is a supporting team there to help the other teams 
+and they have an end date 
+what's the purpose of that 
+enabling team right 
+
+because what happens usually 
+if we stay in that isolation right 
+
+they have freedom they can go fast 
+
+it's nice work ahead of new technology they have uniqueness 
+but if they stay too long 
+
+at isolation they have lots of equality isolation 
+they will become selfish 
+but they will also get the downside of the collaboration right 
+
+they themselves will get high cognitive load 
+they self will guess excessive conformity and sameness 
+
+and this is how a polarity works as well 
+
+if you stay too long in one polarity 
+you get the bat of the boat yeah 
+and you're becoming that tower of babel instead of customer centric 
+and enabling teams 
+
+customer here are the stream 
+
+align teams and then let's talk about my second favorite topic 
+after branching is 
+
+of course the skilled agile frameworks 
+which has their place 
+and which can be implemented correctly 
+but what i see here is a lot of isolation patterns right 
+
+so we need to manage this 
+
+we need to manage the connectiveness 
+and the relationship through these polarity modes

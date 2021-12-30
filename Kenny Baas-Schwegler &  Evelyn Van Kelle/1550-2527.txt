@@ -1,0 +1,367 @@
+so how would that look in our polarity map again 
+
+here you see the solitary test on the left, you see the sociable test on the right
+
+and there you can say well the good thing about the solitary test 
+
+I tested in isolation fast feedback on failure, 
+but if I go to the negative, 
+it's cascading changes on mocks and stubs and the lost of unit of work cohesiveness right 
+
+So we can fix that with the sociable tests 
+which are coherent no mocking or coupler 
+but failure of bug in other classes 
+and slower feedback of failure right 
+
+Balance we need to constantly balance these two 
+and I'll later describe 
+how we can balance this right 
+
+But as you can see on the top my goal 
+is to feeling secure to change the code 
+and my fear is cascading changes 
+
+So as you can see there's no one way 
+and if we look at autonomy again right 
+
+Autonomy sits now in the middle 
+how can I get these two into balance 
+now then let's go to autonomy and teams 
+and there's this individual and interaction over processes and tools right 
+
+An individual can be autonomous 
+and so can be a team 
+
+A team is a collection of individuals that can either work as one autonomous team 
+or as a group of autonomous individuals well right 
+
+Language and meanings would be crucial 
+
+the nuance here is crucial 
+
+So I have we have to break it to you 
+but we are in the end all hurt animals that really really need to be liked by other people 
+and get that confirmation 
+
+it's been described in cultural anthropology 
+
+A lot in sociology 
+and as soon as we start talking about relationships and things get personal 
+
+We get uncomfortable 
+
+that's the problem 
+
+We might feel unsafe 
+because rejection is around the corner 
+
+that's why we love our precise technical problems so much right 
+
+I don't have to deal with other people 
+but the thing here is isolation in a person is is not good for a person right 
+
+We identify ourselves through others 
+
+so we need to have that heard feeling we need to have that feeling that we belong to someone 
+
+there's actually a lot of tests 
+
+one test that went on in the united states 
+when they still isolate people in prison right 
+
+when they had that behavior 
+and they figure out it didn't work 
+
+they didn't self-reflect 
+because they couldn't reflect 
+
+because in order to reflect you need the other right 
+
+you need that connectiveness 
+
+so that's the paradox 
+we want to be autonomous 
+but at the same time 
+we want to belong to a group of people 
+when we act as a group of autonomous individuals 
+and don't feel like a hurt 
+
+we lose that feeling of belonging right 
+
+and in perceived individual 
+and autonomy 
+and perceived team monument what works for any team differs 
+
+that's really context depending on a team same as all my bounded contexts are context dependents 
+and what works depends on that 
+
+but they have to be on the same page 
+
+because otherwise things can get messy 
+and we can turn into a dictatorship right 
+
+so imagine you have a nice development team working on a product 
+
+everyone's doing their job 
+but there's one person that seems to call all the shots 
+
+it can be a tech lead that can be the person that's the longest there uh 
+
+it's probably the person with the most knowledge 
+that person has undocumented knowledge most likely 
+and that's a problem 
+
+this person can be brilliant 
+and building the best product 
+but let's use rigs right 
+
+so the netherlands they call it the bus factor 
+
+I would now rather like to call the lottery factor 
+
+so a colleague told me that 
+
+so if this person would win the lottery 
+
+person is gone from a team what now 
+
+but on the other hand 
+you know it can also be nice to have a lead developer making decisions again 
+
+we are hurt animals and sometimes we like the dog making the decision for us guide us right 
+
+guide us to our home 
+
+so what we have here is an autonomous team with one autonomous individual that has most power 
+
+which can lead to undesired behavior 
+and that can grow 
+because we don't want to lose 
+that person 
+
+we get dependent on the person right 
+
+you get the downside of the Lemniscate
+
+you know the polarity 
+and if we don't switch 
+and we don't manage that 
+
+it becomes worse or worse and worse 
+
+a person can work in isolation 
+because we assume the person is doing the right thing 
+
+meanwhile we you have an autonomous team 
+where stuff is lurking beneath the surface 
+
+this can grow and grow 
+and eventually explode leadership needs to turn that ship around right 
+
+it's leadership 
+that need to manage that again 
+
+we need to do some sense making to see 
+where are we at 
+
+and we need to be able to talk about it 
+
+define the boundaries 
+what do we expect of each other in terms of domains teams 
+but most importantly about 
+what it means in terms of behavior as an individual 
+and as a member 
+
+so because autonomy is a bulk concept 
+it can be misused like said 
+dictatorship is a potential risk 
+but we've also seen autonomy being used as an excuse 
+
+as a means to shift the blame to someone else 
+
+example 
+an organization read about autonomous teams want to do it maybe microservice is right 
+and there's your first flag don't just copy-paste stuff 
+
+because it works for someone else 
+watch on one of our previous talk 
+
+to talk about that and about cargo calling 
+and the copy haste based hell 
+that's mutating 
+
+but one very important note here is 
+that culture is crucial surprise within this particular organization 
+there was fear 
+
+fear of being held accountable distrust 
+
+no room for failure 
+and a lot of pressure 
+
+so for the teams autonomy sounded pretty good 
+because it would get some of the pressure off 
+or so they assumed for management autonomy sounded good 
+because they interpreted that as full responsibility with the teams 
+which was good for their cover your ass culture right 
+
+it didn't look too long for this to clash deadlines 
+
+miss no clear communication 
+and lessons learned moving toward autonomy 
+
+because it works somewhere else 
+or because it might help you cover your ass 
+won't bring you anything sounds trivial 
+but this happens you need someone to expose this behavior 
+and consequences in the case of organization 
+
+it was us doing that instead of focusing on autonomy 
+
+we start with building trust 
+and create a shared meaning 
+
+we need a shared meaning 
+
+we need a shared purpose 
+
+and this is what drive Mr. Pink always also said right 
+
+we need a purpose 
+and well what do you know domain driven design 
+and a bounded context can help you with that 
+
+because of down at context 
+it's a model for a specific purpose 
+
+we know this is what we do it for this is 
+what we build it for for this customer 
+we're building this model right 
+
+and then we can use things like context mapping 
+and domain design to see the connectedness with other teams 
+which we're going to talk about that later 
+and within something 
+
+Nick Tuna the ddd crew up uh is this bounded context canvas 
+where you can describe that description right 
+
+this is really nice 
+because now 
+
+together with the team 
+we collaboratively model our purpose together 
+and we see 
+what are our inbound and outbound communication 
+and this is how we stay connected 
+and define these bounded context problems 
+
+but it's not only about boundaries uh 
+it's also the way we develop our work 
+
+and one thing I see in in each phase of each uh sorts of programming 
+and now you'll see load code popping up is 
+that people have a problem here 
+
+it says application teams grows it slows down 
+
+because multiple developers compete to change the same code 
+
+first of all I don't see that as a problem 
+
+I see that as oh 
+maybe we need to talk together 
+and see how this fit together 
+but they see it as a problem 
+and that's the thing right 
+
+it's not a problem 
+
+so what do they do 
+they actually deliver a different pace 
+
+so they're going to do branching 
+
+nice 
+you got a branch you get a branch 
+everyone gets a branch well 
+
+do you hear the isolation coming in here right 
+
+just working your isolated thing on your own purpose 
+and you'll lose connection 
+there's no balance here 
+
+so what you'll see in that in that thing is that the feedback 
+is late right 
+
+so this is git flow by the way 
+and as you can see 
+
+as if if this is the main line you see 
+there's no real feedback here 
+because this happened and you know long feedback 
+
+and that can cause to some cost fallacy well 
+
+I've been working on this course 
+a really long time right 
+
+and someone else would say well yeah 
+but that's not what we discussed 
+
+I mean I thought it would be a different design 
+and connected differently 
+
+okay let's just take some duct tape 
+and fix that 
+and we'll call it technical debt 
+which it's not it's craft 
+
+there's slow feedback he wasn't connected to 
+
+show that again on the polarity map 
+
+you'll see right the branch gives you freedom individual creativity 
+but you have loss of cohesive mental models well 
+you know bounded context is a shared model 
+
+so we're losing that the longer 
+we are on the branch 
+but the positive effect of the trunk based 
+
+so let's say 
+we do only mainline development is care for the whole shared mental model team effort 
+but we have excessive conformity 
+
+so trunk base people see trunk based as being only on the trunk 
+which is not you can use branches 
+and how would we check that is look 
+
+when we observe our team 
+and we see people competing to 
+just change the same code 
+maybe we need to start pairing 
+and lobbying right 
+
+and at some point you can find signals 
+that you're too long on 
+that main line 
+then we go back 
+and find the branch right 
+
+balance there's no one way to do it don't don't go on 
+and this is not trunk based development that's defined right 
+
+in trunk based development you can do branching 
+
+it's not about only committing on the mainline code 
+
+you could do branching 
+but don't take one approach over the other 
+
+so don't always take the trunk based development 
+or I mean mainline commits 
+and don't always take the branch implements balance 
+
+it choose every time what you're gonna need

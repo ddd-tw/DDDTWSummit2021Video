@@ -1,62 +1,53 @@
 Hello Taiwan, my name is Stefan Hofer, and I love a good story.
 So imagine it was 20,000 years ago.
-It is in the middle of winter  
-and the tribe of cave people sit around a warm fire 
-It is quiet except for the cracking firewood 
-then one of the elders clears their throat
-many summers ago 
+It is in the middle of winter and the tribe of cave people sit around a warm fire.
+It is quiet except for the cracking firewood, 
+then one of the elders clears their throat.
+Many summers ago, 
 a large herd of bison wandered through our hunting grounds 
-it was the largest herd that anyone had ever seen 
-and as the elder shares his story 
-one of the cave people starts to use colorful rocks and coal to paint a picture
-and to this very day we can see this picture in the cave wall 
-and in a sense that is what we want to do with the main storytelling 
-we want to spark a fire tell a story and paint a picture 
-storytelling is at the heart of human communication 
-and it still works in the age of software 
+It was the largest herd that anyone had ever seen.
+And as the elder shares his story one of the cave people starts to use colorful rocks and coal to paint a picture.
+And to this very day, we can see this picture in the cave wall.
+In the sense that is what we want to do with the domain storytelling.
+We want to spark a fire, tell a story and paint a picture.
+Storytelling is at the heart of human communication and it still works in the age of software.
 Domain storytelling is one of the techniques that brings domain experts,  
-product owners, business analysts and software development teams together 
-it helps them to overcome misunderstandings 
+product owners, business analysts, and software development teams together.
+It helps them to overcome misunderstandings
 and to establish a common language 
 that helps you to talk about business processes and requirements
 or in short to build better business software.
-today I'm going to introduce you to domain storytelling by showing you a short demo 
+Today, I'm going to introduce you to domain storytelling by showing you a short demo.
 then I will explain the method 
-and finally I will tell you a little bit about the influence 
-that DDD had on domain storytelling and maybe also the influence 
-that DDD has that domain storytelling has on DDD in its community
-So I will tell you another story
-this time it is about a software system 
-that my colleagues and I built a couple of years ago 
-it's a software system that was supposed to help approve road work 
-so what happened was with a group of stakeholders 
-and they already had a set of requirements 
-they said ah the system must support issuing permits 
-and the sector system must support hearings 
-and we need support on reviewing applications 
-and many more use cases
-so the problem was that we didn't really understand 
-how all these isolated requirements 
-make up a whole software system for for proving road work 
-we hadn't really understood the basic business processes behind it 
+and finally, I will tell you a little bit about the influence that 
+DDD had on domain storytelling and maybe also the influence that 
+DDD has that domain storytelling has on DDD in its community.
+So I will tell you another story.
+This time it is about a software system 
+that my colleagues and I built a couple of years ago.
+It's a software system that was supposed to help approve roadwork. 
+So what happened was with a group of stakeholders 
+and they already had a set of requirements.
+They said the system must support issuing permits 
+and the sector system must support hearings, 
+and we need support on reviewing applications and 
+many more use cases.
+so the problem was that we didn't really understand how all these 
+isolated requirements make up a whole software system 
+for for proving roadwork we hadn't really understood the basic business processes behind it 
 so how does a proving roadwork typically work 
 that was the questions that we asked our domain experts 
 when we brought him together in a room 
 and in front of a whiteboard 
-and this is the story that holders
-so construction company has won a tender for a road work project 
-and before they can start they need to obtain a permit 
-so that they can close the road to traffic 
-so the story starts where the project supervisor 
-awards the contract to the construction company 
-and then they can submit the application for the permit 
-using this new software system that we were supposed to build
-now the stakeholders told us 
-that the project supervisor should be notified 
-whenever a new application comes in 
-because they need to review the application 
+and this is the story that holders.
+So construction company has won a tender for a roadwork project 
+and before they can start they need to obtain a permit so that they can close the road to traffic 
+so the story starts where the project supervisor awards the contract to the construction company 
+and then they can submit the application for the permit using this new software system that we were supposed to build
+now the stakeholders told us that the project supervisor should be notified 
+whenever a new application comes in because they need to review the application 
 and compare it with the tender documents 
-now we didn't understand that requirement at first 
+We didn't understand that requirement at first 
 and they explained us well there can be 
 for example different dates in the application than in the tender documents 
 if for example the construction company doesn't have the necessary resources
@@ -84,146 +75,109 @@ that is something that can be repeated several times
 but in this story we looked at a happy path scenario 
 so everything is fine 
 the first draft becomes the final permit 
-and this is often a typical way of using domain storytelling 
-we start with a happy path and then later look into 
-a more complicated variations of the process
-so this little story and visualizing that story helped us to understand in much more detail 
+and this is often a typical way 
+of using domain storytelling we start with a happy path and then later look into a more complicated variations of the process
+So this little story and visualizing that story helped us to understand in much more detail 
 what the system was supposed to do
-and this is one of the typical cases for using domain storytelling 
-to think about new software systems and how they should support business processes
-now how does this method work
-many people especially software developers tend to think about 
-business processes and visualize business processes like this as a rather abstract 
-but complete description of everything that could possibly happen 
-so it's about different paths in one picture 
-with the main storytelling 
-we choose a different approach 
-we think that a good example is better than a bad abstraction
-so we want examples first and from that knowledge from that foundation 
-we can later build abstractions in our software
-so usual usually it's sufficient to model two or three of the most important versions of the business process
-so the happy path maybe an important variation or common error scenario 
-so if we look at individual paths and 
-therefore we don't need any any 
-gateways or switches or ifs or case statements in our pictographic language
-now domain stories can have different scopes 
-the story that I showed you about the construction site was 
+and this is one of the typical cases for using domain storytelling to think about 
+new software systems and how they should support business processes
+Now, how does this method work
+Many people especially software developers tend to think about 
+business processes and visualize business processes like this 
+as a rather abstract but complete description of everything that could possibly happen 
+So it's about different paths in one picture 
+With the main storytelling we choose a different approach 
+We think that a good example is better than a bad abstraction
+So we want examples first and from that knowledge from that foundation we can later build abstractions in our software
+so usual usually it's sufficient to model two or three of the most important versions of the business process so the happy path maybe an important variation or common error scenario 
+so if we look at individual paths 
+and therefore we don't need any 
+any gateways or switches or ifs or case statements in our pictographic language
+Now domain stories can have different scopes 
+The story that I showed you about the construction site was 
 I would say about medium on a medium level of detail 
-to give you some more idea 
-how domain stories can can look 
-I'll introduce you to another example 
+To give you some more idea how domain stories can can look I'll introduce you to another example 
 this time it's about a movie theater 
-so on the left side we see 
-the process of going to the movies 
-so this is a end-to-end business process 
-from the customer's point of view 
-so we have a moviegoer here 
-they buy a ticket from a cashier 
-and then you buy snacks and drinks from a concession stand
-and they showed a ticket to the usher
-to get access to the movie theater and so on
-on the right side 
-we see a much more detailed picture 
-that tells you the story of buying tickets 
-we have a moviegoer who picks seats and buys for the tickets and so on 
+so on the left side we see the process of going to the movies 
+so this is a end-to-end business process from the customer's point of view 
+so we have a moviegoer here they buy a ticket 
+from a cashier and then you buy snacks and drinks from a concession stand
+and they showed a ticket to the usher to get access to the movie theater and so on
+On the right side we see a much more detailed picture 
+that tells you the story of buying tickets we have a moviegoer 
+who picks seats and buys for the tickets and so on 
 so time buying tickets was one step in the course grade story on the left 
-and it's now a whole story on its own 
-in the more detailed story on the right 
+and it's now a whole story on its own in the more detailed story on the right 
 and that's just one way of illustrating different scopes of stories
-now no matter the level of detail or the scope of the story 
-you will always need a pictographic language to visualize it
-so our pictographic language is comprised of a set of symbols
-so we have actors the person or the people or the software systems
+now no matter the level of detail or the scope of the story you will always need a pictographic language to visualize it
+So our pictographic language is comprised of a set of symbols
+So we have actors, the person or the people or the software systems
 who are active in the story who do things 
-and we have work objects those are the things that they use 
-it can be information, physical things
-digital objects with activities 
-depicted as arrows and we use textual annotations
-now to give those icons a concrete meaning we label them 
-so we have a customer ticket bias and so on 
+and we have work objects those are the things that they use it can be information, physical things
+digital objects with activities depicted as arrows and we use textual annotations
+now to give those icons a concrete meaning we label them so we have a customer ticket bias and so on 
 and if we look at the pictographic language in a little bit more detail
-we can have for example different actors
-so most commonly we use a single person, a group of people, a system but depending on the domain 
+we can have for example different actors so most commonly 
+we use a single person, a group of people, a system but depending on the domain 
 that you're in you can change and adapt the set of symbols 
 for example I did a couple of the main stories in 
 in the harbor domain
-so ships are important actors there 
-and then have a little ship icon that represents a ship
-the same is true for the work objects 
-we also use different icons there 
+so ships are important actors there and then have a little ship icon that represents a ship
+the same is true for the work objects we also use different icons there 
 most commonly to express the medium of a book object 
-so for example if I call the cashier in the box office of the cinema 
-and ask about a reservation for a movie tonight
+so for example if I call the cashier in the box office of the cinema and ask about a reservation for a movie tonight
 and then I would draw this with a telephone icon
-if they then send me a reservation as an email
-I will use this email icon 
-and if I decide to print the reservation at home
-I will use the document icon 
-with that pictographic language we can build sentences 
-and the idea is that the sentence in the pictographic language reads almost like 
+if they then send me a reservation as an email. I will use this email icon 
+and if I decide to print the reservation at home. I will use the document icon 
+with that pictographic language we can build sentences and the idea is that 
+the sentence in the pictographic language reads almost like 
 you would write a natural language sentence 
 now to tell a story we of course need more than one sentence 
-so what do 
-we do we append sentences and we express the order by numbering them 
-so that's how you find your way through the domain story
+So what do we do. We append sentences and we express the order by numbering them 
+So that's how you find your way through the domain story
 now the pictographic language is just one aspect of the main storytelling 
-equally if not more important is that it is also a workshop format
-a way of bringing people together 
+equally if not more important is that it is also a workshop format a way of bringing people together 
 and what happens in the minds of the participants of the bookshop 
 is very important so it's the picture is not just it's not the only result 
 also being there being present in the workshop 
-if you miss this campfire experience 
-it's not the same just looking at the result 
+if you miss this campfire experience it's not the same just looking at the result 
 showing the picture to someone who was not at a workshop
 that's not the same as actually being there and contributing to it
-so what do we need for a workshop 
-well we need people to tell us a story the story tells 
+so what do we need for a workshop. well we need people to tell us a story the story tells 
 and what is a storyteller without someone who listens so we need listeners 
 our storytellers are usually the domain experts, users stakeholders 
 and our listeners are usually members of a development team, 
 business analysts, usability experts and so on.
-and often we don't have just one storyteller but we have several storytellers 
-so every role that is involved in a business process can contribute to the story
-now storytelling is not just a one-way activity 
-it's more of a dialogue of a discussion 
-so storytellers or domain experts are not always born storytellers
-so they needs a little help 
-that's where moderator comes comes in handy 
-and also the listeners can ask questions 
-to move disturbing forward 
-so typically we would ask what's happening next 
-or how do you know that you have to do this now 
-or where do you get the information from 
-to write it down somewhere and so on 
+And often we don't have just one storyteller but we have several storytellers so every role that is involved in a business process can contribute to the story
+Now storytelling is not just a one-way activity. It's more of a dialogue of a discussion.
+So storytellers or domain experts are not always born storytellers
+so they needs a little help that's where moderator comes 
+comes in handy and also the listeners can ask questions to move disturbing forward 
+So typically we would ask what's happening next or how do you know that you have to do this now 
+or where do you get the information from to write it down somewhere and so on 
 so we want the vivid conversation that moves forward 
 and while the story is told it is important that it is also visualized 
 and that's again a job that the moderator has 
-so we visualize the story using the pictographic language while it is told 
+So we visualize the story using the pictographic language while it is told 
 so that gives everyone a chance to see if 
 we understood the story correctly or after any mistakes in it 
-so what will happen is that the domain experts 
-so tell us say "oh no you missed a step" or 
-"no that's not what Isaid Iused a different word" or 
-"can you draw the arrow to. can you turn it around this is wrong" 
+so what will happen is that the domain experts so tell us say "oh no you missed a step" 
+or "no that's not what I said I used a different word" or "can you draw the arrow to... can you turn it around this is wrong" 
 so this is very available and immediate feedback that we get 
 for that to work everyone needs to be able to see the visualized story 
-so we use tools for that for example 
-we can use whiteboards and sticky notes 
-or digital blackboards or we could use the tool 
-that uh I used to show you the old work story 
-it's called "Egon.io" it's open source runs in your browser 
-you can check it out egon.io is also the url 
-now there's a lot more of course to discuss and learn about domain storytelling
+so we use tools for that for example we can use 
+whiteboards and sticky notes or digital blackboards 
+or we could use the tool that I used to show you 
+the old work story it's called "Egon.io" it's open source runs in your browser 
+you can check it out egon.io is also the url. 
+Now there's a lot more of course to discuss and learn about domain storytelling
 I've written a book about this method together with my colleague Henning Schwentner 
-so if you are curious go and check out domainstorytelling.org
-you will find all sorts of links there including links to the book 
-and you can even save some money 
-if you buy directly from edison wesley via the informant store
-you can use this component called domain story and get a nice discount
-now how has domain storytelling influenced DDD 
-and how is DDD influenced domain storytelling 
-well so far I haven't really talked about DDD 
-in fact I've barely even talked about software or developing software or modeling software 
+so if you are curious go and check out domainstorytelling.org you will find all sorts of links there including links to the book 
+and you can even save some money if you buy directly from Edison Wesley via the informant store
+You can use this coupon code "DOMAINSTORY" and get a nice discount.
+Now how has domain storytelling influenced DDD and how is DDD influenced domain storytelling 
+Well, so far I haven't really talked about DDD. 
+In fact I've barely even talked about software or developing software or modeling software 
 and that is because domain storytelling 
 is a modeling method that helps you to have meaningful conversations about business processes 
 so building software for this processes is just one of many use cases for the main storytelling 
@@ -628,7 +582,6 @@ um user account
 um so that's um that's the way um how I deal with it 
 so use different icons to represent those different concepts 
 and then it works
-
 
 Okay!
 as the realization of protons or service product methodology 

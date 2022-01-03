@@ -180,41 +180,35 @@ Well, so far I haven't really talked about DDD.
 In fact I've barely even talked about software or developing software or modeling software 
 and that is because domain storytelling 
 is a modeling method that helps you to have meaningful conversations about business processes 
-so building software for this processes is just one of many use cases for the main storytelling 
+So building software for this processes is just one of many use cases for the main storytelling 
 you could use it to analyze weaknesses and problems 
 or you could use it to help newly hired employees to learn about your business 
-people do that and you're happy with it
-however I mostly use it in software development projects 
+People do that and are happy with it.
+However I mostly use it in software development projects 
 and there are some projects where I use domain storytelling like this
-so I would start with analyzing the domain 
-analyzing the problem spaced as is situation 
-modeling it together with the domain experts 
-so we get a couple of domain stories out from that 
-that is something that we can learn from get feedback from 
-we used it as a basis to design a new improved process software supported process 
-we model that with to be domain stories that show us the future situation 
-again we get feedback from that 
+so I would start with analyzing 
+the domain analyzing the problem spaced as-is situation 
+modeling it together with the domain experts so they get a couple of domain stories out from that 
+It is something that we can learn from get feedback from 
+We used it as a basis to design a new improved process software supported process 
+We model that with to-be domain stories that show us the future situation 
+Again we get feedback from that 
 we use that to derive requirements 
-on a course grade or a medium grade level 
-for example user stories or use cases 
+on a course grade or a medium grade level for example user stories or use cases 
 and again we get feedback on those requirements 
 and then we build software and of course we develop it iteratively and incrementally 
 that means we only take a couple of those requirements and refine them 
-and when you go to the next sprint iteration 
-we take another set of requirements and refine them 
-so it's a constant process of refinement 
-now this process is or this description of software development is not entirely wrong 
-but it's certainly not completely right 
-it's it's a bit too waterfally for me 
-and that changed with the main driven design
-in more and more of my projects I get to use DDD 
-and Eric Evans provided his own metaphor for the software development cycle 
-and that metaphor is the model exploration whirlpool 
-and it looks like that
-so the whirlpool metaphor suggests 
-that there are interconnected cycles of storytelling modeling and coding 
-and it is about learning and about making mistakes 
-so we have activities that focus on housing and documenting, 
+and when you go to the next sprint iteration we take 
+another set of requirements and refine them so it's a constant process of refinement 
+Now this process is or this description of software development
+is not entirely wrong but it's certainly not completely right 
+It's a bit too waterfally for me and that changed with domain driven design
+In more and more of my projects, I get to use DDD. 
+And Eric Evans provided his own metaphor for the software development cycle. 
+That metaphor is the model exploration whirlpool and it looks like that.
+So the whirlpool metaphor suggests that there are interconnected cycles of storytelling modeling and coding. 
+And it is about learning and about making mistakes 
+So we have activities that focus on housing and documenting, 
 scenarios and modeling them,  telling stories, walking through them refocus 
 proposing models explore the language 
 and take those models turn them into code 

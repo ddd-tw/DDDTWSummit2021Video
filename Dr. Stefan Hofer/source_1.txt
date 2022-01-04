@@ -209,52 +209,53 @@ That metaphor is the model exploration whirlpool and it looks like that.
 So the whirlpool metaphor suggests that there are interconnected cycles of storytelling modeling and coding. 
 And it is about learning and about making mistakes 
 So we have activities that focus on housing and documenting, 
-scenarios and modeling them,  telling stories, walking through them refocus 
-proposing models explore the language 
-and take those models turn them into code 
-to learn from that experiment then go back to your scenarios
+scenarios and modeling them, telling stories, 
+walking through them, refocus, 
+proposing models, explore the language 
+and take those models turn them into code to learn from that experiment 
+then go back to your scenarios
 and model more scenarios and other cases and so on 
-so it's this constant whirlpool
+So it's this constant whirlpool.
 I think this model captures much better what is actually going on 
-in a DDD style development project 
-on the other hand this model is not as neat as the one I showed you before
-it looks a bit messy 
-and maybe that is the reason why this metaphor is often neglected 
-when people talk about DDD 
-yet I think the more 
-the more I think about it the more I reflect on it the more powerful this metaphor becomes for me 
-and I mean it's easy to see that 
-when you highlight how often the term scenario or story appears 
-in the in the whirlpool that there's a connection to the main storytelling 
-so for me domain storytelling fills this gap of 
-how to actually gather my my scenarios 
-how do I model them but 
-how to return them how bring 
-how do I bring them closer to developing software
+in a DDD style development project. 
+on the other hand this model is not as neat as the one I showed you before it looks a bit messy 
+and maybe that is the reason why this metaphor is often 
+neglected. When people talk about DDD.
+Yet, I think the more... 
+The more I think about it. The more I reflect on it. The more powerful this metaphor becomes for me. 
+And I mean it's easy to see that 
+When you highlight how often the term scenario or story appears 
+in the in the whirlpool that there's a connection to the main storytelling.
+So for me 
+domain storytelling fills this gap of how to actually 
+gather my my scenarios how do I model them. 
+But how to return them? how bring...
+How do I bring them closer to developing software?
 So that's a way that domain storytelling can help with this model exploration whirlpool makes it more tangible 
 but it also had an influence on domain storytelling 
 because it helps me to better understand how to integrate 
 the main storytelling into the domain driven design process 
 and it helps me to choose the right scope for a story 
 so which level of granularity am I interested in 
-am I analyzing the current process 
+Am I analyzing the current process 
 or am I deciding a new process and so on
 so I think this is very helpful for that 
 for choosing the right scope of a story
-now the second aspect 
-that has influenced the main storytelling and the development of the method is collaborative modeling
-before I became a DDD practitioner 
+now the second aspect that 
+has influenced the main storytelling and the development of the method 
+is collaborative modeling
+Before I became a DDD practitioner 
 and a DDD coach I was active in the academic modeling community 
 and the software and enterprise architecture communities 
 and in the requirements engineering community 
-and I always felt a bit like an outsider in 
-and one of the reasons why this is different with the DDD community is that 
+and I always felt a bit like an outsider. 
+And one of the reasons why this is different with the DDD community is that 
 DDD practitioners have realized the value of collaborative modeling
 While I had felt that for some time it really became evident to me 
-at explore DDD conference in the U.S. 
-where paul raynor drew this picture 
-it shows collaborative modeling is one of the most important concepts of DDD it's one of its pillars 
-so I felt right at home of course
+At explore DDD conference in the U.S. where Paul Rayner drew this picture. 
+It shows collaborative modeling is one of the most important concepts of DDD.
+It's one of its pillars 
+So I felt right at home, of course.
 while I'd felt that for some time 
 that collaborative modeling is an important pillar of DDD 
 I think that many people use it synonymously with 

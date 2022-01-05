@@ -256,49 +256,53 @@ At explore DDD conference in the U.S. where Paul Rayner drew this picture.
 It shows collaborative modeling is one of the most important concepts of DDD.
 It's one of its pillars 
 So I felt right at home, of course.
-while I'd felt that for some time 
-that collaborative modeling is an important pillar of DDD 
+While I'd felt that for some 
+time that collaborative modeling is 
+an important pillar of DDD 
 I think that many people use it synonymously with 
-brainstorming ever since Alberto BrandolinI came up with it 
-so I use events storming too. 
-Here you see my colleagues in a big picture event storming session 
+EventStorming ever since Alberto Brandolini came up with it. 
+So I use EventStorming too. Here you see my colleagues 
+in a big picture EventStorming session 
 or some of my colleagues 
-and I think of it as well I have a modeling toolbox 
+and I think of it as 
+well I have a modeling toolbox 
 and in this toolbox there are several tools 
-like event storming and domain storytelling 
-and um I think that in many projects 
+like EventStorming and domain storytelling 
+and I think that 
+in many projects 
 you will have to use more than one modeling method 
 and you definitely have an advantage 
 if there are several tools in your toolbox and you know how to choose 
 between those tools and when to choose which tool 
 that will increase your changes your chance of success
-now thinking of it as a toolbox is one way of seeing it 
+Now thinking of it as a toolbox is one way of seeing it 
 but I think collaborative modeling could also be described as a family of methods 
-with different relationships between them 
-and the more I became experienced with DDD 
+with different relationships between them and 
+the more I became experienced with DDD 
 and the more I looked at collaborative modeling as this family
-so in my mind I would say that 
+So in my mind I would say that 
 by now I see software development as a series of conversations 
-that are aided by modeling with different members of this collaborative modeling family so with different tools 
-the community behind those methods or tools 
-they've started to write a book called the visual collaborate collaboration tools book 
-you can find it on leanpub and download it from there 
+that are aided by modeling 
+with different members of this collaborative modeling family so with different tools 
+The community behind those methods or tools 
+They've started to write a book 
+called the Visual Collaboration Tools book you can find it on leanpub 
+and download it from there 
 so this is a really thriving community 
-and it's great to see um that this family is ever expanding 
+and it's great to see that this family is ever expanding 
 and to see new connections made between those tools 
-so this is definitely something that has influenced me a lot
-now the final thought I want to share with you today is 
+So this is definitely something that has influenced me a lot
+Now the final thought I want to share with you today is 
 one of the most important concepts I think in DDD 
-and that is that language and models are bounded by the context 
-so this is really an eye opener
+and that is that language and models are bounded by their context 
+So this is really an eye opener
 I mean words can mean different things to different people, right. 
-so even if those people work in the same organization they might have different ideas 
-for example in our movie theater what could ticket mean 
-so for one person it could be a sellable unit that generates a profit 
-and for the other person it could mean a piece of paper 
-that is validated in order to grant access to a movie theater 
-so if you look at this course-grade domain story from before again 
-cashier might think of the ticket as something that they sell it has a price and so on 
+So even if those people work in the same organization they might have different ideas 
+For example in our movie theater what could ticket mean 
+So for one person it could be a sellable unit that generates a profit 
+and for the other person it could mean a piece of paper that is validated in order to grant access to a movie theater.
+So if you look at this course-grade domain story from before again 
+Cashier might think of the ticket as something that they sell it has a price and so on 
 and they are sure well they are not really interested in the price 
 they are just checking if it's the right date and time right movie and then the ground access 
 so they both say ticket but they mean different concepts when they mean ticket 

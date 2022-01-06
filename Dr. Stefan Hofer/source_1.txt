@@ -302,55 +302,53 @@ For example in our movie theater what could ticket mean
 So for one person it could be a sellable unit that generates a profit 
 and for the other person it could mean a piece of paper that is validated in order to grant access to a movie theater.
 So if you look at this course-grade domain story from before again 
-Cashier might think of the ticket as something that they sell it has a price and so on 
+Cashier might think of the ticket as something that they sell it has a price and so on.
 and they are sure well they are not really interested in the price 
 they are just checking if it's the right date and time right movie and then the ground access 
-so they both say ticket but they mean different concepts when they mean ticket 
-now this will often happen in 
-coarse grained domain stories or also other 
+So they both say ticket but they mean different concepts when they mean "ticket". 
+Now this will often happen in 
+coarse-grained domain stories or also other 
 collaborative modelling techniques that when you have different stakeholders 
-to use the same terms without meaning exactly the same thing 
+to use the same terms without meaning exactly the same thing. 
 and this is not necessarily a problem 
-especially on this core screen level 
+especially on this coarse-grained level. 
 but I'll I want to show you an example where it really was a problem for me 
 to moderate the modeling session 
 because there was an immediate problem 
 that luckily I could resolve with the help of bounded contexts 
-so this is yet another domain that tell you about 
-this time it's a 
+So this is yet another domain that tell you about this time it's a 
 fixtures company called awesome browser games 
 so a company that provides a platform for playing browser games 
 but it's based on a true story
 so in the workshop in a real workshop we got different people from different departments together 
 domain expert, software developers 
-and we wanted to start with a course grain domain story 
+and we wanted to start with a course-grained domain story 
 that shows us an end-to-end process 
-so a first-term user signs up plays their first game gets built for the game 
-so someone started and say well the first step is 
-that the user opens an account with awesome browser games 
+so a first-time user signs up plays their first game gets built for the game 
+So someone started and say well the first step is that the user opens an account with awesome browser games 
 and immediately someone said no 
 they said no the account is much, is created much later, I know that for a fact 
-but the first person replied no no no no you are wrong 
-this is the first step I know it 
-I know that for a fact 
+but the first person replied no no no no 
+you are wrong this is the first step I know it I know that for a fact 
 this is the first thing that we do we open the account
-well in the words of martin fowler 
-single conceptual model is a tricky piece to work with 
-and that was what we were trying to do here build a single conceptual model for terms that could not be reconciled
+well in the words of Rartin Fowler 
+"A single conceptual model is a tricky beast to work with" 
+and that was what we were trying to do here build a single conceptual model 
+for terms that could not be reconciled
 so bounded contexts to the rescue what did we do to resolve this situation move on forward 
-well I said okay let's assume for a moment 
-that the first person is right 
-and that the account is open in the first step 
-and then the continued modeling 
-and eventually arrived at uh the step here the step five in the picture 
+well I said okay let's assume for a moment that 
+the first person is right and that the account is open in the first step and then the continued modeling 
+and eventually arrived at the step here the step five in the picture 
 where the second person thinks that their account is created 
 and we used different icons to show that 
 we mean different things here so different kinds of accounts possibly 
 and when we talked about it it became evident 
-that one person thought about the account in the context of use user registration 
-and the other person was thinking about accounts in the context of 
+that one person thought about 
+the account in the context of use user registration 
+and the other person 
+was thinking about accounts in the context of 
 what we call the game management 
-so there are actually two kinds of accounts here 
+so there are actually two kinds of accounts here. 
 one that are per user and the other one is per user and per game 
 so if you play different games you have different accounts one for each game 
 so luckily we had this concept of bounded context that helped us to resolve this issue 

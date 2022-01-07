@@ -351,63 +351,73 @@ what we call the game management
 so there are actually two kinds of accounts here. 
 one that are per user and the other one is per user and per game 
 so if you play different games you have different accounts one for each game 
-so luckily we had this concept of bounded context that helped us to resolve this issue 
+So luckily we had this 
+concept of bounded context that helped us to resolve this issue 
 otherwise I don't think the workshop would have been a success but with this 
 revelation and we could move on forward and had a successful workshop 
-and actually you can use this kind of differences in languages 
-to spot and find and identify bounded context 
+and actually you can use this kind of differences in languages to 
+spot and find and identify bounded context 
 so that's also a way how we use domain storytelling for finding bounded contexts 
-you've you've actually seen another example already 
-where we used bounded context and we remodeled them in a domain story and that was of course the cinema example 
-so again on the left in the course grain story we see in the rectangles different contexts 
-so we have ticket sales and snack sales and entrance control 
+You've actually seen another example already where 
+we used bounded context and we remodeled them in a domain story 
+and that was of course the cinema example 
+So again on the left in the coursed-grain story we see in the rectangles different contexts 
+So we have ticket sales and snack sales and entrance control 
 and in the more detailed domain story 
 that story plays within one context within the ticket sales context 
 and of course we want to make sure that within the ticket sales context 
-we have the same idea of the of the terms that are used there 
-so that we need our ubiquitous language right
-so these are the three things where I think DDD has really influenced domain storytelling 
+we have the same idea of the of the terms that are used there so 
+that we need our ubiquitous language right
+So these are the three things where I think 
+DDD has really influenced domain storytelling 
 and influenced its development and also my personal modeling practices 
-so we have this idea of the model exploration whirlpool 
+So we have this idea of the model exploration whirlpool 
 a powerful metaphor a bit neglected in the DDD community sadly 
 and we have this this big big community of collaborative modeling 
-that is not only within DDD but also extending to other communities like behavior different development for example
+that is not only within DDD but also extending to other communities 
+like behavior different development for example
 and we have this game-changing concept of bounded context 
 so the idea that language and models are bounded by the context 
-that really changed my modeling practices
-now if you want to know more about domain storytelling 
+that really changed my modeling practices.
+Now if you want to know more about domain storytelling 
 go check out domainstorytelling.org 
-you will find my slides on speaker deck 
-and now I'm looking forward for your questions, thank you
+You will find my slides on speaker deck 
+and now I'm looking forward for your questions, thank you.
 Okay thank you very much about Dr. Stefan Hofer's sharing.
-and right now let me see what's question that the participants asked
+and right now let me see what's question that the participants asked.
 so there are a lot of questions on slido right 
 Yeah! okay. Can you see my screen? 
 Yes, I can. 
 Okay the first question is 
-I saw there is no round-trip between each component, could you tell us what motivated you 
-to create create this one-way direction to express the message flow.
-so I think this question refers to the roadwork construction example that I gave 
-if I'm correct um yeah so um 
-this is something very typical uh for software developers 
+I saw there is no round-trip between each components, 
+could you tell us what motivated you to 
+create this 1-way direction to express the message flow?
+So I think this question refers to the 
+roadwork construction example that I gave 
+if I'm correct 
+um yeah so um  
+This is something very typical for software developers 
 we often think in this kind of request response 
 a pattern um or yeah or like you 
 you call a method and then you get a return value or something like that 
-I mean um you can use the main storytelling in that way 
-but often I think it's the better idea to to use it to express an intention 
-otherwise the the picture becomes very messy with a lot of back 
-and forth and back and forth and back and forth without really gaining without pushing the story forward 
-so the idea is that you express intention and not necessarily things like um 
+I mean you can use the main storytelling in that way 
+but often I think it's the better idea to 
+to use it to express an intention. 
+otherwise the the picture becomes very messy with a lot of 
+back and forth, and back and forth, and back and forth without really gaining 
+without pushing the story forward 
+so the idea is that you express intention 
+and not necessarily things like
 you know you enter something in the system in the web page you press the button 
 and then the web page renders a new html page and then you press the next button 
 and then it renders a new html page 
 this would be very boring that's not a good story 
-there's not a lot of information in it that's that drives the conversation forward um 
+there's not a lot of information in it that's that drives the conversation forward
 so that's what I want to avoid and I focus more on 
 what is the intention of this step 
 and then it's okay to have just a one-way information flow 
 or one way direction 
-yeah so that's that's the idea 
+yeah so that's that's the idea. 
 Okay thank you for your answer.
 And the second question is  
 have you ever met someone asking about the compression 

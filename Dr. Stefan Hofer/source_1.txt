@@ -525,82 +525,90 @@ uh to implement DDD
 or you can use it on a lower level 
 to to come up with object oriented 
 design using entities and aggregates and so on 
-what about disadvantages 
-well I'm a bit biased here of course I really love the main storytelling so
+What about disadvantages? 
+Well I'm a bit biased here of course I really love domain storytelling so
 it's it's hard to think about disadvantages but 
 now with the feedback 
-okay um but um well maybe let's put it this way 
-it's not the right tool for everything 
-so that's why I always talk about this toolbox 
-and um I've had situations where 
-I thought using this  this modeling method is a good idea 
+Okay, but well maybe let's put it this way 
+It's not the right tool for everything 
+So that's why I always talk about this toolbox 
+and I've had situations where 
+I thought using this this modeling method is a good idea 
 and then we go into the workshop and it just doesn't work 
 for some reason for for whatever reason 
-and then it's always good if you have this toolbox of other modeling tools 
-and say okay I'm sorry this conversation is not going forward 
-but I have an idea uh 
+and then it's always good if you have this toolbox of other modeling tools and say 
+okay I'm sorry this conversation is not going forward 
+but I have an idea
 let's use for example 
 let's use example mapping to to to figure that out or 
 let's use event storming and then you can switch 
-so um I think this would be a disadvantage like um 
+so I think this would be a disadvantage like 
 treating it as a one-size-fits-all tool for every situation that's not going to work 
 you you will need different tools in your toolbox
-okay and the next is uh 
-domain storytelling suitable as a DDD implementation necessary in complex domain 
-Such as the banking or financial industry.
-Yes, I think so for complex domains
+Okay and the next is
+Domain Storytelling suitable as a DDD implementation method in complex domain 
+such as the banking or financial industry.
+Yes, I think so that it's suitable for complex domains
 my colleagues and I have have used this technique 
-and its predecessors for uh 
-15 years and we applied it in 
-complex domains like healthcare, banking, insurance 
+and its predecessors for 
+uh 15 years and we applied it in 
+complex domains like healthcare, 
+banking, insurance 
 managing ports for example 
 we had stuff like 
 disaster management disaster disaster response teams 
-so a whole lot of different domains logistics of course um e-commerce 
-so it's not really bound to one domain it's really for 
-for pretty much every domain 
+so a whole lot of different domains logistics of course 
+e-commerce so it's not really 
+bound to one domain it's really for for 
+pretty much every domain 
 so I have not encountered a domain yet where I say okay this doesn't fit here 
-um yeah so I would definitely to say this is uh usable in complex domains 
-Okay thank you for your presentation 
+yeah so I would definitely to say this is usable in complex domains 
+Okay, thank you for your presentation 
 Have you run into a suitable where one object 
 can either be a working object 
-or an actor in different sequence of one dst image? 
+or an actor in different sequence of one DST image? 
 How do we deal with it? 
-That's a good question it's already a bit advanced 
+That's a good question. It's already a bit advanced 
 so well 
-within the domain of course it can happen that 
-um in in one domain story something is an actor and in one domain is something is a work object 
-similarly to in in one bounded context you can model something as an entity 
+Within the domain, of course, it can happen that.
+in in one domain story something is an actor and in one domain is something is a work object. 
+similarly to in in one bounded context
+you can model something as an entity 
 and in the next bounded context it's a value object because it doesn't change 
-so that's possible but this question is about in the same picture in the same domain
+so that's possible 
+but this question is about in the same picture in the same domain
 again this is not a common case but it can happen 
 for example um 
 if we think about something like 
-user management user registration you sign up for something 
+user management, user registration you sign up for something 
 you are the user you're the actor then 
-I'm only as an actor and you open your account 
+I'm only as an actor 
+and you open your account 
 and then the system
 creates a user as a representation 
 of the of the human being 
-then we have user as an actor and then we have user as a work object with the same picture 
+then we have 
+user as an actor and then we have user as a work object with the same picture 
 but that's not a problem at all 
-you just have to use a different icon to represent that 
- so I would use this little stick figure for the for the actor for the person 
+you just have to use a different icon 
+to represent that. 
+So I would use this little stick figure for the for the actor for the person 
 and for example the icon set that I use that's the google material I can set 
 they have another smaller picture of a user with a little check mark 
 and that's the one that I typically use for stuff like 
 um user account
-um so that's um that's the way um how I deal with it 
-so use different icons to represent those different concepts 
-and then it works
-
+So that's that's the way how I deal with it.
+So use different icons to represent those different concepts 
+and then it works.
 Okay!
-as the realization of protons or service product methodology 
-or tool does domain storytelling usually 
-it's a great with to foreign or complete agile development process 
+as the realization of products or services, 
+what methodologies or tool does Domain Storytelling usually integrate
+with to form a complete agile development process 
 from requirements analysis to system development
-uh very nice so um
-one of the tools of the methods 
-that I use um a lot in combination with domain storytelling
-is user story mapping why because of two reasons so
-domain storytelling is always about scenarios so about typically
+um very nice so um
+one of the tools of the methods that I use 
+um a lot in combination with Domain Storytelling
+is user story mapping 
+why 
+because of two reasons so
+Domain Storytelling is always about scenarios so about typically
